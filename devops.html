@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sovelluskehitys ja DevOps - LexIT</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Etusivu</a>
+                
+                <div class="nav-dropdown">
+                    <button class="nav-link dropdown-toggle">Sanasto</button>
+                    <div class="dropdown-menu">
+                        <a href="yleiset.html" class="dropdown-item">Yleiset IT‑lyhenteet</a>
+                        <a href="verkko.html" class="dropdown-item">Verkko ja protokollat</a>
+                        <a href="pilvi.html" class="dropdown-item">Pilvi, virtualisointi ja kontit</a>
+                        <a href="turva.html" class="dropdown-item">Tietoturva ja suojaus</a>
+                        <a href="data.html" class="dropdown-item">Tietokannat ja data</a>
+                        <a href="devops.html" class="dropdown-item">Sovelluskehitys ja DevOps</a>
+                        <a href="microsoft.html" class="dropdown-item">Microsoft & päätelaitteiden hallinta</a>
+                        <a href="ai.html" class="dropdown-item">AI ja koneoppiminen</a>
+                        <a href="bi.html" class="dropdown-item">Analytiikka, BI ja raportointi</a>
+                        <a href="itserv.html" class="dropdown-item">IT‑hallinto ja prosessit</a>
+                    </div>
+                </div>
+                
+                <a href="haku.html" class="nav-link">Haku</a>
+                <a href="about.html" class="nav-link">About / README</a>
+                <a href="contribute.html" class="nav-link">Contribute / GitHub</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content">
+        <div class="container">
+            <h1>Sovelluskehitys ja DevOps</h1>
+            
+            <div class="category-intro">
+                <p>DevOps yhdistää sovelluskehityksen (Development) ja järjestelmien ylläpidon (Operations). Tässä osiossa selitämme modernin ohjelmistokehityksen työkaluja ja menetelmiä, joilla sovellukset kehitetään nopeasti ja luotettavasti.</p>
+            </div>
+
+            <div class="term-entry">
+                <h2>AIOps — Artificial Intelligence for IT Operations</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Tekoälyn käyttö IT-järjestelmien monitorointiin, analysointiin ja automaattiseen ongelmanratkaisuun.</p>
+                    <p><strong>Tarkemmin:</strong> AIOps on kuin IT-järjestelmille oma lääkäri joka seuraa terveyttä 24/7 ja osaa diagnosoida ongelmia. Se analysoi valtavia määriä lokitietoja, suorituskykydataa ja verkkotietoja, löytää kuvioita ja varoittaa ongelmista ennen kuin käyttäjät huomaavat niitä. Parhaimmillaan se jopa korjaa ongelmat automaattisesti.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/Artificial_intelligence_for_IT_operations" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.splunk.com/en_us/data-insider/what-is-aiops.html" class="info-link">🔗 Splunk AIOps-opas</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>Ansible — Configuration management tool</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Työkalu palvelimien automaattiseen konfigurointiin ja hallintaan ilman agentteja.</p>
+                    <p><strong>Tarkemmin:</strong> Ansible on kuin reseptikirja palvelimien valmistamiseen. Kirjoitat "playbook":iin mitä haluat tehdä (asenna ohjelma X, konfiguroi palvelu Y), ja Ansible tekee sen sadoille palvelimille samanaikaisesti. Toisin kuin monet muut työkalut, Ansible ei vaadi erillisiä agentteja - se toimii SSH:n kautta.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Ansible_(ohjelmisto)" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.ansible.com/" class="info-link">🔗 Ansible (virallinen sivusto)</a>
+                        <a href="https://docs.ansible.com/ansible/latest/user_guide/quickstart.html" class="info-link">🔗 Ansible aloittajan opas</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>API — Application Programming Interface</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Tapa jolla ohjelmat keskustelevat keskenään - määrittää mitä voit pyytää ja miten.</p>
+                    <p><strong>Tarkemmin:</strong> API toimii kuin ravintolan menu - se kertoo mitä voit tilata, missä muodossa tieto tulee, ja miten tilaus tehdään. Kun mobiilisovellus hakee säätiedot, se käyttää sääpalvelun API:a. API:t mahdollistavat eri ohjelmien yhteistyön ilman että niiden tarvitsee tietää toistensa sisäisestä toiminnasta.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Ohjelmointirajapinta" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://restfulapi.net/" class="info-link">🔗 RESTful API -opas</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>APM — Application Performance Monitoring</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Järjestelmä joka seuraa sovelluksen suorituskykyä ja käyttäjäkokemusta reaaliajassa.</p>
+                    <p><strong>Tarkemmin:</strong> APM on kuin fitness-tracker sovelluksille. Se mittaa kuinka nopeasti sivut latautuvat, missä pullonkauloja on, mitä virheitä sattuu ja miten käyttäjät liikkuvat sovelluksessa. Jos verkkokauppasi on hidas, APM näyttää onko ongelma tietokannassa, verkossa vai jossain muualla. New Relic ja Datadog ovat APM-palveluja.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/Application_performance_monitoring" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.newrelic.com/platform/application-monitoring" class="info-link">🔗 New Relic APM</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>CD — Continuous Delivery / Continuous Deployment</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Automaattinen tapa viedä sovelluspäivityksia tuotantoon nopeasti ja turvallisesti.</p>
+                    <p><strong>Tarkemmin:</strong> Continuous Delivery varmistaa että koodisi on aina valmis julkaistavaksi, Continuous Deployment julkaisee sen automaattisesti. Se on kuin liukuhihna autotehtaassa - jokainen muutos kulkee automaattisten testien kautta tuotantoon. Netflix ja Facebook päivittävät sovelluksiaan useita kertoja päivässä CD:n ansiosta.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Continuous_delivery" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.atlassian.com/continuous-delivery" class="info-link">🔗 Atlassian CD-opas</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>CI — Continuous Integration</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Käytäntö jossa koodimuutokset yhdistetään ja testataan automaattisesti jatkuvasti.</p>
+                    <p><strong>Tarkemmin:</strong> CI on kuin laadunvalvonta tuotantolinjalla. Aina kun kehittäjä tallentaa koodia, CI-järjestelmä hakee sen, kääntää, testaa ja tarkistaa että mikään ei hajoa. Jos testit epäonnistuvat, kaikki saavat heti tiedon. Näin ongelmat löydetään heti eikä vasta viikkoja myöhemmin kun koodi menee tuotantoon.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Continuous_integration" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.atlassian.com/continuous-delivery/continuous-integration" class="info-link">🔗 Atlassian CI-opas</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>Git — Version Control System</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Versionhallintajärjestelmä joka tallentaa kaikki muutokset koodissa ja mahdollistaa yhteistyön.</p>
+                    <p><strong>Tarkemmin:</strong> Git on kuin aikakone koodille. Se tallentaa jokaisen muutoksen historiaan, jolloin voit palata vanhaan versioon, nähdä kuka muutti mitä ja milloin, ja yhdistää useamman kehittäjän työn. Se on kuin Google Docsin "version history" mutta paljon kehittyneempi. Linus Torvalds loi Git:in Linux-ytimen kehitykseen.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Git" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://git-scm.com/" class="info-link">🔗 Git (virallinen sivusto)</a>
+                        <a href="https://learngitbranching.js.org/" class="info-link">🔗 Interaktiivinen Git-opas</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>GitHub Actions — GitHub automation platform</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> GitHubin sisäänrakennettu automaatiojärjestelmä CI/CD:lle ja muille tehtäville.</p>
+                    <p><strong>Tarkemmin:</strong> GitHub Actions on kuin robottiavustaja koodiprojektille. Se voi automaattisesti testata koodin kun lähetät sen GitHubiin, julkaista uusia versioita, lähettää ilmoituksia, päivittää dokumentaatiota tai tehdä mitä vain määrität. Se toimii suoraan GitHub-repositoryssä ilman erillistä palvelua.</p>
+                    <div class="links">
+                        <a href="https://docs.github.com/en/actions" class="info-link">📖 GitHub Actions dokumentaatio</a>
+                        <a href="https://github.com/features/actions" class="info-link">🔗 GitHub Actions</a>
+                        <a href="https://github.com/marketplace?type=actions" class="info-link">🔗 Actions Marketplace</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>GitLab CI — GitLab Continuous Integration</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> GitLabin sisäänrakennettu CI/CD-järjestelmä automaattiseen testaukseen ja julkaisuun.</p>
+                    <p><strong>Tarkemmin:</strong> GitLab CI on GitLabin oma versio GitHub Actionsista. Se lukee ".gitlab-ci.yml"-tiedoston projektista ja suorittaa siinä määritellyt tehtävät: testaa koodin, rakentaa sovelluksen, julkaisee sen eri ympäristöihin. Se on tiukasti integroitu GitLabin koodinhallintaan ja issue-trackingiin.</p>
+                    <div class="links">
+                        <a href="https://docs.gitlab.com/ee/ci/" class="info-link">📖 GitLab CI dokumentaatio</a>
+                        <a href="https://about.gitlab.com/stages-devops-lifecycle/continuous-integration/" class="info-link">🔗 GitLab CI</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>GitOps — Git-pohjainen infrastruktuurin hallinta</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Tapa hallita infrastruktuuria ja sovelluksia Git-repositoryn kautta deklaratiivisesti.</p>
+                    <p><strong>Tarkemmin:</strong> GitOps tekee Git:istä "single source of truth" kaikelle IT-infrastruktuurille. Kun muutat konfiguraatiotiedostoja Git:issä, GitOps-järjestelmä (kuten ArgoCD) huomaa muutokset ja päivittää automaattisesti tuotantoympäristön vastaamaan sitä. Se on kuin "Infrastructure as Code", mutta Git-työkaluin hallittuna.</p>
+                    <div class="links">
+                        <a href="https://www.gitops.tech/" class="info-link">📖 GitOps.tech</a>
+                        <a href="https://argo-cd.readthedocs.io/en/stable/" class="info-link">🔗 ArgoCD (GitOps-työkalu)</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>IaC — Infrastructure as Code</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Lähestymistapa jossa IT-infrastruktuuri määritellään ja hallitaan koodina, ei manuaalisesti.</p>
+                    <p><strong>Tarkemmin:</strong> IaC tarkoittaa että kirjoitat palvelimet, verkot ja tietokannat koodina sen sijaan että klikkailisit niitä käsin. Se on kuin rakennuspiirustukset - kerran kirjoitetut, ne voidaan toistaa tarkasti milloin vain. Terraform ja AWS CloudFormation ovat IaC-työkaluja. Muutos konfiguraatiossa = muutos koodissa = versionhallinta ja peer review.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/Infrastructure_as_code" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.terraform.io/" class="info-link">🔗 Terraform</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>IDE — Integrated Development Environment</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Kaikki-yhdessä-sovellus ohjelmointiin: editori, debuggeri, kääntäjä samassa paketissa.</p>
+                    <p><strong>Tarkemmin:</strong> IDE on kuin koko työpaja yhdessä paketissa. Sen sijaan että käyttäisit erillistä tekstieditoria, kääntäjää ja debuggeria, IDE yhdistää kaikki samaan ohjelmaan. Se osaa automaattisesti täydentää koodia, löytää virheet ja auttaa navigoimaan suuressa projektissa. Visual Studio Code, IntelliJ ja Eclipse ovat suosittuja IDE:jä.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Integroitu_kehitysymp%C3%A4rist%C3%B6" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://code.visualstudio.com/" class="info-link">🔗 Visual Studio Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>Jenkins — CI/CD automation server</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Avoimen lähdekoodin automaatiopalvelin CI/CD-prosessien hallintaan.</p>
+                    <p><strong>Tarkemmin:</strong> Jenkins on kuin henkilökohtainen avustaja joka tekee kaiken tylsän työn puolestasi. Se voi automaattisesti hakea koodin Git:istä, testata sen, rakentaa sovelluksen, julkaista sen palvelimelle ja lähettää ilmoituksen jos jotain menee pieleen. Se on ollut CI/CD:n klassikko vuodesta 2011, ja siihen on saatavilla tuhansia lisäosia.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Jenkins_(ohjelmisto)" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.jenkins.io/" class="info-link">🔗 Jenkins (virallinen sivusto)</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>JSON‑RPC / gRPC — Palveluiden väliset protokollat</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Protokollia joilla sovellukset voivat kutsua toistensa funktioita verkon kautta tehokkaasti.</p>
+                    <p><strong>Tarkemmin:</strong> JSON-RPC on kuin puhelinkeskustelu JSON-muodossa - voit kutsua toisen ohjelman funktiota kuin se olisi omassa koodissasi. gRPC on Googlen kehittämä moderni versio joka on nopeampi ja tukee monia ohjelmointikieliä. Se on kuin REST API:n tehokkaampi serkku mikropalveluiden väliseen viestintään.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/JSON-RPC" class="info-link">📖 JSON-RPC Wikipediassa</a>
+                        <a href="https://grpc.io/" class="info-link">🔗 gRPC (virallinen sivusto)</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>Maven — Build automation tool</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Java-projektien automaattiseen rakentamiseen ja riippuvuuksien hallintaan tarkoitettu työkalu.</p>
+                    <p><strong>Tarkemmin:</strong> Maven on kuin resepti Java-sovellusten valmistamiseen. Se tietää missä järjestyksessä koodit käännetään, mitä kirjastoja tarvitaan ja miten lopputulos paketoidaan. Sen sijaan että kehittäjä muistaisi käyttää oikeita komentoja oikeassa järjestyksessä, Maven tekee sen automaattisesti "pom.xml"-tiedoston ohjeiden mukaan.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Apache_Maven" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://maven.apache.org/" class="info-link">🔗 Apache Maven</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>npm — Node Package Manager</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> JavaScript-projektien pakettien (kirjastojen) hallintajärjestelmä.</p>
+                    <p><strong>Tarkemmin:</strong> npm on kuin sovelluksista for JavaScript-maailmalle. Se sisältää miljoonia valmiita koodipaketteja joita voit asentaa projektiin yhdellä komennolla. Tarvitsetko kalenterikomponentin? "npm install react-calendar" ja se on käytössäsi. npm huolehtii myös riippuvuuksista - jos paketti tarvitsee muita paketteja, ne asennetaan automaattisesti.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Npm_(ohjelmisto)" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.npmjs.com/" class="info-link">🔗 npm (virallinen sivusto)</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>REST — Representational State Transfer</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Arkkitehtuurityyli web-API:ille joka käyttää HTTP-verbejä (GET, POST, PUT, DELETE) resurssien hallintaan.</p>
+                    <p><strong>Tarkemmin:</strong> REST on kuin kielioppi verkon API:lle. Se sanoo että käytä GET hakemiseen, POST luomiseen, PUT päivittämiseen ja DELETE poistamiseen. URL kertoo mitä resurssia käsitellään: "GET /users/123" hakee käyttäjän 123. REST on yksinkertainen ja intuitiivinen, siksi se on niin suosittu.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/REST" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://restfulapi.net/" class="info-link">🔗 RESTful API -opas</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>SCM — Source Code Management</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Järjestelmä lähdekoodin versionhallinnan ja yhteistyön hallintaan.</p>
+                    <p><strong>Tarkemmin:</strong> SCM on kuin kirjaston luettelointijärjestelmä koodille. Se pitää kirjaa kuka muutti mitä ja milloin, mahdollistaa useamman kehittäjän työskentelyn samassa projektissa, ja antaa palata vanhempiin versioihin jos jotain menee rikki. Git, Subversion ja Mercurial ovat SCM-järjestelmiä. Ilman SCM:ää ohjelmistokehitys olisi kaaosta.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/Version_control" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://git-scm.com/about/branching-and-merging" class="info-link">🔗 Git branching -opas</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>SDK — Software Development Kit</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Kehittäjien työkalupaketti tietyn alustan, palvelun tai järjestelmän sovelluskehitykseen.</p>
+                    <p><strong>Tarkemmin:</strong> SDK on kuin Lego-sarja jolla rakennetaan sovelluksia tietylle alustalle. Se sisältää koodikirjastoja, työkaluja, dokumentaatiota ja esimerkkejä. Esimerkiksi Android SDK sisältää kaiken mitä tarvitset Android-sovellusten tekemiseen. Se on kuin keittokirja ja kaikki tarvittavat ainekset yhdessä paketissa.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Ohjelmistokehityspakkaus" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://developer.android.com/studio" class="info-link">🔗 Android SDK</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>SOAP — Simple Object Access Protocol</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Vanha mutta edelleen käytössä oleva protokolla web-palveluille, käyttää XML:ää.</p>
+                    <p><strong>Tarkemmin:</strong> SOAP on kuin virallinen diplomaattiprotokolla ohjelmille. Se on hyvin tarkka ja monimutkainen, mutta myös luotettava ja turvallinen. SOAP käyttää XML:ää viestintään ja määrittelee tarkkaan miten pyyntöjä ja vastauksia muotoillaan. Vaikka REST on nykyään suositumpi, SOAP elää edelleen vanhoissa yrityssovelluksissa.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/SOAP" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.w3.org/TR/soap/" class="info-link">🔗 W3C SOAP-spesifikaatio</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>SRE — Site Reliability Engineering</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Googlen kehittämä lähestymistapa, jossa luotettavuus käsitellään ohjelmistokehitysongelmana.</p>
+                    <p><strong>Tarkemmin:</strong> SRE yhdistää ohjelmistokehityksen ja järjestelmien ylläpidon. SRE-insinöörit kirjoittavat koodia, joka automatisoi järjestelmien hallinnan, monitorointia ja ongelmien ratkaisua. Se määrittelee "error budgets" - jos palvelu toimii liian hyvin, voidaan ottaa enemmän riskejä uusien ominaisuuksien kanssa.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/Site_reliability_engineering" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://sre.google/" class="info-link">🔗 Google SRE</a>
+                        <a href="https://landing.google.com/sre/books/" class="info-link">🔗 SRE-kirjat (ilmaiset)</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>Terraform — Infrastructure as Code tool</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Työkalu IT-infrastruktuurin määrittelyyn, rakentamiseen ja hallintaan koodin kautta.</p>
+                    <p><strong>Tarkemmin:</strong> Terraform on kuin rakennusmestari pilvelle. Kirjoitat konfiguraatiotiedostoon mitä infrastruktuuria tarvitset (palvelimia, tietokantoja, verkkoja), ja Terraform rakentaa ne automaattisesti AWS:iin, Azureen tai mihin tahansa pilveen. Se osaa myös päivittää ja tuhota infrastruktuurin kontrolloidusti.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/Terraform_(software)" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.terraform.io/" class="info-link">🔗 Terraform (virallinen sivusto)</a>
+                        <a href="https://learn.hashicorp.com/terraform" class="info-link">🔗 Terraform-oppaat</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>YAML — YAML Ain't Markup Language</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Ihmisystävällinen dataformaatti konfiguraatiotiedostoille ja datan vaihtoon.</p>
+                    <p><strong>Tarkemmin:</strong> YAML on kuin JSON, mutta helpommin luettavissa. Se käyttää sisennyksiä hierarkian määrittelyyn sulkujen sijaan. Docker Compose, Kubernetes, GitHub Actions ja monet muut työkalut käyttävät YAML-tiedostoja konfiguraatioon. Se on suunniteltu olemaan sekä ihmisen että koneen luettavissa.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/YAML" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://yaml.org/" class="info-link">🔗 YAML.org</a>
+                        <a href="https://yamlchecker.com/" class="info-link">🔗 YAML-syntaksin tarkistin</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

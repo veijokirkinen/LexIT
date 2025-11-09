@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft & päätelaitteiden hallinta - LexIT</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Etusivu</a>
+                
+                <div class="nav-dropdown">
+                    <button class="nav-link dropdown-toggle">Sanasto</button>
+                    <div class="dropdown-menu">
+                        <a href="yleiset.html" class="dropdown-item">Yleiset IT‑lyhenteet</a>
+                        <a href="verkko.html" class="dropdown-item">Verkko ja protokollat</a>
+                        <a href="pilvi.html" class="dropdown-item">Pilvi, virtualisointi ja kontit</a>
+                        <a href="turva.html" class="dropdown-item">Tietoturva ja suojaus</a>
+                        <a href="data.html" class="dropdown-item">Tietokannat ja data</a>
+                        <a href="devops.html" class="dropdown-item">Sovelluskehitys ja DevOps</a>
+                        <a href="microsoft.html" class="dropdown-item">Microsoft & päätelaitteiden hallinta</a>
+                        <a href="ai.html" class="dropdown-item">AI ja koneoppiminen</a>
+                        <a href="bi.html" class="dropdown-item">Analytiikka, BI ja raportointi</a>
+                        <a href="itserv.html" class="dropdown-item">IT‑hallinto ja prosessit</a>
+                    </div>
+                </div>
+                
+                <a href="haku.html" class="nav-link">Haku</a>
+                <a href="about.html" class="nav-link">About / README</a>
+                <a href="contribute.html" class="nav-link">Contribute / GitHub</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content">
+        <div class="container">
+            <h1>Microsoft & päätelaitteiden hallinta</h1>
+            
+            <div class="category-intro">
+                <p>Microsoft-teknologiat hallitsevat monia yritysympäristöjä. Tässä osiossa selitämme Microsoftin tuotteet ja päätelaitteiden hallinnan käsitteet arkikielellä. Oppii miten yritykset hallitsevat tietokoneita, tabletteja ja puhelimia.</p>
+            </div>
+
+            <div class="term-entry">
+                <h2>AD — Active Directory</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Microsoftin hakemistopalvelu joka hallitsee käyttäjiä, tietokoneita ja resursseja yritysverkossa.</p>
+                    <p><strong>Tarkemmin:</strong> AD on kuin yrityksen digitaalinen henkilöstöhallinto ja turvallisuuspalvelu yhdessä. Se tietää kuka saa kirjautua mihinkin tietokoneeseen, mitkä tulostimeat ovat käytössä ja mitä oikeuksia kullakin on. Kun kirjaudut työpaikalla tietokoneeseen, AD tarkistaa henkilöllisyytesi ja antaa oikeudet oikeisiin kansioihin ja sovelluksiin.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Active_Directory" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/" class="info-link">🔗 Microsoft AD-dokumentaatio</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>Autopilot — Windows Autopilot</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Palvelu joka automatisoi uusien Windows-laitteiden käyttöönoton.</p>
+                    <p><strong>Tarkemmin:</strong> Autopilot tekee uuden työläppärin käyttöönotosta yhtä helppoa kuin uuden iPhonen. Sen sijaan että IT-tuki asentaisi manuaalisesti ohjelmat ja asetukset, Autopilot tekee kaiken automaattisesti kun käyttäjä kirjautuu ensimmäisen kerran. Laite "tietää" kenelle se kuuluu ja mitä ohjelmia siihen pitää asentaa.</p>
+                    <div class="links">
+                        <a href="https://docs.microsoft.com/en-us/autopilot/" class="info-link">📖 Microsoft Autopilot-dokumentaatio</a>
+                        <a href="https://docs.microsoft.com/en-us/autopilot/windows-autopilot" class="info-link">🔗 Windows Autopilot</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>Azure AD — Azure Active Directory</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Microsoftin pilvipohjainen identiteetti- ja käyttöoikeuspalvelu.</p>
+                    <p><strong>Tarkemmin:</strong> Azure AD on Active Directoryn pilviserkku. Se hallitsee käyttäjätunnuksia ja oikeuksia pilvipalveluissa. Kun kirjaudut Office 365:een, Teamsiin tai muihin Microsoft-palveluihin yrityksen tunnuksilla, Azure AD hoitaa tunnistautumisen. Se toimii myös SSO:n (Single Sign-On) kanssa - kerran kirjauduttuasi pääset kaikkiin palveluihin.</p>
+                    <div class="links">
+                        <a href="https://docs.microsoft.com/en-us/azure/active-directory/" class="info-link">📖 Azure AD -dokumentaatio</a>
+                        <a href="https://azure.microsoft.com/en-us/services/active-directory/" class="info-link">🔗 Azure Active Directory</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>BYOD — Bring Your Own Device</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Käytäntö jossa työntekijät käyttävät omia henkilökohtaisia laitteitaan työtehtäviin.</p>
+                    <p><strong>Tarkemmin:</strong> BYOD tarkoittaa että käytät omaa iPhoneasi tai MacBookiasi töissä. Se säästää yrityksen rahaa mutta tuo turvallisuushaasteita - miten varmistaa että työn sähköpostit pysyvät turvassa jos puhelin häviää? MDM-järjestelmät auttavat hallitsemaan henkilökohtaisia laitteita turvallisesti.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/Bring_your_own_device" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://docs.microsoft.com/en-us/mem/intune/enrollment/device-enrollment" class="info-link">🔗 Microsoft BYOD-opas</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>Co‑management — SCCM + Intune yhteiskäyttö</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Lähestymistapa jossa SCCM ja Intune hallitsevat samoja laitteita yhdessä.</p>
+                    <p><strong>Tarkemmin:</strong> Co-management on siirtymävaihe perinteisestä SCCM:stä moderniin Intune-hallintaan. Se mahdollistaa sen että osa laitteiden hallinnasta tapahtuu SCCM:n kautta (esim. sovellukset) ja osa Intunen kautta (esim. päivitykset). Kuin kaksi kapellimestaria johtaa orkesteria vuorotellen eri sävellyksissä.</p>
+                    <div class="links">
+                        <a href="https://docs.microsoft.com/en-us/mem/configmgr/comanage/" class="info-link">📖 Microsoft Co-management -dokumentaatio</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>COPE — Company Owned, Personally Enabled</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Yrityksen omistama laite jota saa käyttää myös henkilökohtaisiin tarpeisiin.</p>
+                    <p><strong>Tarkemmin:</strong> COPE on kuin yritysauto jota saa käyttää myös vapaa-ajalla. Yritys ostaa puhelimen tai tabletin, mutta työntekijä saa asentaa siihen myös omia sovelluksiaan ja käyttää sitä henkilökohtaisesti. Yritys hallitsee laitetta MDM:n kautta mutta sallii henkilökohtaisen käytön tietyin rajoituksin.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/Company-owned,_personally-enabled" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>Dataflow — Power BI Dataflows</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Power BI:n ominaisuus datan puhdistamiseen, muotoiluun ja tallentamiseen pilvipalvelussa.</p>
+                    <p><strong>Tarkemmin:</strong> Dataflow on kuin tietojen pesula Power BI:ssä. Se hakee dataa eri lähteistä (Excel, tietokannat, verkkopalvelut), puhdistaa ja muotoilee sen, ja tallentaa valmiiksi Power BI:n pilveen. Sen jälkeen monet raportit voivat käyttää samaa puhdistettua dataa. Se on kuin keskitetty tietojen valmistelukeittiö.</p>
+                    <div class="links">
+                        <a href="https://docs.microsoft.com/en-us/power-bi/transform-model/dataflows/" class="info-link">📖 Power BI Dataflows -dokumentaatio</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>DAX — Data Analysis Expressions</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Excelin kaavamainen kieli Power BI:ssä laskutoimituksiin ja data-analyyseihin.</p>
+                    <p><strong>Tarkemmin:</strong> DAX on kuin Excel-kaavat supersuurille datataulukoille. Sillä voit laskea monimutkaisia tunnuslukuja kuten "kuluvan vuoden myynti vs. edellinen vuosi" tai "liukuva keskiarvo viimeiseltä 3 kuukaudelta". DAX osaa käsitellä aikasarjoja ja suhteiden dataa älykkäämmin kuin tavalliset Excel-kaavat.</p>
+                    <div class="links">
+                        <a href="https://docs.microsoft.com/en-us/dax/" class="info-link">📖 DAX-dokumentaatio</a>
+                        <a href="https://dax.guide/" class="info-link">🔗 DAX Guide (kaavojen hakemisto)</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>DP — Distribution Point</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> SCCM:n palvelimen lisäkone joka jakaa ohjelmistoja ja päivityksiä paikallisesti.</p>
+                    <p><strong>Tarkemmin:</strong> DP toimii kuin paikalliset jakelukeskukset verkkokaupalle. Sen sijaan että kaikki työasemat lataisivat ohjelmat ja päivitykset keskuspalvelimelta (joka voi olla Helsingissä), ne hakevat ne paikallisesta DP:stä (esim. Oulun toimistossa). Tämä säästää kaistaa ja nopeuttaa latauksia.</p>
+                    <div class="links">
+                        <a href="https://docs.microsoft.com/en-us/mem/configmgr/core/servers/deploy/configure/install-and-configure-distribution-points" class="info-link">📖 SCCM DP-dokumentaatio</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>EMM — Enterprise Mobility Management</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Kokonaisvaltainen lähestymistapa yrityksen mobiililaitteiden, sovellusten ja datan hallintaan.</p>
+                    <p><strong>Tarkemmin:</strong> EMM yhdistää MDM:n (laitteiden hallinnan), MAM:in (sovellusten hallinnan) ja identiteetinhallinnan yhdeksi kokonaisuudeksi. Se on kuin yrityksen mobiilijärjestelmien missiokeskus - hallitsee ketkä pääsevät mihinkin dataan millä laitteella ja millä sovelluksilla. Microsoft Intunet ja VMware Workspace ONE ovat EMM-ratkaisuja.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/Enterprise_mobility_management" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>Exchange — Microsoft Exchange Server</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Microsoftin sähköposti-, kalenteri- ja yhteistöpalvelin yrityksille.</p>
+                    <p><strong>Tarkemmin:</strong> Exchange on kuin yrityksen digitaalinen postitoimisto, kalenteri ja osoitekirja yhdessä. Se hoitaa sähköpostin, kalenterien synkronoinnin, yhteisten postilaatikoiden hallinnan ja kokoushuoneiden varaukset. Outlook-ohjelma keskustelee Exchange-palvelimen kanssa. Nykyään monet siirtyvät Exchange Online -pilvipalveluun.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Microsoft_Exchange_Server" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://docs.microsoft.com/en-us/exchange/" class="info-link">🔗 Exchange-dokumentaatio</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>GPO — Group Policy Object</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Windows-ympäristössä käytetty määritystyökalu jolla hallitaan käyttäjien ja koneiden asetuksia keskitetysti.</p>
+                    <p><strong>Tarkemmin:</strong> GPO on kuin yrityksen sisäinen laki Windows-koneille. Se määrittää esimerkiksi että käyttäjät eivät saa asentaa ohjelmia, tietyt verkkosivustot estetään tai salasanassa pitää olla vähintään 8 merkkiä. Active Directory jakaa nämä säännöt automaattisesti kaikille työasemille. IT-henkilö voi muuttaa satoja koneita yhdellä muutoksella.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Ryhm%C3%A4k%C3%A4yt%C3%A4nt%C3%B6" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://docs.microsoft.com/en-us/troubleshoot/windows-server/group-policy/group-policy-overview" class="info-link">🔗 Microsoft GPO-dokumentaatio</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>Hyper-V — Microsoft Hyper-V</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Microsoftin virtualisointialusta jolla luodaan ja hallitaan virtuaalitietokoneita.</p>
+                    <p><strong>Tarkemmin:</strong> Hyper-V tekee yhdestä fyysisestä Windows Server -koneesta useita virtuaalitietokoneita. Se on kuin asunto joka jaetaan useaan pienempään huoneistoon - kukin virtuaalikone toimii itsenäisesti omalla käyttöjärjestelmällään. Hyper-V:n avulla yritykset voivat säästää palvelinlaitteistoissa ja helpottaa palvelimien hallintaa.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Hyper-V" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/" class="info-link">🔗 Hyper-V dokumentaatio</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>Intune — Microsoft Intune</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Microsoftin pilvipohjainen laitteiden hallintapalvelu (MDM/EMM).</p>
+                    <p><strong>Tarkemmin:</strong> Intune on kuin etä-alusta kaikille yrityksen laitteille. Sen avulla IT voi hallita iPhoneja, Android-puhelimia, Windows-läppäreitä ja tabletteja samasta paikasta. Se voi asentaa ohjelmia, pakottaa salasanoja, etätuhota tietoja kadonneilta laitteilta ja varmistaa että laitteet täyttävät turvallisuusvaatimukset.</p>
+                    <div class="links">
+                        <a href="https://docs.microsoft.com/en-us/mem/intune/" class="info-link">📖 Microsoft Intune -dokumentaatio</a>
+                        <a href="https://www.microsoft.com/en-us/security/business/microsoft-intune" class="info-link">🔗 Microsoft Intune</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>M365 / O365 — Microsoft 365 / Office 365</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Microsoftin pilvipalvelupaketti joka sisältää Officen, sähköpostin, tallennustilan ja yhteistyötyökalut.</p>
+                    <p><strong>Tarkemmin:</strong> M365 on kuin Netflix Microsoftin tuotteille - kuukausimaksulla saat Word, Excel, PowerPoint, Outlook, Teams, OneDriven ja muut palvelut pilvipohjaisina. Office 365 keskittyy tuottavuussovelluksiin, Microsoft 365 sisältää lisäksi tietoturvaa ja laitteiden hallintaa. Se on siirtymä ohjelmien ostamisesta niiden vuokraamiseen.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Microsoft_365" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.microsoft.com/fi-fi/microsoft-365" class="info-link">🔗 Microsoft 365</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>MAM — Mobile Application Management</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Järjestelmä jolla hallitaan mobiilisovellusten käyttöä, asentamista ja turvallisuutta yritysympäristössä.</p>
+                    <p><strong>Tarkemmin:</strong> MAM keskittyy sovellusten hallintaan laitteen hallinnan sijaan. Se voi esimerkiksi salata tiedot Outlook-sovelluksessa, estää kopioimisen työsähköposteista WhatsAppiin, tai pakottaa PIN-koodin yrityssovelluksiin. Hyödyllinen BYOD-ympäristöissä jossa halutaan suojata yritysdata henkilökohtaisessa puhelimessa.</p>
+                    <div class="links">
+                        <a href="https://docs.microsoft.com/en-us/mem/intune/apps/app-protection-policy" class="info-link">📖 Intune MAM -dokumentaatio</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>MDM — Mobile Device Management</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Järjestelmä mobiililaitteiden keskitettyyn hallintaan, konfigurointiin ja turvallisuuden valvontaan.</p>
+                    <p><strong>Tarkemmin:</strong> MDM on kuin etäkauko-ohjain kaikille yrityksen puhelimille ja tableteille. Se voi asentaa sovelluksia, asettaa WiFi-asetukset, pakottaa salasanoja, paikantaa kadonneet laitteet ja jopa etätuhota kaikki tiedot jos laite varastetaan. Välttämätön työkalu nykyaikaisessa työpaikassa jossa kaikilla on älypuhelin.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Mobiililaitteiden_hallinta" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://docs.microsoft.com/en-us/mem/intune/enrollment/" class="info-link">🔗 Intune MDM</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>MDT — Microsoft Deployment Toolkit</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Ilmainen Microsoftin työkalu Windows-käyttöjärjestelmien automaattiseen asennukseen.</p>
+                    <p><strong>Tarkemmin:</strong> MDT on kuin Windows-asennus tehtaalla. Sen sijaan että asentaisit Windows, ohjelmat ja asetukset jokaiseen koneeseen käsin, MDT luo valmiit "levykuvat" joilla uusi kone voidaan asentaa täysin automaattisesti. Se osaa jopa havaita erilaisia koneita ja asentaa oikeat ajurit automaattisesti.</p>
+                    <div class="links">
+                        <a href="https://docs.microsoft.com/en-us/windows/deployment/deploy-windows-mdt/" class="info-link">📖 MDT-dokumentaatio</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>Office 365 — Microsoft Office 365</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Microsoftin pilvipalveluna tarjottu Office-ohjelmistopaketti.</p>
+                    <p><strong>Tarkemmin:</strong> Office 365 toi tutut Word, Excel, PowerPoint ja Outlook -ohjelmat nettiin. Sen sijaan että ostaisit Officen kertamaksulla, maksat kuukausimaksua ja saat aina uusimman version automaattisesti. Lisäksi saat OneDrive-tallennustilaa ja voit työskennellä yhdessä toisten kanssa reaaliajassa. Nykyään osa Microsoft 365 -pakettia.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Microsoft_Office_365" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.office.com/" class="info-link">🔗 Office 365</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>OneDrive — Microsoft OneDrive</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Microsoftin pilvipalvelu tiedostojen tallentamiseen, synkronointiin ja jakamiseen.</p>
+                    <p><strong>Tarkemmin:</strong> OneDrive on kuin USB-tikku pilvessä. Tallenna tiedostot OneDriveen ja ne ovat saatavilla kaikilla laitteillasi automaattisesti. Se synkronoi tiedostot taustalla ja mahdollistaa niiden jakamisen muille. Yritysversiossa IT voi hallita mitä tietoja saa tallentaa ja kenen kanssa jakaa.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/OneDrive" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://onedrive.live.com/" class="info-link">🔗 OneDrive</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>OOBE — Out Of Box Experience</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Ensimmäinen käyttökokemus kun uusi laite otetaan käyttöön.</p>
+                    <p><strong>Tarkemmin:</strong> OOBE on se alkunäyttö jossa uudessa Windows-koneessa kysytään kieltä, Wi-Fi-yhteyttä ja luodaan käyttäjätili. Autopilot ja muut hallintajärjestelmät voivat mukauttaa OOBE:a niin että yrityksen uudet koneet konfiguroituvat automaattisesti oikein ilman IT-tuen apua.</p>
+                    <div class="links">
+                        <a href="https://docs.microsoft.com/en-us/windows-hardware/customize/desktop/customize-oobe" class="info-link">📖 Windows OOBE -dokumentaatio</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>OSD — Operating System Deployment</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Käyttöjärjestelmien automaattinen asentaminen usealle tietokoneelle samanaikaisesti.</p>
+                    <p><strong>Tarkemmin:</strong> OSD on kuin linjasto jossa uudet tietokoneet saavat automaattisesti Windows-asennuksen, ajurit, ohjelmat ja asetukset valmiiksi määritellyin kriteerein. SCCM ja MDT ovat OSD-työkaluja. Sen sijaan että IT-henkilö asentaisi jokaisen koneen käsin, OSD hoitaa sadatkin koneet yön yli automaattisesti.</p>
+                    <div class="links">
+                        <a href="https://docs.microsoft.com/en-us/mem/configmgr/osd/" class="info-link">📖 SCCM OSD -dokumentaatio</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>Power BI — Microsoft Power BI</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Microsoftin business intelligence -työkalu datan visualisointiin ja analytiikkaan.</p>
+                    <p><strong>Tarkemmin:</strong> Power BI muuttaa tylsät Excel-taulukot kauniiksi, interaktiivisiksi raporteiksi ja dashboardeiksi. Se osaa hakea dataa sadoista lähteistä (tietokannat, Excel, verkkopalvelut), yhdistää niitä ja luoda kaavioita joissa voi klikkailla ja suodattaa. Kuin Excel superheroina datan visualisoinnissa.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Microsoft_Power_BI" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://powerbi.microsoft.com/" class="info-link">🔗 Power BI</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>PXE — Preboot eXecution Environment</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Standardi jolla tietokone voi käynnistyä verkosta ilman paikallisia levyjä.</p>
+                    <p><strong>Tarkemmin:</strong> PXE mahdollistaa sen että tyhjä tietokone ilman käyttöjärjestelmää voi käynnistyä verkosta ja asentaa itselleen Windows automaattisesti. Se on kuin etäkäynnistys - kytket koneen sähköön, se lataa käynnistysohjelman verkosta ja alkaa automaattisesti asentamaan käyttöjärjestelmää. WDS ja SCCM käyttävät PXE:tä.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Preboot_Execution_Environment" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://docs.microsoft.com/en-us/windows/deployment/configure-a-pxe-server-to-load-windows-pe" class="info-link">🔗 PXE-server konfigurointi</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>RLS — Row‑Level Security</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Tietoturvaominaisuus jolla rajoitetaan mitä tietokantarivejä eri käyttäjät näkevät.</p>
+                    <p><strong>Tarkemmin:</strong> RLS toimii kuin henkilökohtaiset suodattimet tietokannassa. Myyntipäällikkö näkee vain oman alueensa myynnit, HR-henkilö vain oman osastonsa henkilötiedot. Sama taulukko näyttää eri käyttäjille eri sisällön automaattisesti. Power BI ja SQL Server tukevat RLS:ää.</p>
+                    <div class="links">
+                        <a href="https://docs.microsoft.com/en-us/power-bi/admin/service-admin-rls" class="info-link">📖 Power BI RLS -dokumentaatio</a>
+                        <a href="https://docs.microsoft.com/en-us/sql/relational-databases/security/row-level-security" class="info-link">🔗 SQL Server RLS</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>SCCM / MECM — System Center Configuration Manager / Microsoft Endpoint Configuration Manager</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Microsoftin järjestelmä Windows-tietokoneiden keskitettyyn hallintaan suurissa organisaatioissa.</p>
+                    <p><strong>Tarkemmin:</strong> SCCM on kuin missiokeskus IT-hallinnalle. Sen avulla voit asentaa ohjelmia tuhansille koneille yhdellä kertaa, jakaa Windows-päivitykset, kerätä raportteja laitteiden tilasta ja etäohjata koneita. Se on erityisesti suunniteltu suurille organisaatioille joilla on satoja tai tuhansia Windows-koneita hallittavana.</p>
+                    <div class="links">
+                        <a href="https://docs.microsoft.com/en-us/mem/configmgr/" class="info-link">📖 SCCM-dokumentaatio</a>
+                        <a href="https://www.microsoft.com/en-us/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection" class="info-link">🔗 SCCM arviointi</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>SharePoint — Microsoft SharePoint</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Microsoftin alusta dokumenttien hallintaan, yhteistyöhön ja intranet-sivustojen luomiseen.</p>
+                    <p><strong>Tarkemmin:</strong> SharePoint on kuin yrityksen digitaalinen arkisto ja yhteistyötila. Se säilyttää dokumentteja, mahdollistaa niiden jakamisen tiimeille, versionhallinnan ja kommentoinnin. Lisäksi sillä voi rakentaa intranet-sivustoja ja työnkulkuja. Teams käyttää SharePointia taustalla tiedostojen säilyttämiseen.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Microsoft_SharePoint" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://sharepoint.microsoft.com/" class="info-link">🔗 SharePoint</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>Teams — Microsoft Teams</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Microsoftin yhteistyöalusta chatille, videokokouksille ja dokumenttien jakamiselle.</p>
+                    <p><strong>Tarkemmin:</strong> Teams yhdistää Skypen (videokuva), Slackin (chat) ja SharePointin (dokumentit) yhdessä sovelluksessa. Se on kuin digitaalinen toimisto jossa voit pitää palavereita, chatata työkaverien kanssa, jakaa näyttöä ja yhteistyössä muokata dokumentteja. COVID-19:n myötä Teams tuli tutuksi miljoonille etätyöläisille.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Microsoft_Teams" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://teams.microsoft.com/" class="info-link">🔗 Microsoft Teams</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>UEM — Unified Endpoint Management</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Kokonaisvaltainen lähestymistapa kaikkien päätelaitteiden hallintaan yhdestä järjestelmästä.</p>
+                    <p><strong>Tarkemmin:</strong> UEM yhdistää PC:iden, puhelimien, tablettien ja IoT-laitteiden hallinnan samaan järjestelmään. Sen sijaan että olisi erikseen Windows-hallinta, mobiilihallinta ja Mac-hallinta, UEM hoitaa kaiken. Se on kuin yleisavain kaikkiin yrityksen laitteisiin riippumatta valmistajasta tai käyttöjärjestelmästä.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/Unified_endpoint_management" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://docs.microsoft.com/en-us/mem/" class="info-link">🔗 Microsoft Endpoint Manager</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>WDS — Windows Deployment Services</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Windows Server -rooli joka mahdollistaa Windows-käyttöjärjestelmien asentamisen verkon kautta.</p>
+                    <p><strong>Tarkemmin:</strong> WDS tekee Windows-asennuksista helpompia suurissa organisaatioissa. Sen sijaan että kävelisite jokaisen koneen luo DVD:n kanssa, WDS jakaa Windows-asennusmediat verkon kautta. Koneet voivat käynnistyä PXE:llä ja asentaa Windows suoraan verkosta. Se on kuin Netflix Windows-asennuksille.</p>
+                    <div class="links">
+                        <a href="https://docs.microsoft.com/en-us/windows/deployment/windows-deployment-services-overview" class="info-link">📖 WDS-dokumentaatio</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>WSUS — Windows Server Update Services</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Microsoftin järjestelmä Windows-päivitysten keskitettyyn hallintaan organisaatioissa.</p>
+                    <p><strong>Tarkemmin:</strong> WSUS on kuin yrityksen oma Windows Update -palvelu. Sen sijaan että jokainen kone lataa päivitykset Microsoftilta erikseen, WSUS lataa ne kerran ja jakaa ne eteenpäin yrityksen koneille. IT-henkilöstö voi testata päivitykset ensin ja päättää mitkä päivitykset hyväksytään. Säästää kaistaa ja parantaa turvallisuutta.</p>
+                    <div class="links">
+                        <a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus" class="info-link">📖 WSUS-dokumentaatio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

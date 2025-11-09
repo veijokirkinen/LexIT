@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilvi, virtualisointi ja kontit - LexIT</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Etusivu</a>
+                
+                <div class="nav-dropdown">
+                    <button class="nav-link dropdown-toggle">Sanasto</button>
+                    <div class="dropdown-menu">
+                        <a href="yleiset.html" class="dropdown-item">Yleiset IT‑lyhenteet</a>
+                        <a href="verkko.html" class="dropdown-item">Verkko ja protokollat</a>
+                        <a href="pilvi.html" class="dropdown-item">Pilvi, virtualisointi ja kontit</a>
+                        <a href="turva.html" class="dropdown-item">Tietoturva ja suojaus</a>
+                        <a href="data.html" class="dropdown-item">Tietokannat ja data</a>
+                        <a href="devops.html" class="dropdown-item">Sovelluskehitys ja DevOps</a>
+                        <a href="microsoft.html" class="dropdown-item">Microsoft & päätelaitteiden hallinta</a>
+                        <a href="ai.html" class="dropdown-item">AI ja koneoppiminen</a>
+                        <a href="bi.html" class="dropdown-item">Analytiikka, BI ja raportointi</a>
+                        <a href="itserv.html" class="dropdown-item">IT‑hallinto ja prosessit</a>
+                    </div>
+                </div>
+                
+                <a href="haku.html" class="nav-link">Haku</a>
+                <a href="about.html" class="nav-link">About / README</a>
+                <a href="contribute.html" class="nav-link">Contribute / GitHub</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content">
+        <div class="container">
+            <h1>Pilvi, virtualisointi ja kontit</h1>
+            
+            <div class="category-intro">
+                <p>Pilvipalvelut ja virtualisointi ovat mullistaneet IT:n. Tässä osiossa selitämme, miten nykyaikaiset sovellukset toimivat "pilvessä" ja miten yksi fyysinen tietokone voi olla samaan aikaan monta virtuaalista tietokonetta.</p>
+            </div>
+
+            <div class="term-entry">
+                <h2>AMI — Amazon Machine Image</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Valmis tietokoneen "kuva" joka sisältää käyttöjärjestelmän ja sovellukset AWS:ssä.</p>
+                    <p><strong>Tarkemmin:</strong> AMI on kuin valokuva tietokoneesta tietyllä hetkellä - siinä on käyttöjärjestelmä, ohjelmat ja asetukset valmiina. Kun tarvitset uuden palvelimen AWS:ssä, valitset AMI:n ja saat saman konfiguraation kuin alkuperäisessä. Se on kuin Ghost-levykuva, mutta pilvessä.</p>
+                    <div class="links">
+                        <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html" class="info-link">📖 AWS AMI-dokumentaatio</a>
+                        <a href="https://aws.amazon.com/marketplace/search/results?searchTerms=AMI" class="info-link">🔗 AWS Marketplace AMI:t</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>Auto Scaling — Automaattinen skaalautuminen</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Järjestelmä joka automaattisesti lisää tai vähentää palvelimia kuormituksen mukaan.</p>
+                    <p><strong>Tarkemmin:</strong> Auto Scaling toimii kuin älykäs henkilökunnan vuokraus. Kun verkkokauppasi saa paljon vierailijoita (kuten Black Friday), se automaattisesti käynnistää lisää palvelimia. Kun liikenne vähenee, se sammuttaa ylimääräiset palvelimet säästääkseen rahaa. Näin maksat vain siitä mitä tarvitset.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Automaattinen_skaalautuminen" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://docs.aws.amazon.com/autoscaling/" class="info-link">🔗 AWS Auto Scaling</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>AWS — Amazon Web Services</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Amazonin pilvipalveluiden kokoelma - maailman suurin pilvipalveluntarjoaja.</p>
+                    <p><strong>Tarkemmin:</strong> AWS on kuin digitaalinen Citymarket kaikille IT-tarpeille. Sieltä voit "ostaa" palvelimia, tietokantoja, tallennustilaa, tekoälyä ja satoja muita palveluja. Maksat vain siitä mitä käytät, kuten sähköstä. Netflix, Airbnb ja lukuisat muut yritykset pyörittävät palvelujaan AWS:ssä.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Amazon_Web_Services" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://aws.amazon.com/" class="info-link">🔗 AWS (virallinen sivusto)</a>
+                        <a href="https://aws.amazon.com/free/" class="info-link">🔗 AWS Free Tier</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>Azure — Microsoft Azure</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Microsoftin pilvipalvelualusta, erityisesti suosittu yrityksissä jotka käyttävät Microsoft-tuotteita.</p>
+                    <p><strong>Tarkemmin:</strong> Azure on Microsoftin vastaus AWS:lle. Se integroituu saumattomasti Office 365:n, Windows Serverin ja muiden Microsoft-tuotteiden kanssa. Jos yrityksesi käyttää jo Microsoftin tuotteita, Azure on usein luonnollinen valinta pilvipalveluille. Se tarjoaa samankaltaisia palveluja kuin AWS.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Microsoft_Azure" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://azure.microsoft.com/" class="info-link">🔗 Microsoft Azure</a>
+                        <a href="https://azure.microsoft.com/fi-fi/free/" class="info-link">🔗 Azure Free Account</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>CDN — Content Delivery Network</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Maailmanlaajuinen palvelinverkosto, joka nopeuttaa verkkosivujen lataamista sijoittamalla sisältöä lähemmäs käyttäjiä.</p>
+                    <p><strong>Tarkemmin:</strong> CDN toimii kuin postijakeluverkosto verkkosivuille - sen sijaan että kaikki tiedostot tulisivat kaukaisesta palvelimesta, CDN tallentaa kopioita suosituista sivuista palvelimille ympäri maailmaa. Näin kuvat ja videot latautuvat nopeammin, kun ne tulevat lähimmästä palvelimesta.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Sis%C3%A4ll%C3%B6njakeluyerkosto" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.cloudflare.com/learning/cdn/what-is-a-cdn/" class="info-link">🔗 Cloudflare CDN-opas</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>Docker — Konttiteknologian työkalusarja</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Teknologia jolla sovelluksia pakataan "kontteihin" helpottamaan niiden asentamista ja siirtämistä.</p>
+                    <p><strong>Tarkemmin:</strong> Docker on kuin standardikokoinen kontti, johon voit pakata sovelluksesi kaikkien tarvittavien osien kanssa. Kun sovellus toimii Docker-kontissa sinun tietokoneellasi, se toimii samalla tavalla myös palvelimella tai kollegan koneella. "It works on my machine" -ongelma ratkeaa.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Docker_(ohjelmisto)" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.docker.com/" class="info-link">🔗 Docker (virallinen sivusto)</a>
+                        <a href="https://docs.docker.com/get-started/" class="info-link">🔗 Docker aloittajan opas</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>EC2 — Elastic Compute Cloud</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> AWS:n peruspalvelin-palvelu, jolla voit vuokrata virtuaalisia tietokoneita pilvessä.</p>
+                    <p><strong>Tarkemmin:</strong> EC2 on kuin tietokonevuokraamo pilvessä. Voit käynnistää virtuaalisen palvelimen minuuteissa, valita sen tehon ja maksaa vain käyttöajasta. Tarvitsetko tehokkaan koneen muutamaksi tunniksi? Käynnistä EC2-instanssi, tee työsi ja sammuta se. Maksat vain käytetyistä tunneista.</p>
+                    <div class="links">
+                        <a href="https://docs.aws.amazon.com/ec2/" class="info-link">📖 AWS EC2-dokumentaatio</a>
+                        <a href="https://aws.amazon.com/ec2/" class="info-link">🔗 AWS EC2</a>
+                        <a href="https://calculator.aws/#/createCalculator/EC2" class="info-link">🔗 EC2 hinta-arvio</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>GCP — Google Cloud Platform</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Googlen pilvipalvelualusta, erityisesti vahva tekoälyssä ja data-analyyseissä.</p>
+                    <p><strong>Tarkemmin:</strong> GCP on Googlen versio pilvipalveluista. Se hyödyntää samaa infrastruktuuria kuin Google Search ja YouTube. GCP on erityisen vahva tekoälyssä (TensorFlow), big datassa (BigQuery) ja konttiteknologiassa (Kubernetes syntyi Googlessa). Kolmas suurin pilvipalveluntarjoaja AWS:n ja Azuren jälkeen.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Google_Cloud_Platform" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://cloud.google.com/" class="info-link">🔗 Google Cloud Platform</a>
+                        <a href="https://cloud.google.com/free" class="info-link">🔗 GCP Free Tier</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>HCI — Hyperconverged Infrastructure</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Arkkitehtuuri joka yhdistää palvelimet, tallennuksen ja verkon yhdeksi hallittavaksi kokonaisuudeksi.</p>
+                    <p><strong>Tarkemmin:</strong> HCI on kuin all-in-one-tietokone isommassa mittakaavassa. Perinteisesti yrityksissä oli erilliset palvelimet, tallennuslaitteet ja verkkolaitteet. HCI:ssä nämä kaikki on yhdistetty yhdeksi järjestelmäksi, jota hallitaan yhden ohjelmiston kautta. Se yksinkertaistaa hallintaa ja vähentää kaapelisotkua.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/Hyper-converged_infrastructure" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.nutanix.com/what-is-hci" class="info-link">🔗 Nutanix HCI-opas</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>IaaS — Infrastructure as a Service</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Pilvipalvelumalli jossa vuokraat perus-IT-infrastruktuurin (palvelimet, tallennuksen, verkon).</p>
+                    <p><strong>Tarkemmin:</strong> IaaS on kuin tyhjän toimistotilan vuokraamista - saat seinät, sähkön ja ilmastoinnin, mutta sisustus on sinun vastuullasi. Saat virtuaaliset palvelimet ja tallennustilan, mutta käyttöjärjestelmän asentaminen ja sovellusten hallinta on sinun tehtäväsi. AWS EC2 ja Azure Virtual Machines ovat IaaS-palveluja.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Infrastructure_as_a_service" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://azure.microsoft.com/fi-fi/overview/what-is-iaas/" class="info-link">🔗 Microsoft IaaS-opas</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>Kubernetes (K8s) — Konttien orkestrointialusta</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Järjestelmä joka hallitsee tuhansia Docker-kontteja automaattisesti useilla palvelimilla.</p>
+                    <p><strong>Tarkemmin:</strong> Kubernetes on kuin älykkäämpä kapellimestari Docker-konteille. Se päättää missä palvelimessa mikäkin kontti pyörii, käynnistää uusia kontteja jos jokin kaatuu, ja jakaa liikennettä tasaisesti. Kun Netflix päivittää sovellustaan, Kubernetes hoitaa että palvelu pysyy käynnissä koko päivityksen ajan. "K8s" tulee sanojen K-ubernete-s välissä olevista 8 kirjaimesta.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Kubernetes" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://kubernetes.io/" class="info-link">🔗 Kubernetes (virallinen sivusto)</a>
+                        <a href="https://kubernetes.io/docs/tutorials/kubernetes-basics/" class="info-link">🔗 Kubernetes-perusteet</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>KVM — Kernel‑based Virtual Machine</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Linuxin sisäänrakennettu virtualisointiteknologia, joka muuttaa Linuxin hypervisoriksi.</p>
+                    <p><strong>Tarkemmin:</strong> KVM tekee Linux-koneesta virtuaalikoneiden isäntäkoneen. Se hyödyntää nykyaikaisten prosessorien virtualisointiominaisuuksia ja tarjoaa lähes alkuperäisen suorituskyvyn. Toisin kuin VMware tai VirtualBox, KVM on osa Linux-ydintä, joten se on erittäin tehokas. Monet pilvipalveluntarjoajat käyttävät KVM:ää taustalla.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Kernel-based_Virtual_Machine" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.linux-kvm.org/" class="info-link">🔗 KVM (virallinen sivusto)</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>Load Balancer — Kuormanjako</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Järjestelmä joka jakaa verkkoliikenteen tasaisesti usealle palvelimelle.</p>
+                    <p><strong>Tarkemmin:</strong> Load balancer toimii kuin liikenteenohjaaja ruuhka-aikaan. Kun verkkokauppasi saa paljon vierailijoita, load balancer ohjaa heitä eri palvelimille tasaisesti, jotta mikään palvelin ei ylikuormitu. Jos yksi palvelin kaatuu, se ohjaa kaiken liikenteen terveille palvelimille. Käyttäjä ei huomaa mitään, sivusto vain toimii.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Kuormanjako" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://aws.amazon.com/elasticloadbalancing/" class="info-link">🔗 AWS Load Balancing</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>OCI — Open Container Initiative</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Standardi joka määrittelee miten kontit pitää rakentaa, jotta ne toimivat kaikissa järjestelmissä.</p>
+                    <p><strong>Tarkemmin:</strong> OCI on kuin ISO-standardi konteille. Se varmistaa että Docker-kontti joka toimii kehittäjän koneella toimii myös tuotantopalvelimella riippumatta käytetystä konttimoottorista. Se määrittelee kontin formaatin ja runtime-spesifikaation. Kuin HDMI-standardi, joka varmistaa että kaikki kaapelit toimivat kaikkien laitteiden kanssa.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/Open_Container_Initiative" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://opencontainers.org/" class="info-link">🔗 Open Container Initiative</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>PaaS — Platform as a Service</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Pilvipalvelumalli jossa saat valmiin alustan sovelluskehitykseen ilman palvelinhallintaa.</p>
+                    <p><strong>Tarkemmin:</strong> PaaS on kuin täysin varusteltu keittiö. Saat kaasun, veden, uunin ja työkalut - tarvitsee vain tuoda raaka-aineet ja alkaa kokkaamamaan. Et huolehdi palvelimista, käyttöjärjestelmistä tai tietokantojen päivityksistä, vaan keskityt pelkästään sovelluksesi kehittämiseen. Heroku ja Google App Engine ovat PaaS-palveluja.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Platform_as_a_service" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://azure.microsoft.com/fi-fi/overview/what-is-paas/" class="info-link">🔗 Microsoft PaaS-opas</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>S3 — Simple Storage Service</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> AWS:n pilvipalvelu tiedostojen tallentamiseen, kuin rajaton kovalevy internetissä.</p>
+                    <p><strong>Tarkemmin:</strong> S3 on kuin maailman suurin varastohotelli tiedostoille. Voit tallentaa sinne kuvia, videoita, varmuuskopioita tai mitä tahansa dataa ja hakea niitä mistä vain internetin kautta. Se on uskomatonta edullinen ja luotettava - AWS lupaa 99.999999999% (11 yhdeksää) kestävyyttä. Monet verkkosivut säilyttävät kuvansa S3:ssa.</p>
+                    <div class="links">
+                        <a href="https://docs.aws.amazon.com/s3/" class="info-link">📖 AWS S3-dokumentaatio</a>
+                        <a href="https://aws.amazon.com/s3/" class="info-link">🔗 AWS S3</a>
+                        <a href="https://calculator.aws/#/createCalculator/S3" class="info-link">🔗 S3 hinta-arvio</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>SaaS — Software as a Service</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Pilvipalvelumalli jossa käytät valmiita sovelluksia suoraan selaimessa ilman asennuksia.</p>
+                    <p><strong>Tarkemmin:</strong> SaaS on kuin Netflix ohjelmistoille. Sen sijaan että ostaisit ja asentaisit ohjelmiston, käytät sitä internetin kautta ja maksat kuukausimaksun. Gmail, Office 365, Salesforce ja Slack ovat SaaS-palveluja. Sinun ei tarvitse huolehtia päivityksistä, varmuuskopioista tai teknisestä ylläpidosta.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Software_as_a_service" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://azure.microsoft.com/fi-fi/overview/what-is-saas/" class="info-link">🔗 Microsoft SaaS-opas</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>VDI — Virtual Desktop Infrastructure</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Järjestelmä jossa työpöytäympäristöt toimivat palvelimilla ja käyttäjät yhdistävät niihin etänä.</p>
+                    <p><strong>Tarkemmin:</strong> VDI on kuin etätyöpaikka pilvessä. Sen sijaan että kaikilla olisi oma tietokone, jokainen saa oman virtuaalisen työpöydän palvelimelta. Voit käyttää samaa "tietokoneesi" tabletilla kotona, tietokoneella toimistossa tai puhelimella matkalla. IT-hallinto on helpompaa kun kaikki työpöydät ovat samassa paikassa.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/Desktop_virtualization" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.vmware.com/topics/glossary/content/virtual-desktop-infrastructure-vdi.html" class="info-link">🔗 VMware VDI-opas</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>VM — Virtual Machine</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Ohjelmallisesti luotu tietokone toisessa tietokoneessa, joka toimii kuin aito tietokone.</p>
+                    <p><strong>Tarkemmin:</strong> VM on kuin tietokone tietokoneen sisällä. Yhdelle fyysiselle palvelimelle voidaan asentaa useita virtuaalitietokoneita, joista jokainen näyttää itsellensä aidolta tietokoneelta omalla käyttöjärjestelmällään. Voit esimerkiksi pyörittää Windows-konetta Mac:issä tai useita Linux-koneita yhdellä palvelimella. Virtualisointi mahdollistaa resurssien tehokkaamman käytön.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Virtuaalitietokone" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.vmware.com/topics/glossary/content/virtual-machine.html" class="info-link">🔗 VMware VM-opas</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

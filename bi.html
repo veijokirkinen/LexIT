@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytiikka, BI ja raportointi - LexIT</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Etusivu</a>
+                
+                <div class="nav-dropdown">
+                    <button class="nav-link dropdown-toggle">Sanasto</button>
+                    <div class="dropdown-menu">
+                        <a href="yleiset.html" class="dropdown-item">Yleiset IT‑lyhenteet</a>
+                        <a href="verkko.html" class="dropdown-item">Verkko ja protokollat</a>
+                        <a href="pilvi.html" class="dropdown-item">Pilvi, virtualisointi ja kontit</a>
+                        <a href="turva.html" class="dropdown-item">Tietoturva ja suojaus</a>
+                        <a href="data.html" class="dropdown-item">Tietokannat ja data</a>
+                        <a href="devops.html" class="dropdown-item">Sovelluskehitys ja DevOps</a>
+                        <a href="microsoft.html" class="dropdown-item">Microsoft & päätelaitteiden hallinta</a>
+                        <a href="ai.html" class="dropdown-item">AI ja koneoppiminen</a>
+                        <a href="bi.html" class="dropdown-item">Analytiikka, BI ja raportointi</a>
+                        <a href="itserv.html" class="dropdown-item">IT‑hallinto ja prosessit</a>
+                    </div>
+                </div>
+                
+                <a href="haku.html" class="nav-link">Haku</a>
+                <a href="about.html" class="nav-link">About / README</a>
+                <a href="contribute.html" class="nav-link">Contribute / GitHub</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content">
+        <div class="container">
+            <h1>Analytiikka, BI ja raportointi</h1>
+            
+            <div class="category-intro">
+                <p>Business Intelligence ja analytiikka muuttavat dataa ymmärrettäviksi näkemyksiksi liiketoiminnalle. Tässä osiossa selitämme miten yritykset tekevät päätöksiä datan perusteella ja muuttavat numerot tarkkana kertomuksina.</p>
+            </div>
+
+            <div class="term-entry">
+                <h2>BI — Business Intelligence</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Teknologioita ja menetelmiä joilla yritysdata muutetaan ymmärrettäviksi raporteiksi päätöksenteon tueksi.</p>
+                    <p><strong>Tarkemmin:</strong> BI on kuin yrityksen kristallipallo joka näyttää mitä on tapahtunut ja mikä suunta on. Se kerää dataa eri järjestelmistä (myynti, asiakkaat, talous), puhdistaa sen ja esittää kaavioina, raporetteina ja dashboardeina. Johtajat voivat nähdä helposti että "myynti kasvaa, mutta asiakastyytyväisyys laskee" ja tehdä päätöksiä sen perusteella.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Liiketoimintatietous" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://powerbi.microsoft.com/" class="info-link">🔗 Power BI</a>
+                        <a href="https://www.tableau.com/" class="info-link">🔗 Tableau</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>Dashboard — Kojelauta</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Visuaalinen näytöt joka kokoaa tärkeimmät mittarit ja trendit yhdelle sivulle.</p>
+                    <p><strong>Tarkemmin:</strong> Dashboard on kuin auton kojelauta bisnekselle. Se näyttää tärkeimmät mittarit (myynti, asiakaskuittaa, varastosaldo) reaaliajassa yhdellä vilkaisulla. Hyvä dashboard kertoo heti onko kaikki kunnossa (vihrreät värit) vai vaatiiko jokin asian huomiota (punaiset hälytysvalot). Se on suuniteltu nopeaan päätöksentekoon.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Liiketoiminnan_kojelauta" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://docs.microsoft.com/en-us/power-bi/create-reports/service-dashboards" class="info-link">🔗 Power BI Dashboard-opas</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>Data Mart — Osavarasto</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Pienempi, erikoistunut datavarasto tietyn osaston tai toiminnon tarpeisiin.</p>
+                    <p><strong>Tarkemmin:</strong> Data Mart on kuin osasto yrityksen suuressa datakirjastossa. Sen sijaan että markkinointitiimi käyttäisi koko yrityksen valtavaa data warehousea, heille tehdään oma Data Mart jossa on vain markkinointidataa optimoidussa muodossa. Se on nopeampi, helpompi käyttää ja sisältää vain sen mitä he tarvitsevat.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/Data_mart" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.oracle.com/database/what-is-a-data-mart/" class="info-link">🔗 Oracle Data Mart -opas</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>DAX — Data Analysis Expressions</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Excelin kaavamainen kieli Power BI:ssä ja Analysis Servicesissa laskutoimituksia varten.</p>
+                    <p><strong>Tarkemmin:</strong> DAX on kuin Excel-kaavat steroideilla suurelle datalle. Sillä voi laskea monimutkaisia tunnuslukuja kuten "kuluvan vuoden myynti verrattuna edelliseen vuoteen" tai "liukuva keskiarvo viimeiseltä kolmelta kuukaudelta". DAX osaa käsitellä aikasarja ja suhteellista dataa älykkäämmin kuin tavalliset Excel-kaavat.</p>
+                    <div class="links">
+                        <a href="https://docs.microsoft.com/en-us/dax/" class="info-link">📖 DAX-dokumentaatio</a>
+                        <a href="https://dax.guide/" class="info-link">🔗 DAX Guide</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>Drill Down — Syväporaus</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Raportin ominaisuus jolla voi klikata ylätason lukua ja nähdä yksityiskohtaisemman tiedon.</p>
+                    <p><strong>Tarkemmin:</strong> Drill Down on kuin zoomaaminen mikroskoopin kanssa. Näet ensin kokonaismyynnin koko maassa, klikkaat sitä ja näet myynnin alueittain, sitten kaupungeittain ja lopulta yksittäisittäin myymälöittäin. Se mahdollistaa "mistä tämä tulos oikein tulee" -tutkimisen ilman monimutkaisia raportteja.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/Drill_down" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>ETL — Extract, Transform, Load</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Prosessi jossa data haetaan, muokataan ja ladataan tietovarastoon analysointia varten.</p>
+                    <p><strong>Tarkemmin:</strong> ETL on kuin ruuan valmistusta: haet raaka-aineet eri paikoista (Extract), pilkkot ja maustat ne (Transform), ja tarjoilet valmiin aterian (Load). Myyntidataa eri järjestelmistä puhdistetaan, yhtenäistetään ja ladataan data warehouseen raporttien ja BI:n käyttöön. Tärkeä vaihe jotta data on käyttökelpoisessa muodossa.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/ETL" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://docs.microsoft.com/en-us/sql/integration-services/sql-server-integration-services" class="info-link">🔗 SSIS (ETL-työkalu)</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>KPI — Key Performance Indicator</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Ydintunnusluku joka mittaa miten hyvin yritys tai prosessi saavuttaa tavoitteensa.</p>
+                    <p><strong>Tarkemmin:</strong> KPI on kuin kehon keskeisimmät terveysmuuttajat (pulssi, verenpaine, paino). Ne ovat 3-5 tärkeintä lukua jotka kertovat onko yritys terve ja menossa oikeaan suuntaan. Verkkokaupassa KPI:tä voivat olla asiakashankintakustannus, ostoskorin arvo ja asiakasuskollisuus. Hyvät KPI:t ovat helppoja mitata ja suoraan yhteydessä liiketoiminnan menestykseen.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Avainsuorituskykyindikaattori" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.klipfolio.com/resources/articles/what-is-a-key-performance-indicator" class="info-link">🔗 KPI-opas</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>KPI Dashboard — Mittarien kojelauta</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Erikoistunut dashboard joka keskittyy näyttämään yrityksen tärkeimmät KPI:t.</p>
+                    <p><strong>Tarkemmin:</strong> KPI Dashboard on kuin auton kojelauta josta näät vain tärkeimmät asiat: nopeus, polttoaine, lämpötila. Se näyttää 3-7 tärkeintä mittaria (myynti, asiakasmäärä, kustannukset) selkeässä muodossa usein vihreä-keltainen-punainen -värikkodilla. Johtajat voivat nähdä yhdellä vilkaisulla onko kaikki kunnossa.</p>
+                    <div class="links">
+                        <a href="https://www.datapine.com/kpi-dashboard-guide" class="info-link">🔗 KPI Dashboard -opas</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>MDX — Multidimensional Expressions</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Kyselykieli monimutkaisten analyysien tekemiseen multidimensionaalisista tietokannoista.</p>
+                    <p><strong>Tarkemmin:</strong> MDX on kuin SQL mutta monimutkaisten kuuutioille (cubes). Sen sijaan että kyselit tasaisia taulukoita, MDX osaa kysyä "näytä myynti tuoteryhmittäin, alueittain ja kuukausittain samanaikaisesti". Se on optimoitu OLAP-kuutioiden kanssa työskentelyyn ja mahdollistaa monidimensionaalisen datan helpon käsittelyn.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/MultiDimensional_eXpressions" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://docs.microsoft.com/en-us/analysis-services/multidimensional-models/mdx/" class="info-link">🔗 Microsoft MDX-dokumentaatio</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>MOLAP — Multidimensional Online Analytical Processing</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> OLAP-toteutus jossa data on tallennettu monidimensionaalisiin kuutioihin nopeaa analyysiä varten.</p>
+                    <p><strong>Tarkemmin:</strong> MOLAP on kuin etukäteen rakennettu karttarekisteri. Se luo datasta monimutkaisia kuutioita jotka sisältävät ennakkolaskettuja aggregaattoja. Kun haluat nähdä myynnin alueittain, se ei laske sitä reaaliajassa vaan hakee valmiiksi lasketun tuloksen. Tämä tekee kyselyistä salamannopeita mutta vaatii enemmän tallennustilaa.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/Online_analytical_processing#MOLAP" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>OKR — Objectives and Key Results</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Tavoitteenasettamismenetelmä jossa jokainen tavoite on liitetty mitattaviin tuloksiin.</p>
+                    <p><strong>Tarkemmin:</strong> OKR rakenne tavoitteet kuin GPS-navigointia: määrittelet minne haluat mennä (Objective) ja miten tiedät että olet perillä (Key Results). Esimerkki: Objective = "Parantaa asiakastyytyväisyyttä", Key Results = "NPS-pisteet 70+, tukitikettiaikojen alle 2h, asiakkaiden retentio 90%+". Google ja monet muut teknologiayritykset käyttävät OKR:ia.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/OKR" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/" class="info-link">🔗 Google OKR-opas</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>OLAP — Online Analytical Processing</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Teknologia nopeaan monimutkaisten analyysien tekemiseen suurista datamassoista.</p>
+                    <p><strong>Tarkemmin:</strong> OLAP on kuin monidimensionaalinen Excel supernopeassa käytössä. Se mahdollistaa datan tarkastelun eri näkökulmista samanaikaisesti: myynti tuotteittain, alueittain, kuukausittain ja asiakastyypeittäin. Voit "vääntää ja kääntää" dataa eri tavara helposti. Business Intelligence -työkalut käyttävät OLAP:ia taustalla analyyseihin.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/OLAP" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.oracle.com/database/technologies/related/olap.html" class="info-link">🔗 Oracle OLAP-opas</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>ROI — Return on Investment</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Mittari joka kertoo miten paljon sijoitus tuottaa suhteessa sen kustannuksiin.</p>
+                    <p><strong>Tarkemmin:</strong> ROI on kuin sijoituksen kouluarvosana prosentteina. Se laskee (tuotto - kustannus) / kustannus * 100%. Jos sijoitat markkinointikampanjaan 10,000€ ja se tuo 15,000€ lisämyyntiä, ROI on 50%. ROI auttaa vertailemaan eri sijoitusvaihtoehtoja ja priorisoimaan resursseja sinne missä ne tuottavat eniten.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Sijoitetun_p%C3%A4%C3%A4oman_tuotto" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>ROLAP — Relational Online Analytical Processing</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> OLAP-toteutus joka käyttää perinteisiä relationaalisia tietokantoja ja SQL:ää.</p>
+                    <p><strong>Tarkemmin:</strong> ROLAP on kuin MOLAP:in kustannustehokas serkku. Sen sijaan että rakentaisi erillisiä kuutioita, ROLAP tekee analyysit suoraan tavallisista tietokantataulukoista SQL-kyselyillä. Se on joustavampi ja vie vähemmän tallennustilaa, mutta kyselyt voivat olla hitaampia. Parempi vaihtoehto kun dataa on paljon ja kuutioiden rakentaminen olisi liian kallista.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/Online_analytical_processing#ROLAP" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>Slice and Dice — Datan leikkaus ja pilkkominen</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Analytiikkan tekniikka jolla data "leikataan" eri näkökulmista tutkimisen helpottamiseksi.</p>
+                    <p><strong>Tarkemmin:</strong> Slice and Dice on kuin keittiössä vihannesten pilkkominen eri tavara. "Slice" tarkoittaa yhden dimension putoamista (esim. vain tammin kuun myynti), "Dice" tarkoittaa useamman dimension yhdistämistä (esim. tammikuun myynti Helsingissä tietylle tuoteryhmälle). Se auttaa löytämään kuvioita ja ymmärtämään mistä hyvät/huonot tulokset tulevat.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/Online_analytical_processing#Operations" class="info-link">📖 OLAP-operaatiot Wikipediassa</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>SQL Server, SSAS, SSIS, SSRS — Microsoftin data‑tuotekokonaisuus</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Microsoftin kattava kokoelma työkaluja tiedon tallentamiseen, käsittelyyn, analysointiin ja raportointiin.</p>
+                    <p><strong>Tarkemmin:</strong> Nämä muodostavat Microsoftin "data-ammuntatarvikkeiston". SQL Server tallentaa datan, SSIS siirtää ja muokkaa dataa, SSAS mahdollistaa nopeat analyysit, ja SSRS luo raportit. Yhdessä ne kattavat koko ketjun raakadatasta valmiisiin raportteihin. Kuin rakennussarja jossa jokaiselle työlle on oma erikoistyökalunsa.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Microsoft_SQL_Server" class="info-link">📖 SQL Server Wikipediassa</a>
+                        <a href="https://docs.microsoft.com/en-us/sql/" class="info-link">🔗 Microsoft SQL-dokumentaatio</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>SSAS — SQL Server Analysis Services</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Microsoftin työkalu OLAP-kuutioiden ja data mining -mallien luomiseen ja hallintaan.</p>
+                    <p><strong>Tarkemmin:</strong> SSAS on kuin nopeiden analyysien moottori. Se rakentaa monimutkaisia datakuutioita joista Business Intelligence -työkalut voivat hakea tietoa salamannopeasti. Sen sijaan että jokainen raportti laskisi myynti alueittain ja tuotteittain SQL:llä, SSAS on ennakkolaskenut nämä ja tarjoaa valmiit vastaukset. Power BI ja Excel voivat käyttää SSAS-kuutioita.</p>
+                    <div class="links">
+                        <a href="https://docs.microsoft.com/en-us/analysis-services/" class="info-link">📖 SSAS-dokumentaatio</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>SSIS — SQL Server Integration Services</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Microsoftin ETL-työkalu jolla siirretään ja muokataan dataa eri järjestelmien välillä.</p>
+                    <p><strong>Tarkemmin:</strong> SSIS on kuin tehdas joka käsittelee raakadataa. Se osaa hakea dataa sadoista eri lähteistä (Excel, tietokannat, verkkopalvelut), puhdistaa sen, muuttaa oikeaan muotoon ja ladata kohdetietokantaan. Se toimii graafisella "vedetään ja pudotetaan" -käyttöliittymällä ilman koodausta. Välttämätön työkalu data warehousejen rakentamiseen.</p>
+                    <div class="links">
+                        <a href="https://docs.microsoft.com/en-us/sql/integration-services/" class="info-link">📖 SSIS-dokumentaatio</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>SSRS — SQL Server Reporting Services</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Microsoftin työkalu muodollisten raporttien luomiseen ja jakamiseen.</p>
+                    <p><strong>Tarkemmin:</strong> SSRS on kuin automaattinen raporttintuottaja. Se luo perinteisiä, tulostettavia raportteja (laskut, tilinpäätökset, myyntiraportit) jotka voidaan lähettää automaattisesti sähköpostilla tai julkaista verkossa. SSRS huolehtii formatoinnista, sivunjaosta ja datan hakemisesta. Se täydentää Power BI:tä virallisten, formaattien dokumenttien osalta.</p>
+                    <div class="links">
+                        <a href="https://docs.microsoft.com/en-us/sql/reporting-services/" class="info-link">📖 SSRS-dokumentaatio</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>VIZ — Visualization</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Datan esittäminen visuaalisessa muodossa kaavioina, graafeina ja kartoina.</p>
+                    <p><strong>Tarkemmin:</strong> Visualisointi tekee numeroista tarinoita. Sen sijaan että lukisit "Q1 myynti 120k, Q2 myynti 150k", näet graafin joka näyttää selkeän nousevan trendin. Hyvä visualisointi paljastaa kuvioita, poikkeamia ja trendejä jotka jäisivät huomaamatta numeroina. "Kuva kertoo enemmän kuin tuhat sanaa" on visualisoinnin ydin.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Tietojen_visualisointi" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.tableau.com/learn/articles/data-visualization" class="info-link">🔗 Tableau visualisointi-opas</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>VQ — Visual Query / Q&A</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Ominaisuus jolla voi kysyä kysymyksiä datasta luonnollisella kielellä visuaalisen vastauksen saamiseksi.</p>
+                    <p><strong>Tarkemmin:</strong> VQ mahdollistaa datan kysymisen kuin keskustelussa: "Näytä viime kuukauden myynti alueittain" ja järjestelmä luo automaattisesti sopivan kaavion. Se on kuin henkilökohtainen data-analyytikko joka ymmärtää suomea ja piirtää graafit puolestasi. Power BI:n Q&A ja Google Analyticsin Intelligence ovat esimerkkejä tästä teknologiasta.</p>
+                    <div class="links">
+                        <a href="https://docs.microsoft.com/en-us/power-bi/natural-language/q-and-a-intro" class="info-link">📖 Power BI Q&A-dokumentaatio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

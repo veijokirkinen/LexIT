@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verkko ja protokollat - LexIT</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Etusivu</a>
+                
+                <div class="nav-dropdown">
+                    <button class="nav-link dropdown-toggle">Sanasto</button>
+                    <div class="dropdown-menu">
+                        <a href="yleiset.html" class="dropdown-item">Yleiset IT‑lyhenteet</a>
+                        <a href="verkko.html" class="dropdown-item">Verkko ja protokollat</a>
+                        <a href="pilvi.html" class="dropdown-item">Pilvi, virtualisointi ja kontit</a>
+                        <a href="turva.html" class="dropdown-item">Tietoturva ja suojaus</a>
+                        <a href="data.html" class="dropdown-item">Tietokannat ja data</a>
+                        <a href="devops.html" class="dropdown-item">Sovelluskehitys ja DevOps</a>
+                        <a href="microsoft.html" class="dropdown-item">Microsoft & päätelaitteiden hallinta</a>
+                        <a href="ai.html" class="dropdown-item">AI ja koneoppiminen</a>
+                        <a href="bi.html" class="dropdown-item">Analytiikka, BI ja raportointi</a>
+                        <a href="itserv.html" class="dropdown-item">IT‑hallinto ja prosessit</a>
+                    </div>
+                </div>
+                
+                <a href="haku.html" class="nav-link">Haku</a>
+                <a href="about.html" class="nav-link">About / README</a>
+                <a href="contribute.html" class="nav-link">Contribute / GitHub</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content">
+        <div class="container">
+            <h1>Verkko ja protokollat</h1>
+            
+            <div class="category-intro">
+                <p>Verkot ja protokollat muodostavat internetin ja tietoliikenteen perustan. Nämä teknologiat mahdollistavat tietojen siirtämisen laitteiden välillä ympäri maailmaa. Tutustutaan tärkeimpiin verkko- ja protokollakäsitteisiin.</p>
+            </div>
+
+            <div class="term-entry">
+                <h2>BGP — Border Gateway Protocol</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Internetin selkärankareititin, joka ohjaa liikennettä eri verkkojen välillä internetissä.</p>
+                    <p><strong>Tarkemmin:</strong> BGP on reititysprotokolla, joka määrittelee, miten eri internetpalveluntarjoajien verkot löytävät parhaat reitit toisiinsa. Se on kuin internetin kartta ja kompassi - se tietää, mistä löytyy mitäkin ja miten sinne päästään nopeimmin. Ilman BGP:tä internet ei toimisi.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Border_Gateway_Protocol" class="info-link" target="_blank">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://bgp.he.net/" class="info-link" target="_blank">🔗 BGP Looking Glass (reittitietojen tarkastelu)</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>CDN — Content Delivery Network</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Maailmanlaajuinen palvelinverkosto, joka nopeuttaa verkkosivujen lataamista sijoittamalla sisältöä lähemmäs käyttäjiä.</p>
+                    <p><strong>Tarkemmin:</strong> CDN toimii kuin postijakeluverkosto - sen sijaan että kaikki tilauksesi tulisivat kaukaisesta keskusvarastosta, CDN sijoittaa kopioita suosituista verkkosivuista ja tiedostoista palvelimille ympäri maailmaa. Näin Netflix-videosi latautuu nopeammin, kun se tulee lähimmästä palvelimesta eikä Yhdysvalloista.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Sisällönjakeluyerkosto" class="info-link" target="_blank">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.cloudflare.com/" class="info-link" target="_blank">🔗 Cloudflare (CDN-palvelu)</a>
+                        <a href="https://aws.amazon.com/cloudfront/" class="info-link" target="_blank">🔗 Amazon CloudFront</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>DHCP — Dynamic Host Configuration Protocol</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Automaattinen järjestelmä, joka jakaa IP-osoitteita laitteille, kun ne liittyvät verkkoon.</p>
+                    <p><strong>Tarkemmin:</strong> DHCP toimii kuin hotellin vastaanotto - kun liität puhelimesi wifi-verkkoon, DHCP antaa sille automaattisesti IP-osoitteen (kuin huonenumeron) ja kertoo, mistä löytyy internet-yhteys. Ilman DHCP:tä sinun pitäisi syöttää kaikki verkon asetukset käsin joka kerta.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/DHCP" class="info-link" target="_blank">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.isc.org/dhcp/" class="info-link" target="_blank">🔗 ISC DHCP (avoimen lähdekoodin toteutus)</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>DNS — Domain Name System</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Internetin "puhelinluettelo", joka muuttaa verkkosivujen nimet (kuten google.com) IP-osoitteiksi.</p>
+                    <p><strong>Tarkemmin:</strong> DNS toimii kuin puhelinluettelo tai osoitekirja. Kun kirjoitat "google.com" selaimeen, DNS kääntää sen tietokoneen ymmärtämään numeromuotoon (kuten 142.250.185.14). Tämä mahdollistaa sen, että muistamme helposti "youtube.com" sen sijaan että joutuisimme opettelemaan ulkoa vaikeitä numerojonoja.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/DNS" class="info-link" target="_blank">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.cloudflare.com/dns/" class="info-link" target="_blank">🔗 Cloudflare DNS (1.1.1.1)</a>
+                        <a href="https://developers.google.com/speed/public-dns" class="info-link" target="_blank">🔗 Google DNS (8.8.8.8)</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>FTP — File Transfer Protocol</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Vanha menetelmä tiedostojen siirtämiseen internetin kautta palvelimien välillä.</p>
+                    <p><strong>Tarkemmin:</strong> FTP on kuin vanha postipalvelu tiedostoille - se mahdollistaa tiedostojen lataamisen ja lähettämisen palvelimille internetin kautta. Verkkosivujen ylläpitäjät käyttivät sitä aiemmin sivujen päivittämiseen. Nykyään sitä käytetään vähemmän, koska uudemmat menetelmät ovat turvallisempia.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/FTP" class="info-link" target="_blank">📖 Lisätietoja FTP:stä</a>
+                        <a href="https://filezilla-project.org/" class="info-link" target="_blank">🔗 FileZilla (ilmainen FTP-ohjelma)</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>HTTP — HyperText Transfer Protocol</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Perusprotokolla, jolla verkkosivut siirretään internetissä selaimelle näytettäväksi.</p>
+                    <p><strong>Tarkemmin:</strong> HTTP on kuin postipalvelun säännöt verkkosivuille - se määrittelee, miten selaimesi pyytää verkkosivua palvelimelta ja miten palvelin vastaa lähettämällä sivun sisällön. Kun kirjoitat osoiteriville "http://example.com", selaimesi käyttää HTTP:tä keskustellakseen palvelimen kanssa.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/HTTP" class="info-link" target="_blank">📖 Lisätietoja HTTP:stä</a>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP" class="info-link" target="_blank">🔗 Mozilla HTTP-dokumentaatio</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>HTTPS — HTTP Secure</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Turvallinen versio HTTP:stä, joka salaa tietoliikennettä verkkosivun ja selaimesi välillä.</p>
+                    <p><strong>Tarkemmin:</strong> HTTPS on kuin tavallinen postipalvelu, mutta kaikki kirjeet lähetetään sinetöidyissä kirjekuorissa, joita vain oikea vastaanottaja voi lukea. Kun näet lukko-symbolin selaimen osoiterivissä, HTTPS suojaa tietosi (kuten salasanat ja luottokorttinumerot) muilta kuin verkkosivulta.</p>
+                    <p class="info-link">📚 <a href="https://fi.wikipedia.org/wiki/HTTPS" target="_blank">Lisätietoja HTTPS:stä</a></p>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>ICMP — Internet Control Message Protocol</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Verkkoprotokolla, joka lähettää virheilmoituksia ja testausviestejä internetissä.</p>
+                    <p><strong>Tarkemmin:</strong> ICMP toimii kuin internetin viestipalvelu - se lähettää ilmoituksia ongelmista, kuten "palvelin ei vastaa" tai "reitti katkeillut". "Ping"-komento käyttää ICMP:tä testatakseen, toimiiko yhteys johonkin palvelimeen. Se on kuin huutaisi "kuuleeko kukaan?" ja odottaisi vastausta.</p>
+                    <p class="info-link">📚 <a href="https://fi.wikipedia.org/wiki/Internet_Control_Message_Protocol" target="_blank">Lisätietoja ICMP:stä</a></p>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>IMAP — Internet Message Access Protocol</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Sähköpostiprotokolla, jolla voit lukea sähköposteja useilla laitteilla pitäen ne synkronissa.</p>
+                    <p><strong>Tarkemmin:</strong> IMAP toimii kuin jaettu mappi pilvessä - sähköpostisi pysyvät palvelimella, ja voit lukea niitä puhelimella, tietokoneella ja tabletilla. Kun merkitset viestin luetuksi puhelimessa, se näkyy luettuna myös tietokoneella. Gmail ja Outlook käyttävät IMAP:ia.</p>
+                    <p class="info-link">📚 <a href="https://fi.wikipedia.org/wiki/IMAP" target="_blank">Lisätietoja IMAP:ista</a></p>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>IP — Internet Protocol</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Internetin perusprotokolla, joka määrittelee, miten tietopaketit ohjataan oikeisiin osoitteisiin.</p>
+                    <p><strong>Tarkemmin:</strong> IP toimii kuin postijärjestelmä - jokaisella internet-yhteydellä on IP-osoite (kuin postiosoite), ja IP huolehtii siitä, että tietopaketit löytävät perille oikeaan osoitteeseen. IPv4 käyttää numeroita kuten 192.168.1.1, IPv6 tuo lisää osoitetilaa internetin kasvun myötä.</p>
+                    <p class="info-link">📚 <a href="https://fi.wikipedia.org/wiki/Internet-protokolla" target="_blank">Lisätietoja IP:stä</a></p>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>ISP — Internet Service Provider</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Internet-palveluntarjoaja, yritys joka tarjoaa sinulle internet-yhteyden kotiin tai toimistoon.</p>
+                    <p><strong>Tarkemmin:</strong> ISP on kuin sähköyhtiö internetille - se tuo internet-yhteyden kotiisi ja laskuttaa siitä kuukausittain. Esimerkkejä Suomessa ovat Elisa, Telia ja DNA. ISP:t omistavat internet-infrastruktuurin (kaapelit, tukiasemat) ja yhdistävät sinut maailmanlaajuiseen internettiin.</p>
+                    <p class="info-link">📚 <a href="https://fi.wikipedia.org/wiki/Internet-palveluntarjoaja" target="_blank">Lisätietoja ISP:stä</a></p>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>LAN — Local Area Network</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Paikallinen tietoliikenneverkko, joka yhdistää laitteita pienellä alueella kuten kotona tai toimistossa.</p>
+                    <p><strong>Tarkemmin:</strong> LAN on kuin sisäpuhelin-järjestelmä rakennuksessa - se yhdistää kaikki lähiverkon laitteet (tietokoneet, tulostimet, puhelimet) keskenään. Kotiverkkosi on LAN, samoin toimiston sisäverkko. LAN mahdollistaa tiedostojen jakamisen ja tulostamisen ilman internettiä.</p>
+                    <p class="info-link">📚 <a href="https://fi.wikipedia.org/wiki/L%C3%A4hiverkko" target="_blank">Lisätietoja LAN:ista</a></p>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>MAC — Media Access Control</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Jokaisella verkkolaitteella oleva yksilöllinen tunniste, kuin sormenjälki tai henkilötunnus.</p>
+                    <p><strong>Tarkemmin:</strong> MAC-osoite on kuin laitteen henkilötunnus - se on 12-merkkinen koodi (esim. 00:1B:44:11:3A:B7), joka on upotettu jokaiseen verkkokorttiin tehtaalla. Se on erilainen kuin IP-osoite, joka voi muuttua. Verkko-ylläpitäjät voivat käyttää MAC-osoitteita tunnistamaan ja hallitsemaan tiettyjä laitteita.</p>
+                    <p class="info-link">📚 <a href="https://fi.wikipedia.org/wiki/MAC-osoite" target="_blank">Lisätietoja MAC-osoitteesta</a></p>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>MPLS — Multiprotocol Label Switching</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Tehokas reititystekniikka, joka nopeuttaa tietoliikennettä suurissa verkoissa käyttämällä etikettejä.</p>
+                    <p><strong>Tarkemmin:</strong> MPLS toimii kuin nopea postijärjestelmä, jossa jokaiseen pakettiin liitetään etiketti, joka kertoo reitittimille suoraan, mihin se kuuluu. Tämä on nopeampaa kuin lukea jokaisen paketin osoite kokonaan. Teleoperaattorit käyttävät MPLS:ää tarjotakseen luotettavia yhteyksiä yrityksille.</p>
+                    <p class="info-link">📚 <a href="https://fi.wikipedia.org/wiki/MPLS" target="_blank">Lisätietoja MPLS:stä</a></p>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>NAT — Network Address Translation</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Tekniikka, joka mahdollistaa useamman laitteen käytön samalla julkisella IP-osoitteella.</p>
+                    <p><strong>Tarkemmin:</strong> NAT toimii kuin vaihde isossa yrityksessä - ulkopuolelta kaikki puhelut tulevat samaan päänumeroon, mutta vaihde ohjaa ne oikeille henkilöille sisäverkkoon. Kotireitittimesi käyttää NAT:ia, jotta kaikki kotisi laitteet voivat käyttää internettiä yhden IP-osoitteen kautta.</p>
+                    <p class="info-link">📚 <a href="https://fi.wikipedia.org/wiki/NAT" target="_blank">Lisätietoja NAT:ista</a></p>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>POP3 — Post Office Protocol v3</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Vanha sähköpostiprotokolla, joka lataa viestit paikallisesti eikä pidä niitä synkronissa laitteiden välillä.</p>
+                    <p><strong>Tarkemmin:</strong> POP3 toimii kuin tavallinen postilaatikko - kun haet postisi, se siirtyy kokonaan sinulle eikä jää enää postilaatikkoon. Sähköpostit latautuvat yhteen laitteeseen, eivätkä näy muissa. Nykyään IMAP on yleisempi, koska se mahdollistaa sähköpostin lukemisen useilla laitteilla.</p>
+                    <p class="info-link">📚 <a href="https://fi.wikipedia.org/wiki/POP3" target="_blank">Lisätietoja POP3:sta</a></p>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>SFTP — SSH File Transfer Protocol</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Turvallinen tapa siirtää tiedostoja internetin kautta käyttämällä SSH-salausta.</p>
+                    <p><strong>Tarkemmin:</strong> SFTP on kuin pankkihohti tiedostojen siirtämiseen - se käyttää SSH:n salausta suojatakseen tiedostot siirron aikana. Toisin kuin tavallinen FTP, SFTP salaa sekä käyttäjätunnukset että tiedostojen sisällön. IT-ammattilaiset käyttävät sitä turvalliseen tiedostojen siirtoon palvelimien välillä.</p>
+                    <p class="info-link">📚 <a href="https://fi.wikipedia.org/wiki/SSH_File_Transfer_Protocol" target="_blank">Lisätietoja SFTP:stä</a></p>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>SMTP — Simple Mail Transfer Protocol</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Protokolla sähköpostien lähettämiseen internetin kautta sähköpostipalvelimien välillä.</p>
+                    <p><strong>Tarkemmin:</strong> SMTP toimii kuin postituspalvelu sähköposteille - kun painat "lähetä" sähköpostiohjelmassasi, SMTP kuljettaa viestin vastaanottajan sähköpostipalvelimelle. Se on kuin postinjakajan reitti: viestisi kulkee SMTP-palvelimien kautta perille. SMTP hoitaa vain lähettämisen, ei vastaanottamista.</p>
+                    <p class="info-link">📚 <a href="https://fi.wikipedia.org/wiki/SMTP" target="_blank">Lisätietoja SMTP:stä</a></p>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>SNMP — Simple Network Management Protocol</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Protokolla verkkolaitteiden etähallintaan ja seurantaan internetin kautta.</p>
+                    <p><strong>Tarkemmin:</strong> SNMP toimii kuin kotiautomaatiojärjestelmä verkkolaitteille - sen avulla verkko-ylläpitäjä voi seurata reitittimien, kytkimien ja palvelimien tilaa etänä. Se kertoo esimerkiksi, onko laite toiminnassa, kuinka kuormitettu se on, tai jos siinä on vikoja. Kuin digitaalinen mittaristo koko verkolle.</p>
+                    <p class="info-link">📚 <a href="https://fi.wikipedia.org/wiki/SNMP" target="_blank">Lisätietoja SNMP:stä</a></p>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>SSH — Secure Shell</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Turvallinen tapa kirjautua etänä toiseen tietokoneeseen ja hallita sitä internetin kautta.</p>
+                    <p><strong>Tarkemmin:</strong> SSH on kuin salautettu puhelinyhteys toiseen tietokoneeseen - sen avulla voit kirjautua etäpalvelimelle ja käyttää sitä aivan kuin olisit fyysisesti sen ääressä. Kaikki komennot ja tiedostot ovat salattuja. Linux-palvelimien hallinta tapahtuu yleensä SSH:lla, kuin ottaisit kauko-ohjaimen käyttöön.</p>
+                    <p class="info-link">📚 <a href="https://fi.wikipedia.org/wiki/SSH" target="_blank">Lisätietoja SSH:sta</a></p>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>SSL — Secure Sockets Layer</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Vanha salaustekniikka internetyhteyksiä varten, nykyisin korvattu TLS:llä.</p>
+                    <p><strong>Tarkemmin:</strong> SSL oli kuin digitaalinen kuiskausjärjestelmä internetille - se salasi tietoliikennettä palvelimen ja selaimen välillä. Vaikka SSL on teknisesti vanhentunut ja korvattu TLS:llä, monet ihmiset käyttävät edelleen nimeä "SSL-sertifikaatti", vaikka tarkoittavat oikeasti TLS:ää. Se on kuin sanoisit "mikro" tarkoittaen minkä tahansa lämmitinuunia.</p>
+                    <p class="info-link">📚 <a href="https://fi.wikipedia.org/wiki/SSL" target="_blank">Lisätietoja SSL:stä</a></p>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>TCP — Transmission Control Protocol</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Luotettava internetprotokolla, joka varmistaa että kaikki tietopaketit saapuvat perille oikeassa järjestyksessä.</p>
+                    <p><strong>Tarkemmin:</strong> TCP toimii kuin kirjattu posti - se varmistaa, että jokainen lähetetetty tietopaketti saapuu perille ja on ehyessä kunnossa. Jos joku paketti häviää matkalla, TCP lähettää sen uudestaan. Verkkosivujen lataaminen ja sähköposti käyttävät TCP:tä varmistaakseen, että mikään ei katoa matkalla.</p>
+                    <p class="info-link">📚 <a href="https://fi.wikipedia.org/wiki/TCP" target="_blank">Lisätietoja TCP:stä</a></p>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>TLS — Transport Layer Security</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Nykyaikainen salaustekniikka, joka suojaa tietoliikenteen internetin kautta.</p>
+                    <p><strong>Tarkemmin:</strong> TLS on SSL:n nykyaikainen seuraaja - se toimii kuin digitaalinen suojattu putki kahden laitteen välillä internetissä. Kun näet https:// sivustossa tai lukko-symbolin selaimessä, TLS suojaa kaiken tietoliikenteen. Se varmistaa, että luottokorttitietosi ja salasanasi pysyvät turvassa verkkokaupassa.</p>
+                    <p class="info-link">📚 <a href="https://fi.wikipedia.org/wiki/Transport_Layer_Security" target="_blank">Lisätietoja TLS:stä</a></p>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>UDP — User Datagram Protocol</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Nopea mutta epäluotettava internetprotokolla, joka lähettää tietoa ilman takuita perillemenosta.</p>
+                    <p><strong>Tarkemmin:</strong> UDP toimii kuin tavallinen posti ilman saapumisvahvistusta - se on nopea ja tehokas, mutta ei takaa että paketit saapuvat perille tai oikeassa järjestyksessä. Videostriimauksessa ja peleissä käytetään UDP:tä, koska nopeus on tärkeämpää kuin se, että jokin yksittäinen paketti häviää.</p>
+                    <p class="info-link">📚 <a href="https://fi.wikipedia.org/wiki/UDP" target="_blank">Lisätietoja UDP:stä</a></p>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>VLAN — Virtual Local Area Network</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Tekniikka, jolla yksi fyysinen verkko jaetaan useisiin erillisiin virtuaaliverkkoihin.</p>
+                    <p><strong>Tarkemmin:</strong> VLAN toimii kuin väliseinät avoimessa toimistotilassa - samassa fyysisessä verkossa voi olla useita erillisiä virtuaaliverkkoja, jotka eivät näe toisiaan. Esimerkiksi sairaalassa henkilökunnan ja vieraiden verkot voivat olla fyysisesti samoja kaapeleita, mutta VLAN pitää ne erillään turvallisuussyistä.</p>
+                    <p class="info-link">📚 <a href="https://fi.wikipedia.org/wiki/VLAN" target="_blank">Lisätietoja VLAN:ista</a></p>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>VPN — Virtual Private Network</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Turvallinen yhteys internetin kautta, joka luo salattun tunnelin laitteesi ja VPN-palvelimen välille.</p>
+                    <p><strong>Tarkemmin:</strong> VPN toimii kuin turvallinen tunneli julkisessa paikassa - se salaa kaiken internetliikenteesi ja piilottaa todellisen sijaintisi. Kun käytät julkista wifi:ä kahvilassa, VPN suojaa tietojasi. VPN voi myös antaa sinun "näyttää" olevan toisessa maassa, jolloin voit katsoa paikallisia Netflix-ohjelmia.</p>
+                    <p class="info-link">📚 <a href="https://fi.wikipedia.org/wiki/VPN" target="_blank">Lisätietoja VPN:stä</a></p>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>VXLAN — Virtual Extensible LAN</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Kehittynyt virtualisoitekniikka, joka mahdollistaa VLAN:ien laajentamisen datacenterien välille.</p>
+                    <p><strong>Tarkemmin:</strong> VXLAN on kuin VLAN:in kehittyneempi sisko - se mahdollistaa virtuaaliverkkojen luomisen eri datacenterien välille internetin kautta. Tämä tarkoittaa, että yrityksen verkko voi ulottua Helsingin ja Tampereen datacentereiden välille ikään kuin ne olisivat samassa rakennuksessa. Pilvipalvelut hyödyntävät paljon VXLAN:ia.</p>
+                    <p class="info-link">📚 <a href="https://fi.wikipedia.org/wiki/VXLAN" target="_blank">Lisätietoja VXLAN:ista</a></p>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>WAN — Wide Area Network</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Laaja verkko, joka yhdistää useita LAN-verkkoja eri maantieteellisillä alueilla.</p>
+                    <p><strong>Tarkemmin:</strong> WAN on kuin yrityksen sisäinen valtatieverkosto - se yhdistää eri kaupungeissa tai maissa olevat toimistot yhteen verkkoon. Internet on maailman suurin WAN. Yritykset käyttävät WAN:ia yhdistääkseen Helsingin, Turun ja Oulun toimistot samaan sisäverkkoon, vaikka ne ovat satoja kilometrejä toisistaan.</p>
+                    <p class="info-link">📚 <a href="https://fi.wikipedia.org/wiki/WAN" target="_blank">Lisätietoja WAN:ista</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

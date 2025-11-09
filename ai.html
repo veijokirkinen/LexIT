@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI ja koneoppiminen - LexIT</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Etusivu</a>
+                
+                <div class="nav-dropdown">
+                    <button class="nav-link dropdown-toggle">Sanasto</button>
+                    <div class="dropdown-menu">
+                        <a href="yleiset.html" class="dropdown-item">Yleiset IT‑lyhenteet</a>
+                        <a href="verkko.html" class="dropdown-item">Verkko ja protokollat</a>
+                        <a href="pilvi.html" class="dropdown-item">Pilvi, virtualisointi ja kontit</a>
+                        <a href="turva.html" class="dropdown-item">Tietoturva ja suojaus</a>
+                        <a href="data.html" class="dropdown-item">Tietokannat ja data</a>
+                        <a href="devops.html" class="dropdown-item">Sovelluskehitys ja DevOps</a>
+                        <a href="microsoft.html" class="dropdown-item">Microsoft & päätelaitteiden hallinta</a>
+                        <a href="ai.html" class="dropdown-item">AI ja koneoppiminen</a>
+                        <a href="bi.html" class="dropdown-item">Analytiikka, BI ja raportointi</a>
+                        <a href="itserv.html" class="dropdown-item">IT‑hallinto ja prosessit</a>
+                    </div>
+                </div>
+                
+                <a href="haku.html" class="nav-link">Haku</a>
+                <a href="about.html" class="nav-link">About / README</a>
+                <a href="contribute.html" class="nav-link">Contribute / GitHub</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content">
+        <div class="container">
+            <h1>AI ja koneoppiminen</h1>
+            
+            <div class="category-intro">
+                <p>Tekoäly ja koneoppiminen muokkaavat maailmaa nopeasti. Tässä osiossa selitämme AI:n ja ML:n keskeiset käsitteet tavallisilla sanoilla. Tutustutaan teknologiaan joka mahdollistaa ChatGPT:n, automaattisen kääntämisen ja paljon muuta.</p>
+            </div>
+
+            <div class="term-entry">
+                <h2>AI — Artificial Intelligence</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Teknologia jolla koneet voivat suorittaa tehtäviä jotka vaatisivat ihmisältä älykkyyttä.</p>
+                    <p><strong>Tarkemmin:</strong> AI on kuin koneen oppiminen ajattelemaan. Se voi tunnistaa kuvia, ymmärtää puhetta, kääntää kieliä tai pelata shakkia. AI ei ole vielä yleistä älykkyyttä kuten ihmisillä, vaan erikoistunut tiettyihin tehtäviin. ChatGPT osaa keskustella, mutta ei osaa ajaa autoa. Itseajavat autot osaavat ajaa, mutta eivät keskustella.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Teko%C3%A4ly" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.ibm.com/cloud/learn/what-is-artificial-intelligence" class="info-link">🔗 IBM AI-opas</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>API — Application Programming Interface</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Rajapinta jolla sovellukset voivat käyttää AI-palveluja internetin kautta.</p>
+                    <p><strong>Tarkemmin:</strong> AI-API toimii kuin drive-in-ravintolan vastaanotto. Lähetät pyynnön (esim. "käännä tämä teksti englanniksi"), AI-palvelu käsittelee sen ja palauttaa vastauksen. OpenAI:n ChatGPT API, Google Cloud Vision API ja Amazon Rekognition ovat esimerkkejä. Kehittäjät voivat lisätä AI-ominaisuuksia sovelluksiinsa ilman omaa AI-osaamista.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Ohjelmointirajapinta" class="info-link">📖 Lisätietoa API:sta</a>
+                        <a href="https://platform.openai.com/" class="info-link">🔗 OpenAI API</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>BERT — Bidirectional Encoder Representations from Transformers</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Googlen kehittämä AI-malli joka ymmärtää kieltä lukemalla tekstiä molempiin suuntiin.</p>
+                    <p><strong>Tarkemmin:</strong> BERT on kuin super-lukija joka ymmärtää kontekstin paljon paremmin kuin vanhat AI:t. Se lukee lauseen kokonaan (sekä eteen- että taaksepäin) ennen kuin päättää mitä jokin sana tarkoittaa. Esimerkiksi "pankki" voi tarkoittaa joen rantaa tai rahalaitosta - BERT ymmärtää oikein kontekstin perusteella. Se paransi Google-hakua merkittävästi.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/BERT_(language_model)" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://huggingface.co/bert-base-uncased" class="info-link">🔗 BERT Hugging Facessa</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>CNN — Convolutional Neural Network</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Neuroverkkotyyppi joka on erikoistunut kuvien tunnistamiseen ja käsittelyyn.</p>
+                    <p><strong>Tarkemmin:</strong> CNN toimii kuin ihmisaivot kuvien katsomisessa. Se tunnistaa ensin yksinkertaisia kuvioita (viivoja, reunoja), sitten monimutkaisempia muotoja (pyöreitä, kulmikkaita), ja lopulta kokonaisia objekteja (kissoja, autoja). Instagram-filtterit, lääketieteen kuvantaminen ja itseajavat autot käyttävät CNN:iä kuvien ymmärtämiseen.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Konvoluutionaalinen_neuroverkko" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://cs231n.github.io/convolutional-networks/" class="info-link">🔗 Stanford CNN-kurssi</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>DL — Deep Learning</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Koneoppimisen haaraiksi, joka käyttää monimutkaisia, monikerroksisia neuroverkkoja.</p>
+                    <p><strong>Tarkemmin:</strong> Deep Learning on kuin aivojen simulointi tietokoneessa. Se käyttää "syviä" neuroverkkoja jotka on monta kerrosta päällekkäin, kuten aivojen eri alueet. Mitä syvempi verkko, sitä monimutkaisempia asioita se voi oppia. DL mahdollistaa kuvan- ja puheen tunnistuksen, käännökset ja ChatGPT:n kaltaiset keskustelurobotit.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Syv%C3%A4_oppiminen" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.deeplearning.ai/" class="info-link">🔗 DeepLearning.AI</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>Fine-tuning — Hienosäätö</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Prosessi jossa valmista AI-mallia muokataan toimimaan paremmin tietyssä tehtävässä.</p>
+                    <p><strong>Tarkemmin:</strong> Fine-tuning on kuin erikoistuneemman koulutuksen antaminen jo koulutetulle henkilölle. Otetaan valmis malli joka osaa kieltä yleisesti (kuten ChatGPT) ja opetetaan sille spesifimpi taito (vaikkapa lääketieteen terminologia tai tietyn yrityksen asiakaspalvelu). Se on nopeampaa ja halvempaa kuin mallin opettaminen tyhjästä.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/Fine-tuning_(machine_learning)" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://huggingface.co/docs/transformers/training" class="info-link">🔗 Hugging Face fine-tuning</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>GAN — Generative Adversarial Network</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> AI-arkkitehtuuri jossa kaksi neuroverkkor kilpailevat keskenään - toinen luo väärentäjyy, toinen yrittää paljastaa ne.</p>
+                    <p><strong>Tarkemmin:</strong> GAN toimii kuin rahanväärentäjän ja poliisin välinen kissa-hiiri-leikki. Generaattori yrittää luoda mahdollisimman uskottavia kuvia (vaikkapa kasvoja jotka näyttävät aidoilta), ja diskriminaattori yrittää tunnistaa mitkä ovat vääriä. Ne parantavat toisiaan kunnes generaattori osaa luoda todella uskottavia kuvia. ThisPersonDoesNotExist.com käyttää GAN:ia.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/Generative_adversarial_network" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://thispersondoesnotexist.com/" class="info-link">🔗 This Person Does Not Exist</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>GPU, TPU — Laitteet massiiviseen rinnakkaislaskentaan</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Erikoissuorittimet jotka pystyvät tekemään tuhansia laskutoimituksia samanaikaisesti AI:n vaatimiin laskuihin.</p>
+                    <p><strong>Tarkemmin:</strong> GPU (Graphics Processing Unit) suunniteltiin alun perin pelien grafiikkaa varten, mutta osoittautui loistavaksi AI-laskentaan. TPU (Tensor Processing Unit) on Googlen AI:ta varten suunnittelema chip. Ne ovat kuin tuhat laskinta yhdessä - tavalliset prosessorit tekevät asiat peräkkäin, GPU/TPU tekevät tuhansia asioita yhtä aikaa.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/N%C3%A4yt%C3%B6nohjain" class="info-link">📖 GPU Wikipediassa</a>
+                        <a href="https://cloud.google.com/tpu" class="info-link">🔗 Google Cloud TPU</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>GPT — Generative Pre-trained Transformer</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> OpenAI:n kehittämä kielimalli-arkkitehtuuri, jonka tunnetuin versio on ChatGPT.</p>
+                    <p><strong>Tarkemmin:</strong> GPT on kuin erittäin taitava tekstin jatkaja. Se on oppinut internetin teksteistä miten ihmiset kirjoittavat, ja osaa jatkaa lähes mitä tahansa tekstiä uskottavasti. GPT-1:stä alkaen OpenAI on kehittänyt yhä tehokkaampia versioita. ChatGPT on GPT:n käyttöliittymä joka mahdollistaa keskustelun AI:n kanssa.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/GPT-3" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://openai.com/gpt-4" class="info-link">🔗 OpenAI GPT-4</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>LLM — Large Language Model</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Valtava AI-malli joka on oppinut ymmärtämään ja tuottamaan ihmiskieltä.</p>
+                    <p><strong>Tarkemmin:</strong> LLM on kuin digitaalinen polymatikko joka on lukenut lähes kaikene internetin tekstit. Se osaa vastata kysymyksiin, kirjoittaa eri tyylilajeitä, kääntää kieliä ja jopa ohjelmoida. LLM:ien koko mitataan parametreissa - GPT-4:ssä on noin 1.7 biljoonaa parametria. Mitä suurempi malli, sitä taitavampi se yleensä on.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/Large_language_model" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://huggingface.co/models" class="info-link">🔗 Hugging Face mallikirjasto</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>ML — Machine Learning</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Tieteenhaara jossa koneet oppivat tunnistamaan kuvioita datasta ilman eksplisiittistä ohjelmoitua.</p>
+                    <p><strong>Tarkemmin:</strong> ML on kuin koneen oppiminen kokemuksesta. Sen sijaan että ohjelmoitsisit jokaiselle tilanteelle säännön, näytät koneelle esimerkkejä ja se oppii itse tunnistamaan kuvioita. Näytä tuhansia kissien kuvia ja kone oppii tunnistamaan kissat uusista kuvista. Sähköposti-spam-suodattimet, tuotesuositukset ja hakukoneet käyttävät ML:ää.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Koneoppiminen" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://scikit-learn.org/" class="info-link">🔗 Scikit-learn (ML-kirjasto)</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>MLM — Masked Language Model</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> AI-mallin harjoittelutapa jossa piilotetaan sanoja tekstistä ja yritetään arvata ne kontekstista.</p>
+                    <p><strong>Tarkemmin:</strong> MLM toimii kuin täytä tyhjä kohta -harjoitus. "Aurinko [PEITETTY] kirkkaasti" - malli yrittää arvata että [PEITETTY] = "paistaa". Näin malli oppii ymmärtämään kieltä ja kontekstin merkitystä. BERT ja moni muu kielimalli on koulutettu tällä tavalla. Se on tehokkaampaa kuin perinteinen tapa jossa luetaan tekstiä vain vasemmalta oikealle.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/Masked_language_model" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>MLOps — Machine Learning Operations</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Käytäntöjä ja työkaluja koneoppimismallien hallintaan tuotantoympäristössä.</p>
+                    <p><strong>Tarkemmin:</strong> MLOps on kuin DevOps mutta AI-malleille. Se huolehtii että mallit toimivat luotettavasti, päivittyvät automaattisesti paremmalla datalla ja niiden suorituskykyä seurataan. MLOps sisältää mallin versionhallinnan, automaattisen testauksen, monitorointia ja uudelleen kouluttamista. Ilman MLOps:ia AI-projektit jäävät helposti "laboratorioon" eivätkä pääse oikeaan käyttöön.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/MLOps" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://ml-ops.org/" class="info-link">🔗 MLOps.org</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>MoE — Mixture of Experts</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> AI-arkkitehtuuri jossa eri osa-mallit ("asiantuntijat") erikoistuvat eri tehtäviin.</p>
+                    <p><strong>Tarkemmin:</strong> MoE toimii kuin konsulttitoimisto täynnä eri alojen asiantuntijoita. Sen sijaan että yksi iso malli tekisi kaiken, MoE:ssä on monta pienempää mallia jotka erikoistuvat eri tehtäviin. Router-verkko päättää mikä asiantuntija osaa parhaiten vastata kuhunkin kysymykseen. Tämä tekee mallista tehokkaamman - vain tarvittavat osat aktivoidaan kerrallaan.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/Mixture_of_experts" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>NLP — Natural Language Processing</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> AI:n osa-alue joka käsittelee ihmiskielen ymmärtämistä ja tuottamista tietokoneilla.</p>
+                    <p><strong>Tarkemmin:</strong> NLP opettaa koneet ymmärtämään meitä samalla tavalla kuin me ymmärrämme toisiamme. Se sisältää tekstin tunnistamisen, kääntämisen, tunne-analyysin, chatbotit ja paljon muuta. Google-käännös, Siri, automaattinen sähköpostien luokittelu ja sosiaalimedian moderointi käyttävät NLP:tä. Se on silta ihmisen ja koneen väliseen kommunikaatioon.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Luonnollisen_kielen_k%C3%A4sittely" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.nltk.org/" class="info-link">🔗 NLTK (Python NLP-kirjasto)</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>RAG — Retrieval-Augmented Generation</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Tekniikka joka yhdistää tiedon haun ja tekstin tuotannon antaen AI:lle ajantasaista faktatietoa.</p>
+                    <p><strong>Tarkemmin:</strong> RAG on kuin AI:lle ulkoisen muistin antaminen. Perus-LLM tietää vain sen mitä se oppi koulutuksessa, mutta RAG hakee relevanttia tietoa tietokannoista tai dokumenteista ennen vastaamista. Näin AI voi vastata ajantasaisilla tiedoilla ja viitata lähteisiinsä. Esimerkiksi yrityksen chatbot voi hakea tuoretietoa hinnoista tai varastotilanteesta.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/Retrieval-augmented_generation" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://huggingface.co/docs/transformers/model_doc/rag" class="info-link">🔗 Hugging Face RAG</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>RL — Reinforcement Learning</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Oppimismetodi jossa AI oppii kokeilemalla ja saamalla palautetta - palkintoja hyvistä ja rangaistuksia huonoista päätöksistä.</p>
+                    <p><strong>Tarkemmin:</strong> RL toimii kuin lemmikkieläimen kouluttaminen. AI kokeilee erilaisia toimia, saa palkintoja onnistuneista (esim. voittamalla pelin) ja "rangaistuksia" epäonnistuneista (häviämällä). Ajan myötä se oppii mikä strategia toimii parhaiten. AlphaGo voitti Go-mestarin RL:n avulla, ja se on käytössä itseajavissa autoissa ja peliaikojen optimoinnissa.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Vahvistusoppiminen" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://gym.openai.com/" class="info-link">🔗 OpenAI Gym (RL-ympäristö)</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>RNN — Recurrent Neural Network</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Neuroverkko joka muistaa aikaisempaa tietoa ja soveltaa sitä uusiin tilanteisiin.</p>
+                    <p><strong>Tarkemmin:</strong> RNN toimii kuin henkilö jolla on muisti. Toisin kuin tavalliset neuroverkot jotka käsittelevät jokaisen syötteen erikseen, RNN muistaa mitä tapahtui aiemmin. Se on hyödyllinen aikaketjeille kuten tekstille (sanat riippuvat edellisistä sanoista) tai osakekursseille. LSTM ja GRU ovat kehittyneitä RNN-versioita jotka muistavat paremmin.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/Recurrent_neural_network" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://colah.github.io/posts/2015-08-Understanding-LSTMs/" class="info-link">🔗 LSTM-opas</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>SLM — Small/Streamlined Language Model</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Pienet, tehokkaat kielimallit jotka toimivat paikallisesti ilman pilviyhteyttä.</p>
+                    <p><strong>Tarkemmin:</strong> SLM on kuin taskukokoinen sanakirja vs. koko kirjaston kokoelma. Ne ovat paljon pienempiä kuin LLM:t mutta riittävän taitavia moniin tehtäviin. SLM:t voivat pyöriä puhelimessa tai pienessä palvelimessa, eivätkä tarvitse internetyhteyttä. Ne ovat nopeampia, edullisempia ja yksityisyyttä suojaavampia kuin suuret pilvipalvelut.</p>
+                    <div class="links">
+                        <a href="https://huggingface.co/models?pipeline_tag=text-generation&sort=downloads&search=small" class="info-link">🔗 Pienet mallit Hugging Facessa</a>
+                        <a href="https://ollama.ai/" class="info-link">🔗 Ollama (SLM:ien ajaminen paikallisesti)</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>VLM — Vision‑Language Model</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> AI-malli joka ymmärtää sekä kuvia että tekstiä ja osaa yhdistää niitä.</p>
+                    <p><strong>Tarkemmin:</strong> VLM on kuin henkilö joka osaa sekä katsoa että lukea samaan aikaan. Se voi kuvailla kuvia tekstinä, vastata kysymyksiin kuvien sisällöstä, tai generoida kuvia tekstin perusteella. DALL-E, GPT-4V ja CLIP ovat VLM:iä. Ne mahdollistavat kuva-chatbotit, automaattisen kuvatekstin generoinnin ja visuaalisen haun.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/Vision%E2%80%93language_model" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://openai.com/dall-e-3" class="info-link">🔗 OpenAI DALL-E</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

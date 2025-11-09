@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tietokannat ja data - LexIT</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Etusivu</a>
+                
+                <div class="nav-dropdown">
+                    <button class="nav-link dropdown-toggle">Sanasto</button>
+                    <div class="dropdown-menu">
+                        <a href="yleiset.html" class="dropdown-item">Yleiset IT‑lyhenteet</a>
+                        <a href="verkko.html" class="dropdown-item">Verkko ja protokollat</a>
+                        <a href="pilvi.html" class="dropdown-item">Pilvi, virtualisointi ja kontit</a>
+                        <a href="turva.html" class="dropdown-item">Tietoturva ja suojaus</a>
+                        <a href="data.html" class="dropdown-item">Tietokannat ja data</a>
+                        <a href="devops.html" class="dropdown-item">Sovelluskehitys ja DevOps</a>
+                        <a href="microsoft.html" class="dropdown-item">Microsoft & päätelaitteiden hallinta</a>
+                        <a href="ai.html" class="dropdown-item">AI ja koneoppiminen</a>
+                        <a href="bi.html" class="dropdown-item">Analytiikka, BI ja raportointi</a>
+                        <a href="itserv.html" class="dropdown-item">IT‑hallinto ja prosessit</a>
+                    </div>
+                </div>
+                
+                <a href="haku.html" class="nav-link">Haku</a>
+                <a href="about.html" class="nav-link">About / README</a>
+                <a href="contribute.html" class="nav-link">Contribute / GitHub</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content">
+        <div class="container">
+            <h1>Tietokannat ja data</h1>
+            
+            <div class="category-intro">
+                <p>Data on nykyajan öljyä. Tässä osiossa selitämme miten tietoa säilytetään, järjestellään ja käsitellään tietokannoissa ja erilaisissa dataformaateissa. Tutustutaan tiedon hallintaan arkikielellä.</p>
+            </div>
+
+            <div class="term-entry">
+                <h2>ACID — Atomicity, Consistency, Isolation, Durability</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Tietokantatapahtumien luotettavuusperiaatteet, jotka takaavat datan eheyden.</p>
+                    <p><strong>Tarkemmin:</strong> ACID on kuin pankkitapahtumien turvallisuussäännöt. <em>Atomicity</em> = koko tapahtuma onnistuu tai koko tapahtuma peruutetaan (ei puolitiehen jäämistä). <em>Consistency</em> = data pysyy järkevässä tilassa. <em>Isolation</em> = tapahtumat eivät sekoitu toisiinsa. <em>Durability</em> = kun tapahtuma on valmis, se on pysyvästi tallennettu. Pankkisiirto ei saa kadota tai jäädä puolitiehen.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/ACID" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.databricks.com/glossary/acid-transactions" class="info-link">🔗 Databricks ACID-opas</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>API — Application Programming Interface</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Tapa jolla ohjelmat keskustelevat keskenään ja jakavat dataa.</p>
+                    <p><strong>Tarkemmin:</strong> API toimii kuin kahvilan tarjoilija. Sinä (ohjelma) pyydät jotain, tarjoilija (API) vie pyynnön keittiöön (tietokantaan), ja tuo sinulle vastauksen. Kun mobiilisovellus hakee säätiedot, se käyttää sääpalvelun API:a. API määrittelee mitä voit pyytää ja missä muodossa saat vastauksen.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Ohjelmointirajapinta" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://restfulapi.net/" class="info-link">🔗 RESTful API-opas</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>BASE — Basically Available, Soft state, Eventual consistency</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Vaihtoehtoinen lähestymistapa ACID:ille suurissa hajautetuissa järjestelmissä.</p>
+                    <p><strong>Tarkemmin:</strong> BASE on kuin verkkokauppa joka hyväksyy että tiedot voivat olla hetken epätarkkoja, kunhan lopulta kaikki on kunnossa. <em>Basically Available</em> = järjestelmä toimii vaikka joku osa olisi rikki. <em>Soft state</em> = data voi muuttua ajan myötä. <em>Eventual consistency</em> = lopulta kaikki kopiot datasta ovat samat. NoSQL-tietokannat käyttävät usein BASE-mallia.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/Eventual_consistency" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.dataversity.net/acid-vs-base-the-shifting-ph-of-database-transaction-processing/" class="info-link">🔗 ACID vs BASE -vertailu</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>CDC — Change Data Capture</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Tekniikka jolla seurataan ja tallennetaan kaikki muutokset tietokannassa.</p>
+                    <p><strong>Tarkemmin:</strong> CDC on kuin tietokannan muutospäiväkirja. Se kirjaa ylös jokaisen lisäyksen, muutoksen ja poiston reaaliajassa. Tämä mahdollistaa muiden järjestelmien päivittämisen heti kun jotain muuttuu. Esimerkiksi kun asiakas päivittää osoitteensa, CDC voi automaattisesti päivittää sen myös laskutusjärjestelmään ja CRM:ään.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/Change_data_capture" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://debezium.io/" class="info-link">🔗 Debezium (CDC-työkalu)</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>CRUD — Create, Read, Update, Delete</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Neljä perusoperaatiota joita tehdään datalle: luo, lue, päivitä, poista.</p>
+                    <p><strong>Tarkemmin:</strong> CRUD on kuin perusmappi kaikille datantoiminnoille. <em>Create</em> = lisää uusi asiakastietue. <em>Read</em> = hae asiakkaan tiedot. <em>Update</em> = päivitä puhelinnumero. <em>Delete</em> = poista asiakastietue. Jokainen tietokantasovellus tekee näitä neljää perustehtävää. API:t ja verkkosivustot rakentuvat CRUD-operaatioiden päälle.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/CRUD" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.codecademy.com/article/what-is-crud" class="info-link">🔗 Codecademy CRUD-opas</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>CSV — Comma-Separated Values</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Yksinkertainen tiedostomuoto taulukkomuotoisen datan tallentamiseen pilkuilla erotettuina.</p>
+                    <p><strong>Tarkemmin:</strong> CSV on kuin tekstimuotoinen Excel-taulukko. Jokainen rivi on taulukkorivi, ja sarakkeet erotetaan pilkuilla: "Nimi,Ikä,Kaupunki". Se on niin yksinkertainen formaatti että sitä voi avata millä tahansa ohjelmalla. Excelissä tehty taulukko voidaan tallentaa CSV:nä ja siirtää mihin tahansa tietokantaan.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/CSV" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://tools.ietf.org/html/rfc4180" class="info-link">🔗 CSV-formaatin standardi</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>Data Lake — Laaja datavarasto raakamuotoiselle datalle</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Valtava säiliö jonne voidaan tallentaa kaikenlaista dataa sellaisenaan ilman ennakkokäsittelyä.</p>
+                    <p><strong>Tarkemmin:</strong> Data Lake on kuin jättimäinen varasto jonne voit heittää kaiken datan: tekstitiedostoja, kuvia, lokeja, sensoritietoa, mitä vain. Toisin kuin Data Warehouse, Data Lake ei vaadi että tiedot ovat siistissä taulukkomuodossa. Voit analysoida dataa myöhemmin kun tiedät mitä siitä haet. "Store first, ask questions later."</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/Data_lake" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://aws.amazon.com/big-data/datalakes-and-analytics/what-is-a-data-lake/" class="info-link">🔗 AWS Data Lake -opas</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>DB / DBMS — Database / Database Management System</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Tietokanta ja järjestelmä joka hallitsee sitä.</p>
+                    <p><strong>Tarkemmin:</strong> Database on kuin digitaalinen arkistokaapin, jossa tieto on järjestetty taulukoihin. DBMS on kuin kirjastonhoitaja, joka tietää missä mikäkin on, hakee sinulle tiedot ja huolehtii että kukaan ei tuhoa mitään. MySQL, PostgreSQL ja Oracle ovat DBMS:iä. Tietokanta ilman hallinnointijärjestelmää olisi kuin kirjasto ilman luetteloa.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Tietokanta" class="info-link">📖 Lisätietoa tietokannasta</a>
+                        <a href="https://fi.wikipedia.org/wiki/Tietokannan_hallintaj%C3%A4rjestelm%C3%A4" class="info-link">📖 Lisätietoa DBMS:stä</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>DWH — Data Warehouse</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Keskitetty varasto puhtaalle, analysoitavalle datalle eri lähteistä.</p>
+                    <p><strong>Tarkemmin:</strong> Data Warehouse on kuin siisti, järjestetty arkisto jossa kaikki yrityksen data on puhdistettuna ja yhtenäisessä muodossa. Se kerää tietoja eri järjestelmistä (myynti, markkinointi, asiakaspalvelu) ja järjestää ne niin että johtajat voivat tehdä raportteja ja analyysejä. Kuin kirjasto jossa kaikki kirjat on luetteloitu ja järjestetty.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Tietovarasto" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.oracle.com/database/what-is-a-data-warehouse/" class="info-link">🔗 Oracle DWH-opas</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>ELT — Extract, Load, Transform</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Dataprosessi jossa tieto haetaan, ladataan kohteeseen ja sitten muokataan siellä.</p>
+                    <p><strong>Tarkemmin:</strong> ELT on kuin muutto jossa pakataan kaikki tavarat autoon (Extract), kuljetetaan uuteen kotiin (Load) ja sitten järjestellään huonekalut (Transform) uudessa paikassa. Nykyaikaiset pilvipohjaiset data warehouset suosivat ELT:tä koska ne pystyvät käsittelemään valtavia datamääriä tehokkaasti sisäisesti.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/Extract,_load,_transform" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.fivetran.com/blog/elt-vs-etl" class="info-link">🔗 ELT vs ETL -vertailu</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>ETL — Extract, Transform, Load</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Dataprosessi jossa tieto haetaan, muokataan ja sitten ladataan kohdetietokantaan.</p>
+                    <p><strong>Tarkemmin:</strong> ETL on kuin ruuan valmistus: haet raaka-aineet kaupasta (Extract), pilkkot ja maustat ne (Transform), ja tarjoilet valmiin aterian (Load). Esimerkiksi myyntidataa eri järjestelmistä puhdistetaan, yhtenäistetään ja ladataan data warehouseen raporttien tekoa varten. Perinteinen tapa käsitellä dataa.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/ETL" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.informatica.com/resources/articles/what-is-etl.html" class="info-link">🔗 Informatica ETL-opas</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>JSON — JavaScript Object Notation</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Kevyt tekstimuotoinen dataformaatti strukturoidun tiedon tallentamiseen ja siirtämiseen.</p>
+                    <p><strong>Tarkemmin:</strong> JSON on kuin XML:n yksinkertaisempi serkku. Se käyttää aaltosulkeita {} objekteille ja hakasulkeita [] listoille. Se on helppo lukea sekä ihmisille että koneille. Web-API:t käyttävät JSON:ia lähes yksinomaan. Esimerkki: {"nimi": "Matti", "ikä": 30, "harrastukset": ["lukeminen", "juoksu"]}.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/JSON" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.json.org/json-fi.html" class="info-link">🔗 JSON.org (virallinen sivusto)</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>NAS — Network Attached Storage</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Verkkoon kytketty tallennuslaite jonka kautta voidaan jakaa tiedostoja.</p>
+                    <p><strong>Tarkemmin:</strong> NAS on kuin jaettu kovalevy verkossa. Se on erillinen laite joka sisältää kovalevyjä ja jakaa niitä kaikille verkon käyttäjille. Kotona tai pienessä toimistossa NAS voi toimia varmuuskopiointipalvelimena, mediapalvelimena ja jaettuna tallennustilana. Synology ja QNAP tekevät suosittuja NAS-laitteita.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/NAS" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.synology.com/en-us/knowledgebase/DSM/tutorial/General_Setup/What_is_NAS" class="info-link">🔗 Synology NAS-opas</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>NFS — Network File System</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Unix/Linux-protokolla tiedostojen jakamiseen verkon kautta.</p>
+                    <p><strong>Tarkemmin:</strong> NFS mahdollistaa sen että etäpalvelimen kovalevyt näyttävät ikään kuin ne olisivat paikallisia kovalevyjäsi. Voit avata, muokata ja tallentaa tiedostoja aivan kuin ne olisivat omalla koneellasi, vaikka ne oikeasti sijaitsevatkin palvelimella. Se on kuin jatkokappale tietokoneesi kovalevylle, mutta verkon kautta.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Network_File_System" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://nfs.sourceforge.net/" class="info-link">🔗 NFS-projektin sivusto</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>NoSQL — Not Only SQL</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Tietokantateknologioiden perhe joka ei käytä perinteisiä taulukkoja ja SQL:ää.</p>
+                    <p><strong>Tarkemmin:</strong> NoSQL-tietokannat ovat kuin erilaiset säilytysratkaisut eri tarpeisiin. MongoDB tallentaa dataa JSON-tyylisesti, Redis on kuin superhopea muistikirja avain-arvo -pareille, ja Neo4j tallentaa suhteet ihmisten välillä verkostona. Ne skaalautuvat paremmin suurilla datamäärillä kuin perinteiset SQL-tietokannat, mutta ACID-takuut ovat heikompia.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/NoSQL" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.mongodb.com/nosql-explained" class="info-link">🔗 MongoDB NoSQL-opas</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>OLAP — Online Analytical Processing</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Järjestelmä monimutkaisten data-analyysien tekemiseen suurista datamassoista.</p>
+                    <p><strong>Tarkemmin:</strong> OLAP on kuin monidimensionaalinen Excel supersuurille datamäärille. Se mahdollistaa datan tarkastelun eri näkökulmista nopeasti: myynnin tutkiminen tuotteittain, alueittain, kuukausittain ja asiakastyypeittäin samanaikaisesti. Business Intelligence -työkalut käyttävät OLAP:ia. Se on optimoitu luentaan, ei kirjoittamiseen.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/OLAP" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.oracle.com/database/technologies/related/olap.html" class="info-link">🔗 Oracle OLAP-opas</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>OLTP — Online Transaction Processing</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Järjestelmä päivittäisten liiketoimintatransaktioiden käsittelyyn reaaliajassa.</p>
+                    <p><strong>Tarkemmin:</strong> OLTP on kuin pankin kassajärjestelmä - se käsittelee tuhansia pieniä tapahtumia nopeasti ja luotettavasti. Verkkokaupassat tilaukset, pankkisiirrot ja hotellivaraukset ovat OLTP-tapahtumia. Se on optimoitu nopeille lisäyksille, muutoksille ja poistoille, toisin kuin OLAP joka on optimoitu lukemiseen ja analyyseihin.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/Online_transaction_processing" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.ibm.com/cloud/learn/oltp" class="info-link">🔗 IBM OLTP-opas</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>RAID — Redundant Array of Independent Disks</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Tekniikka jolla useita kovalevyjä yhdistetään toimimaan yhtenä luotettavampana yksikkönä.</p>
+                    <p><strong>Tarkemmin:</strong> RAID on kuin turvaverkko kovalevyille. RAID 1 tekee kahdesta kovalevystä peilit - jos toinen hajoaa, data löytyy toisesta. RAID 5 jakaa datan usealle levylle ja lisää vikasietoisuutta. RAID 0 yhdistää levyt nopeutta varten mutta ei paranna turvallisuutta. Se on kuin vakuutus tärkeälle datalle.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/RAID" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.seagate.com/tech-insights/choosing-raid-levels-article-master-ti/" class="info-link">🔗 Seagate RAID-opas</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>SAN — Storage Area Network</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Erillinen nopea verkko joka yhdistää palvelimet jaettuun tallennustilaan.</p>
+                    <p><strong>Tarkemmin:</strong> SAN on kuin yksityistie tallennuslaitteille. Se on erillinen verkko (yleensä kuitukaapelit) joka yhdistää palvelimet valtaviin tallennuslaitteisiin supernopeasti. Toisin kuin NAS, SAN:issa palvelimille näkyy tallennustila ikään kuin se olisi paikallinen kovalevy. Suuret datacentreissa käyttävät SAN:ia kriittisille sovelluksille.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/Storage_area_network" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.netapp.com/data-storage/what-is-san-storage-area-network/" class="info-link">🔗 NetApp SAN-opas</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>SMB — Server Message Block</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Windows-protokolla tiedostojen, tulostimien ja muiden resurssien jakamiseen verkossa.</p>
+                    <p><strong>Tarkemmin:</strong> SMB mahdollistaa sen että Windows-koneesi voi käyttää toisen Windows-koneen kansioita ikään kuin ne olisivat omalla koneellasi. Se hoitaa myös tulostimien jakamisen verkossa. Kun mappaat verkkoaseman Windows-koneessa tai tulosteet verkkotulostimeen, käytät luultavasti SMB:tä. Se on kuin Windows-maailman sisäinen kieli resurssien jakamiseen.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Server_Message_Block" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://docs.microsoft.com/en-us/windows/win32/fileio/microsoft-smb-protocol-and-cifs-protocol-overview" class="info-link">🔗 Microsoft SMB-dokumentaatio</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>SQL — Structured Query Language</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Standardikieli tietokantojen kanssa keskustelemiseen.</p>
+                    <p><strong>Tarkemmin:</strong> SQL on kuin englannin kielen yksinkertaisempi versio tietokannoille. Voit sanoa "SELECT nimi FROM asiakkaat WHERE kaupunki = 'Helsinki'" ja tietokanta ymmärtää että haluat kaikkien helsinkiläisten asiakkaiden nimet. Se on ollut käytössä vuodesta 1974 ja toimii lähes kaikissa tietokannoissa samalla tavalla. Kuin Esperanto tietokannoille.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/SQL" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.w3schools.com/sql/" class="info-link">🔗 W3Schools SQL-opetus</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>XML — eXtensible Markup Language</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Merkintäkieli strukturoidun datan tallentamiseen ja siirtämiseen.</p>
+                    <p><strong>Tarkemmin:</strong> XML on kuin HTML:n isoveli datalle. Se käyttää tageja kuten &lt;nimi&gt;Matti&lt;/nimi&gt; järjestämään tietoja. Se on hyvin tarkka ja monipuolinen, mutta myös sanallisempi kuin JSON. Vanhemmat järjestelmät ja monet yrityssovellukset käyttävät edelleen XML:ää. Se on kuin virallinen kirje siinä missä JSON on tekstiviesti.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/XML" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.w3.org/XML/" class="info-link">🔗 W3C XML-standardi</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

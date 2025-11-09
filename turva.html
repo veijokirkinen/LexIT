@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tietoturva ja suojaus - LexIT</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Etusivu</a>
+                
+                <div class="nav-dropdown">
+                    <button class="nav-link dropdown-toggle">Sanasto</button>
+                    <div class="dropdown-menu">
+                        <a href="yleiset.html" class="dropdown-item">Yleiset IT‑lyhenteet</a>
+                        <a href="verkko.html" class="dropdown-item">Verkko ja protokollat</a>
+                        <a href="pilvi.html" class="dropdown-item">Pilvi, virtualisointi ja kontit</a>
+                        <a href="turva.html" class="dropdown-item">Tietoturva ja suojaus</a>
+                        <a href="data.html" class="dropdown-item">Tietokannat ja data</a>
+                        <a href="devops.html" class="dropdown-item">Sovelluskehitys ja DevOps</a>
+                        <a href="microsoft.html" class="dropdown-item">Microsoft & päätelaitteiden hallinta</a>
+                        <a href="ai.html" class="dropdown-item">AI ja koneoppiminen</a>
+                        <a href="bi.html" class="dropdown-item">Analytiikka, BI ja raportointi</a>
+                        <a href="itserv.html" class="dropdown-item">IT‑hallinto ja prosessit</a>
+                    </div>
+                </div>
+                
+                <a href="haku.html" class="nav-link">Haku</a>
+                <a href="about.html" class="nav-link">About / README</a>
+                <a href="contribute.html" class="nav-link">Contribute / GitHub</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content">
+        <div class="container">
+            <h1>Tietoturva ja suojaus</h1>
+            
+            <div class="category-intro">
+                <p>Tietoturva koskettaa meitä kaikkia päivittäin. Tässä osiossa selitämme tietoturvaan liittyvät käsitteet tavallisilla sanoilla, jotta ymmärrät miten suojata itsesi ja yrityksesi digitaalisessa maailmassa.</p>
+            </div>
+
+            <div class="term-entry">
+                <h2>2FA — Two‑Factor Authentication</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Kaksivaiheinen tunnistautuminen - käyttäjätunnuksen ja salasanan lisäksi vaaditaan toinen varmistus.</p>
+                    <p><strong>Tarkemmin:</strong> 2FA tarkoittaa että pelkän salasanan lisäksi tarvitset toisen todisteen henkilöllisyydestäsi. Tämä voi olla tekstiviesti puhelimeesi, sovelluksen generoima koodi tai sormenjälki. Vaikka joku saisi salasanasi, hän ei pääse tilillesi ilman toista varmistusta. Käytä 2FA:ta aina kun mahdollista!</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Kaksivaiheinen_tunnistautuminen" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://authy.com/" class="info-link">🔗 Authy (2FA-sovellus)</a>
+                        <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2" class="info-link">🔗 Google Authenticator</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>GDPR — General Data Protection Regulation</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> EU:n tietosuoja-asetus joka suojaa sinun henkilötietojasi.</p>
+                    <p><strong>Tarkemmin:</strong> GDPR on EU:n laki joka määrittää miten yritykset saavat kerätä, käsitellä ja säilyttää henkilötietojasi. Se antaa sinulle oikeuden tietää mitä tietoja sinusta on talletettu, oikeuden poistaa ne ja oikeuden siirtää tiedot toiseen palveluun. Siksi näet nykyään "eväste-ilmoituksia" kaikilla verkkosivuilla.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Yleinen_tietosuoja-asetus" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://tietosuoja.fi/" class="info-link">🔗 Tietosuojavaltuutettu</a>
+                        <a href="https://gdpr.eu/" class="info-link">🔗 GDPR.eu (ohjeita)</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>IDS — Intrusion Detection System</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Tietoturvajärjestelmä joka havaitsee epäilyttävää toimintaa verkossa.</p>
+                    <p><strong>Tarkemmin:</strong> IDS on kuin digitaalinen vartija joka tarkkaa verkkoliikennettä ja hälyttää jos huomaa jotain outoa. Se voi huomata esimerkiksi jos joku yrittää murtautua järjestelmään tai jos kone käyttäytyy epäilyttävästi. IDS ei estä hyökkäystä, vaan vain ilmoittaa siitä - siihen tarvitaan IPS:ää.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Tunkeutumisen_havaitsemisjärjestelmä" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://suricata.io/" class="info-link">🔗 Suricata (avoimen lähdekoodin IDS)</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>MFA — Multi‑Factor Authentication</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Monivaiheinen tunnistautuminen - sama kuin 2FA, mutta voi olla useampi vaihe.</p>
+                    <p><strong>Tarkemmin:</strong> MFA on yleisempi termi kuin 2FA. Se voi sisältää useita varmistuskeinoja: salasanan, puhelimen, sormenjäljen, iiriksen skannauksen tai fyysisen tunnistimen. Pankkien verkkotunnukset ovat hyvä esimerkki: tarvitset tunnukset, puhelimen ja usein vielä erillisen tunnistelaitteen.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Monivaiheinen_tunnistautuminen" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.microsoft.com/fi-fi/security/business/identity-access/mfa-multi-factor-authentication" class="info-link">🔗 Microsoft MFA</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>OWASP — Open Web Application Security Project</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Kansainvälinen yhteisö joka edistää verkkosovellusten turvallisuutta.</p>
+                    <p><strong>Tarkemmin:</strong> OWASP on voittoa tavoittelematon järjestö joka kehittää tietoturvaohjeita ja työkaluja. He julkaisevat kuuluisan "Top 10" -listan yleisimmistä verkkosovellusten haavoittuvuuksista. Jos kehität verkkosivustoja tai olet kiinnostunut tietoturvasta, OWASP:n materiaalit ovat kullanarvoisia.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/OWASP" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://owasp.org/" class="info-link">🔗 OWASP.org (virallinen sivusto)</a>
+                        <a href="https://owasp.org/www-project-top-ten/" class="info-link">🔗 OWASP Top 10</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>PKI — Public Key Infrastructure</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Järjestelmä joka hallinnoi digitaalisia varmenteita turvallista viestintää varten.</p>
+                    <p><strong>Tarkemmin:</strong> PKI on kuin digitaalinen passitoimisto. Se luo ja hallinnoi sertifikaatteja jotka todistavat että verkkosivu tai henkilö on se mitä väittää olevansa. Kun näet selaimen osoitepalkissa lukon ja "https://", käytät PKI:n luomaa sertifikaattia. PKI mahdollistaa turvallisen verkkokaupan ja sähköpostin salauksen.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Julkisen_avaimen_infrastruktuuri" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.ssl.com/guide/pki-guide-to-public-key-infrastructure/" class="info-link">🔗 SSL.com PKI-opas</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>SIEM — Security Information and Event Management</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Järjestelmä joka kerää ja analysoi tietoturvatietoja koko organisaatiosta.</p>
+                    <p><strong>Tarkemmin:</strong> SIEM on kuin yrityksen tietoturvan hermokeskus. Se kerää lokitietoja palvelimista, verkkoon kytketyistä laitteista ja sovelluksista, ja etsii niistä uhkia tai epäilyttävää toimintaa. SIEM voi esimerkiksi havaita jos joku yrittää kirjautua sisään väärillä tunnuksilla useita kertoja peräkkäin.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/SIEM" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.splunk.com/" class="info-link">🔗 Splunk (SIEM-ratkaisu)</a>
+                        <a href="https://www.elastic.co/security" class="info-link">🔗 Elastic Security</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>SSO — Single Sign‑On</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Yhden kirjautumisen järjestelmä - yhdellä kirjautumisella pääsee useisiin palveluihin.</p>
+                    <p><strong>Tarkemmin:</strong> SSO tarkoittaa että kirjaudut kerran sisään ja pääset sen jälkeen automaattisesti kaikkiin yrityksen järjestelmiin ilman uutta kirjautumista. Esimerkiksi Google-tilillä voit kirjautua Gmail, YouTube, Google Drive ja moniin muihin palveluihin. SSO tekee elämän helpommaksi ja parantaa turvallisuutta.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Kertakirjautuminen" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.okta.com/" class="info-link">🔗 Okta (SSO-palvelu)</a>
+                        <a href="https://login.microsoftonline.com/" class="info-link">🔗 Microsoft Azure AD SSO</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>ABAC — Attribute‑Based Access Control</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Kehittynyt pääsynhallintatapa, joka käyttää erilaisia ominaisuuksia päätöksien tekemiseen.</p>
+                    <p><strong>Tarkemmin:</strong> ABAC on kuin älykkäämpää ovenvartijaa. Sen sijaan että vain tarkistaa "onko sinulla oikeus", se ottaa huomioon monta asiaa: kuka olet, mitä aikaa on, mistä tulet, mitä laitetta käytät. Esimerkiksi voit päästä tärkeisiin tiedostoihin vain työaikana, toimistolta ja yrityksen tietokoneelta.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/Attribute-based_access_control" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.nist.gov/publications/guide-attribute-based-access-control-abac-definition-and-considerations" class="info-link">🔗 NIST ABAC-opas</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>CA — Certificate Authority</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Luotettava taho joka myöntää ja varmistaa digitaalisia varmenteita internetissä.</p>
+                    <p><strong>Tarkemmin:</strong> CA toimii kuin digitaalinen notaari tai passitoimisto. Se varmistaa että verkkosivu tai yritys on oikeasti se mitä väittää olevansa, ja antaa siitä digitaalisen todistuksen (sertifikaatin). Kun näet vihreän lukon selaimessa, CA on varmistanut että olet oikealla sivustolla. Let's Encrypt ja DigiCert ovat tunnettuja CA:ita.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Varmentaja" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://letsencrypt.org/" class="info-link">🔗 Let's Encrypt (ilmainen CA)</a>
+                        <a href="https://www.digicert.com/" class="info-link">🔗 DigiCert</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>CSRF — Cross‑Site Request Forgery</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Hyökkäystyyppi, jossa pahantahtoinen sivusto saa sinut tekemään toimintoja toisella sivustolla.</p>
+                    <p><strong>Tarkemmin:</strong> CSRF on kuin digitaalinen huijaus. Olet kirjautuneena pankkiisi toisessa välilehdessä, ja klikkaat pahantahtoista linkkiä. Tämä linkki voi salaa lähettää pyynnön pankkisi sivustolle esimerkiksi rahan siirtämiseksi. Nykyaikaiset sivustot suojautuvat tätä vastaan CSRF-tokeneilla, jotka varmistavat että toiminto on aidosti sinulta.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Cross-site_request_forgery" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://owasp.org/www-community/attacks/csrf" class="info-link">🔗 OWASP CSRF-opas</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>DLP — Data Loss Prevention</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Järjestelmä joka estää arkaluonteisten tietojen vahingossa tai tahallaan leviämisen.</p>
+                    <p><strong>Tarkemmin:</strong> DLP on kuin älykäs vartija joka vahtii yrityksen tietoja. Se tunnistaa arkaluonteiset tiedot (henkilötunnukset, luottokorttinumerot, salaiset asiakirjat) ja estää niiden lähettämisen sähköpostilla, lataamisen pilvipalveluihin tai kopioimisen USB-tikulle. Jos yrität vahingossa lähettää asiakasluettelon väärään osoitteeseen, DLP pysäyttää sen.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/Data_loss_prevention_software" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.microsoft.com/fi-fi/security/business/information-protection/microsoft-purview-data-loss-prevention" class="info-link">🔗 Microsoft DLP</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>FIDO — Fast IDentity Online</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Standardi salasanattomaan kirjautumiseen käyttäen sormenjälkeä, kasvoja tai turva-avaimia.</p>
+                    <p><strong>Tarkemmin:</strong> FIDO haluaa päästä eroon salasanoista kokonaan. Sen sijaan käytät sormenjälkeäsi, kasvojentunnistusta tai fyysistä turva-avainta (kuten YubiKey). Tämä on turvallisempaa koska biometrisiä tietoja ei lähetetä internettiin, ja fyysistä avainta ei voi "varastaa" verkossa. Windows Hello ja iPhone:n Face ID käyttävät FIDO-teknologiaa.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/FIDO_Alliance" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://fidoalliance.org/" class="info-link">🔗 FIDO Alliance</a>
+                        <a href="https://www.yubico.com/" class="info-link">🔗 YubiKey (FIDO-avain)</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>IPS — Intrusion Prevention System</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Järjestelmä joka ei vain havaitse uhkia kuten IDS, vaan myös estää ne aktiivisesti.</p>
+                    <p><strong>Tarkemmin:</strong> IPS on kuin turvahenkilöstö joka ei vain huomaa ongelmia vaan puuttuu niihin heti. Kun IPS havaitsee hyökkäyksen, se voi estää liikennettä, pudottaa yhteyksiä tai karanteeniin asentaa tarttuneen koneen automaattisesti. Se on kuin älykkäämpää palomuuriä joka oppii ja reagoi uhkiin reaaliajassa.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/Intrusion_detection_system#Intrusion_prevention" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.fortinet.com/products/ips" class="info-link">🔗 Fortinet IPS</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>JWT — JSON Web Token</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Turvallinen tapa säilyttää käyttäjän tietoja ja oikeuksia digitaalisessa muodossa.</p>
+                    <p><strong>Tarkemmin:</strong> JWT on kuin digitaalinen passi jossa lukee kuka olet ja mihin sinulla on oikeus. Kun kirjaudut sovellukseen, se antaa sinulle JWT:n joka sisältää tietosi salattuina. Seuraavilla sivunlatauksilla sovellus tarkistaa tämän "passin" sen sijaan että kyselee joka kerta tietokannasta. Se tekee sovelluksista nopeampia ja skaalautuvampia.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/JSON_Web_Token" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://jwt.io/" class="info-link">🔗 JWT.io (testaustyökalu)</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>LDAP — Lightweight Directory Access Protocol</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Protokolla käyttäjä- ja ryhmätietojen hallintaan yrityksissä.</p>
+                    <p><strong>Tarkemmin:</strong> LDAP on kuin yrityksen digitaalinen puhelinluettelo ja organisaatiokaavio yhdessä. Se säilyttää tiedot kaikista työntekijöistä, heidän rooleistaan ja oikeuksistaan. Kun kirjaudut yrityksen tietokoneelle tai sähköpostiin, LDAP tarkistaa että sinulla on oikeus ja kertoo mihin järjestelmiin pääset. Active Directory käyttää LDAP:ia.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/LDAP" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://ldap.com/" class="info-link">🔗 LDAP.com (oppaita)</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>OAuth2 — OAuth 2.0</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Standardi jolla voit antaa sovelluksille rajatun pääsyn tileihisi jakamatta salasanaasi.</p>
+                    <p><strong>Tarkemmin:</strong> OAuth2 mahdollistaa sen että annat esimerkiksi valokuvasovellukselle luvan lukea Google-kuvasi jakamatta Google-salasanaasi. Se on kuin antaisit vahtimestarille avaimen vain tiettyyn huoneeseen tietyksi ajaksi. Kun näet "Kirjaudu Google/Facebook/GitHub-tilillä" -painikkeen, se käyttää OAuth2:ta.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/OAuth" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://oauth.net/2/" class="info-link">🔗 OAuth 2.0 (virallinen sivusto)</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>OTP — One‑Time Password</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Kertakäyttöinen salasana joka on voimassa vain hetken, usein 6-numeroinen koodi.</p>
+                    <p><strong>Tarkemmin:</strong> OTP on kuin lippunumero joka on voimassa vain hetken. Se voi tulla tekstiviestinä, sovelluksesta tai USB-avaimesta. Vaikka joku kuulisi koodisi, se ei ole enää käyttökelpoinen minuutin päästä. Pankkien vahvistuskoodit ja Google Authenticatorin koodit ovat OTP:itä. Se on keskeinen osa 2FA:ta.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Kertak%C3%A4ytt%C3%B6salasana" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://tools.ietf.org/html/rfc6238" class="info-link">🔗 TOTP-standardi</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>PCI DSS — Payment Card Industry Data Security Standard</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Turvallisuusstandardi yrityksille jotka käsittelevät luottokorttitietoja.</p>
+                    <p><strong>Tarkemmin:</strong> PCI DSS määrittää tiukat säännöt sille miten yritykset saavat käsitellä, säilyttää ja siirtää luottokorttitietoja. Se on kuin rakennusmääräykset pankkiholvien rakentamiseen. Jos verkkokauppasi käsittelee korttitietoja, sinun täytyy noudattaa PCI DSS:ää tai maksaa sakkoja ja menettää oikeus vastaanottaa korttimaksuja.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/PCI_DSS" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.pcisecuritystandards.org/" class="info-link">🔗 PCI Security Standards</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>RBAC — Role‑Based Access Control</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Pääsynhallinta jossa oikeudet määritellään työroolin, ei henkilön mukaan.</p>
+                    <p><strong>Tarkemmin:</strong> RBAC toimii kuin työntekijäkortit eri tasoilla. "Kirjanpitäjä"-rooli pääsee taloustietoihin, "myynti"-rooli asiakastietoihin, "admin" kaikkialle. Kun henkilö vaihtaa roolia, vaihdetaan vain hänen roolinsa, ei luoda kaikkia oikeuksia uudestaan. Tämä tekee oikeuksien hallinnasta helpompaa isoissa organisaatioissa.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Roolipohjalainen_p%C3%A4%C3%A4synhallinta" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://csrc.nist.gov/projects/role-based-access-control" class="info-link">🔗 NIST RBAC-materiaalia</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>SAML — Security Assertion Markup Language</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Standardi jolla organisaatiot voivat jakaa tunnistautumistietoja turvallisesti.</p>
+                    <p><strong>Tarkemmin:</strong> SAML mahdollistaa sen että kun kirjaudut yrityksen järjestelmään, se kertoo muille järjestelmille että olet jo tunnistautunut. Se on kuin työntekijäkortti joka toimii kaikkialla yrityksessä. SAML mahdollistaa SSO:n - yhden kirjautumisen joka avaa pääsyn kaikkiin yrityksen sovelluksiin.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/SAML" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://developers.onelogin.com/saml" class="info-link">🔗 OneLogin SAML-opas</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>SOC — Security Operations Center</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Tietoturvakeskus jossa ammattilaiset valvovat ja reagoivat uhkiin ympäri vuorokauden.</p>
+                    <p><strong>Tarkemmin:</strong> SOC on kuin yrityksen tietoturvamissio NASA:n tapaan - tilassaan on seinällistä näyttöjä, joissa seurataan kaikkea mitä yrityksen verkossa tapahtuu 24/7. Tietoturva-analyytikot tarkkailevat lokitietoja, hälytyksiä ja uhkatietoa, ja reagoivat hyökkäyksiin heti. Isot yritykset perustavat oman SOC:in tai ostavat palvelua.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/Security_operations_center" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.sans.org/white-papers/950/" class="info-link">🔗 SANS SOC-opas</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>SOC 2 — Service Organization Control 2</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Tarkastusstandardi joka varmistaa että pilvipalvelut käsittelevät asiakkaiden tietoja turvallisesti.</p>
+                    <p><strong>Tarkemmin:</strong> SOC 2 on kuin hygieniatodistus ravintolalle, mutta tietoturvalle. Se varmistaa että pilvipalveluyritys (kuten Dropbox tai Slack) täyttää turvallisuus-, saatavuus-, ja luottamuksellisuusvaatimukset. Jos käytät yrityksen dataa pilvipalvelussa, SOC 2 -raportti kertoo että palvelu on tarkastettu ja turvallinen.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/SSAE_16#SOC_2" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.aicpa.org/interestareas/frc/assuranceadvisoryservices/aicpasoc2report.html" class="info-link">🔗 AICPA SOC 2 -ohjeita</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>VPN (IPSec / SSL‑VPN) — Turvallinen etäyhteys</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Eri teknologioilla toimivat VPN:t - IPSec sovelluksiin, SSL-VPN selaimeen.</p>
+                    <p><strong>Tarkemmin:</strong> IPSec VPN vaatii yleensä erillisen ohjelman ja on turvallisempi, mutta monimutkaisempi. SSL-VPN toimii suoraan selaimessa klikkaamalla linkkiä, mutta ei ole yhtä turvallinen. IPSec sopii työntekijöiden päivittäiseen etätyöhön, SSL-VPN pikaisten asioiden hoitamiseen matkalla.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/VPN" class="info-link">📖 Lisätietoa VPN:stä</a>
+                        <a href="https://en.wikipedia.org/wiki/IPsec" class="info-link">📖 IPSec Wikipediassa</a>
+                        <a href="https://www.cisco.com/c/en/us/products/security/ssl-vpn/index.html" class="info-link">🔗 Cisco SSL VPN</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>X509 — X.509 Certificate Standard</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Standardi digitaalisten varmenteiden muodolle ja sisällölle internetissä.</p>
+                    <p><strong>Tarkemmin:</strong> X.509 määrittelee miltä digitaaliset sertifikaatit näyttävät sisältä - kuin passin standardiformaatti kansainvälisesti. Se sisältää omistajan nimen, julkisen avaimen, voimassaoloajan ja CA:n allekirjoituksen. Kaikki HTTPS-sertifikaatit, sähköpostin salaus ja VPN-yhteydet käyttävät X.509-formaattia. Se on internetin luottamuksen perusta.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/X.509" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.rfc-editor.org/rfc/rfc5280.html" class="info-link">🔗 RFC 5280 (X.509-standardi)</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>XSS — Cross‑Site Scripting</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Hyökkäystyyppi jossa pahantahtoinen koodi suoritetaan toisen käyttäjän selaimessa.</p>
+                    <p><strong>Tarkemmin:</strong> XSS on kuin digitaalinen viruksen levittäminen. Hyökkääjä onnistuu saamaan omaa koodiaan toisen käyttäjän sivulle - esimerkiksi kommenttikenttään tai hakuun. Kun uhri vierailee sivulla, hyökkääjän koodi suoritetaan hänen selaimessaan ja voi varastaa evästeitä tai ohjata väärille sivuille. Nykyaikaiset kehystyökalut suojautuvat tätä vastaan automaattisesti.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Cross-site_scripting" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://owasp.org/www-community/attacks/xss/" class="info-link">🔗 OWASP XSS-opas</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
