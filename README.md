@@ -1,54 +1,30 @@
-# LexIT - Suomalainen IT-sanasto# LexIT - IT-lyhenteiden sivusto
+# LexIT - Suomalainen IT-sanasto
+
+🇫🇮 **LexIT on kattava suomenkielinen IT-terminologian oppimissivusto, joka selittää 227 IT-termiä selkeästi ja ymmärrettävästi.**
+
+## 📖 Mitä LexIT tarjoaa?
+
+- **10 kategoriaa** IT-termejä ammattilaisille ja aloittelijoille
+- **227 termiä** täydellisillä selityksillä suomeksi
+- **Kaksitasoinen selitys**: Lyhyt yhteenveto + syvempi kuvaus
+- **Hyödylliset linkit** Wikipedia-artikkeleihin ja virallisiin sivustoihin
+- **Responsiivinen design** toimii kaikilla laitteilla
+- **Hakutoiminto** nopeaan löytämiseen
 
 
 
-🇫🇮 **LexIT on kattava suomenkielinen IT-terminologian oppimissivusto, joka selittää yli 220 IT-termiä selkeästi ja ymmärrettävästi.**Moderni React-pohjainen web-sivusto IT-lyhenteille ja termeille. Sisältää kattavan kokoelman IT-alan lyhenteitä kategorioittain järjestettynä.
+## 🎯 Kategoriat
 
-
-
-## 📖 Mitä LexIT tarjoaa?## 🚀 Ominaisuudet
-
-
-
-- **10 kategoriaa** IT-termejä ammattilaisille ja aloittelijoille- **16+ kategoriaa** IT-lyhenteitä
-
-- **Yli 220 termiä** täydellisillä selityksillä suomeksi- **Responsiivinen design** kaikille laitteille
-
-- **Kaksitasoinen selitys**: Lyhyt yhteenveto + syvempi kuvaus- **Moderni React 18** arkkitehtuuri
-
-- **Hyödylliset linkit** Wikipedia-artikkeleihin ja virallisiin sivustoihin- **Vite** nopea kehitysympäristö
-
-- **Responsiivinen design** toimii kaikilla laitteilla- **CSS Modules** tyylien hallintaan
-
-- **Hakutoiminto** nopeaan löytämiseen- **Kategorioittain järjestetty** sisältö
-
-
-
-## 🎯 Kategoriat## 📂 Kategoriat
-
-
-
-1. **Yleiset IT-lyhenteet** - Peruskäsitteet (CPU, RAM, USB, PDF...)1. **Yleiset IT-lyhenteet** - Perus IT-termit
-
-2. **Verkko ja protokollat** - Internet-teknologiat (HTTP, DNS, VPN, TCP...)2. **Verkko ja protokollat** - Verkkoinfrastruktuuri
-
-3. **Pilvi, virtualisointi ja kontit** - Pilvipalvelut (AWS, Azure, Docker, Kubernetes...)3. **Pilvi, virtualisointi ja kontit** - Pilvipalvelut
-
-4. **Tietoturva ja suojaus** - Kyberturva (2FA, GDPR, PKI, SIEM...)4. **Tietoturva ja suojaus** - Kyberturvallisuus
-
-5. **Tietokannat ja data** - Tiedonhallinta (SQL, API, ETL, NoSQL...)5. **Tietokannat ja data** - Tiedon hallinta
-
-6. **Sovelluskehitys ja DevOps** - Ohjelmistokehitys (CI/CD, Git, Jenkins...)6. **Sovelluskehitys ja DevOps** - Ohjelmistokehitys
-
-7. **Microsoft & päätelaitteiden hallinta** - Microsoft-ekosysteemi (Azure AD, Intune, Office 365...)7. **Microsoft ja päätelaitteiden hallinta** - Microsoft-teknologiat
-
-8. **AI ja koneoppiminen** - Tekoäly (ML, NLP, GPT, CNN...)8. **AI ja koneoppiminen** - Tekoälyteknologiat
-
-9. **Analytiikka, BI ja raportointi** - Tietoanalytiikka (BI, KPI, OLAP, Power BI...)9. **Analytiikka, BI ja raportointi** - Liiketoimintaäly
-
-10. **IT-hallinto ja prosessit** - Palveluhallinta (ITIL, Agile, SLA, DevOps...)10. **Tallennus ja tiedon hallinta** - Tallennusratkaisut
-
-11. **IT-hallinto, palvelut ja prosessit** - IT-palvelujen hallinta
+1. **Yleiset IT-lyhenteet** (17 termiä) - Peruskäsitteet (CPU, RAM, USB, PDF...)
+2. **Verkko ja protokollat** (28 termiä) - Internet-teknologiat (HTTP, DNS, VPN, TCP...)
+3. **Pilvi, virtualisointi ja kontit** (19 termiä) - Pilvipalvelut (AWS, Azure, Docker, Kubernetes...)
+4. **Tietoturva ja suojaus** (26 termiä) - Kyberturva (2FA, GDPR, PKI, SIEM...)
+5. **Tietokannat ja data** (22 termiä) - Tiedonhallinta (SQL, API, ETL, NoSQL...)
+6. **Sovelluskehitys ja DevOps** (23 termiä) - Ohjelmistokehitys (CI/CD, Git, Jenkins...)
+7. **Microsoft & päätelaitteiden hallinta** (31 termiä) - Microsoft-ekosysteemi (Azure AD, Intune, Office 365...)
+8. **AI ja koneoppiminen** (20 termiä) - Tekoäly (ML, NLP, GPT, CNN...)
+9. **Analytiikka, BI ja raportointi** (21 termiä) - Tietoanalytiikka (BI, KPI, OLAP, Power BI...)
+10. **IT-hallinto ja prosessit** (20 termiä) - Palveluhallinta (ITIL, Agile, SLA, DevOps...)
 
 ## 🚀 Ominaisuudet12. **Sähköposti ja yhteistyö** - Viestintäteknologiat
 
