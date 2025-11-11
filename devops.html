@@ -325,6 +325,258 @@
                     </div>
                 </div>
             </div>
+
+            <div class="term-entry">
+                <h2>OOP — Object-Oriented Programming</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Ohjelmointiparadigma, jossa koodi organisoidaan olioiksi, jotka sisältävät dataa ja toimintoja.</p>
+                    <p><strong>Tarkemmin:</strong> Olio-ohjelmointi on kuin Lego-rakentamista koodissa. Luot uudelleenkäytettäviä "olioluokkia" (kuten Lego-palikkamalleja) ja sitten voit luoda niistä monia olioita (kuten rakentaa monta autoa samasta mallista). Oliot voivat periä ominaisuuksia toisiltaan ja piilottaa sisäistä toimintaansa. Tämä tekee koodista modulaarista ja helpommin hallittavaa.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Olio-ohjelmointi" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.tutorialspoint.com/object_oriented_analysis_design/index.htm" class="info-link">🔗 OOP-oppaat</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>SOLID — Design Principles</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Viisi olio-ohjelmoinnin suunnitteluperiaatetta puhtaan ja ylläpidettävän koodin kirjoittamiseen.</p>
+                    <p><strong>Tarkemmin:</strong> SOLID on kuin hyvän talon rakentamisen ohjeet: S = Single Responsibility (yksi vastuu per luokka), O = Open/Closed (avoin laajennuksille, suljettu muutoksille), L = Liskov Substitution (perityt luokat toimivat isänsä paikalla), I = Interface Segregation (pienet, tarkoituksenmukaiset rajapinnat), D = Dependency Inversion (riippuvuudet abstraktion kautta).</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/SOLID" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://blog.cleancoder.com/uncle-bob/2020/10/18/Solid-Relevance.html" class="info-link">🔗 Uncle Bob - SOLID</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>DRY — Don't Repeat Yourself</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Ohjelmointiperiaate, jonka mukaan koodia ei pidä toistaa vaan käyttää uudelleen.</p>
+                    <p><strong>Tarkemmin:</strong> DRY on kuin reseptien kirjoittamista: sen sijaan että kirjoittaisit "kuori peruna, pilko kuutioiksi, keitä 10 minuuttia" joka reseptiin, kirjoitat sen kerran ja viittaat siihen. Koodissa tämä tarkoittaa funktioiden, luokkien ja moduleiden luomista toistuvalle logiikalle. Jos muutat myöhemmin "perunan valmistustapaa", tarvitsee muuttaa vain yhdestä paikasta.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.codementor.io/joshuaaroke/dry-code-vs-wet-code-89xjwv11w" class="info-link">🔗 DRY vs WET</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>KISS — Keep It Simple, Stupid</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Suunnitteluperiaate, joka korostaa yksinkertaisuuden tärkeyttä.</p>
+                    <p><strong>Tarkemmin:</strong> KISS muistuttaa, että paras ratkaisu on usein yksinkertaisin. Sen sijaan että luoisit monimutkaisen järjestelmän "kaiken varalle", aloita yksinkertaisesta ratkaisusta ja lisää monimutkaisuutta vain tarpeen mukaan. Kuin Ikean huonekalu: yksinkertainen, toimiva ja helppo koota.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/KISS_principle" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://blog.codinghorror.com/the-best-code-is-no-code-at-all/" class="info-link">🔗 Yksinkertaisuudesta</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>YAGNI — You Aren't Gonna Need It</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Älä rakenna ominaisuuksia "varmuuden vuoksi" - rakenna vain se mitä todella tarvitset.</p>
+                    <p><strong>Tarkemmin:</strong> YAGNI estää "ehkä tarvitsemme tätä tulevaisuudessa" -ajattelun. Se on kuin muuttaminen: älä pakkaa tavaroita "ehkä tarvitsen", vaan ota vain se mitä tiedät tarvitsevasi. Ylimääräinen koodi on ylläpitotaakkaa ja hidastaa kehitystä. Parempaa on lisätä ominaisuuksia kun niitä todella tarvitaan.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://martinfowler.com/bliki/Yagni.html" class="info-link">🔗 Martin Fowler - YAGNI</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>TDD — Test-Driven Development</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Kehitysmenetelmä, jossa testit kirjoitetaan ennen varsinaista koodia.</p>
+                    <p><strong>Tarkemmin:</strong> TDD on kuin opettelisit ajamaan ensin teoriakokeella, sitten vasta käytännössä. Kirjoitat ensin testin siitä mitä koodisi pitäisi tehdä (testi epäonnistuu), sitten kirjoitat minimaalisen koodin testin läpäisemiseksi, ja lopuksi refaktoroit koodin siistiksi. Tämä "Red-Green-Refactor" -sykli tuottaa luotettavaa, testattua koodia.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Testivetoinen_kehitys" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://testdriven.io/test-driven-development/" class="info-link">🔗 TDD-opas</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>BDD — Behavior-Driven Development</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Kehitysmenetelmä, joka keskittyy ohjelmiston käyttäytymisen määrittelyyn liiketoiminnan näkökulmasta.</p>
+                    <p><strong>Tarkemmin:</strong> BDD on kuin käsikirjoituksen kirjoittamista sovellukselle. Sen sijaan että testaisit teknisiä yksityiskohtia, kirjoitat skenaarioita: "Kun käyttäjä tekee X, niin sovelluksen pitäisi tehdä Y". Nämä kirjoitetaan tavallisella kielellä (Given-When-Then), jotta sekä ohjelmoijat että liiketoiminta ymmärtävät mitä rakennetaan.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/Behavior-driven_development" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://cucumber.io/docs/bdd/" class="info-link">🔗 BDD-opas</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>DDD — Domain-Driven Design</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Ohjelmistosuunnittelumenetelmä, joka keskittyy liiketoiminta-alueen (domain) ymmärtämiseen ja mallintamiseen.</p>
+                    <p><strong>Tarkemmin:</strong> DDD on kuin arkkitehti, joka suunnittelee talon asukkaidensa elämäntavan mukaan. Se korostaa, että ohjelmoijien ja liiketoiminta-asiantuntijoiden pitää puhua samaa kieltä ja rakentaa ohjelmisto todellisen liiketoiminnan mallien mukaan. Koodi heijastaa sitä miten bisnes todella toimii, ei teknisiä ratkaisuja.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/Domain-driven_design" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://martinfowler.com/bliki/DomainDrivenDesign.html" class="info-link">🔗 Martin Fowler - DDD</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>MVC — Model-View-Controller</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Ohjelmistoarkkitehtuurimalli, joka jakaa sovelluksen kolmeen osaan: tietomalli, näkymä ja ohjain.</p>
+                    <p><strong>Tarkemmin:</strong> MVC on kuin ravintolan organisointi: Model (keittiö) hoitaa datan ja liiketoimintalogiikan, View (sali) näyttää tiedot asiakkaalle, ja Controller (tarjoilija) välittää pyyntöjä ja vastauksia. Tämä ero tekee koodista modulaarista - voit vaihtaa käyttöliittymää vaikuttamatta liiketoimintalogiikkaan.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/MVC" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://developer.mozilla.org/en-US/docs/Glossary/MVC" class="info-link">🔗 MDN - MVC</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>MVP — Model-View-Presenter</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> MVC:n muunnelma, jossa Presenter hoitaa kaikki View:n päätökset ja View on passiivinen.</p>
+                    <p><strong>Tarkemmin:</strong> MVP on kuin teatteriesitys, jossa Presenter (ohjaaja) tekee kaikki päätökset ja View (näyttelijät) vain noudattaa käskyjä. Toisin kuin MVC:ssä, View ei tiedä mitään Modelista - kaikki kommunikointi kulkee Presenterin kautta. Tämä tekee View:stä helpommin testattavan.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93presenter" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://martinfowler.com/eaaDev/uiArchs.html" class="info-link">🔗 UI Architectures</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>MVVM — Model-View-ViewModel</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Arkkitehtuurimalli, jossa ViewModel toimii välittäjänä Model:n ja View:n välillä tiedon sitomisen kautta.</p>
+                    <p><strong>Tarkemmin:</strong> MVVM on kuin automaattinen käännös: ViewModel osaa muuttaa Modelin tiedot sellaiseen muotoon, että View ymmärtää ne automaattisesti (data binding). Kun Model muuttuu, View päivittyy automaattisesti ja päinvastoin. Suosittu erityisesti WPF-, Angular- ja Vue.js-sovelluksissa.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://docs.microsoft.com/en-us/dotnet/architecture/maui/mvvm" class="info-link">🔗 Microsoft MVVM</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>CQRS — Command Query Responsibility Segregation</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Arkkitehtuurimalli, joka erottaa tiedon lukemisen ja kirjoittamisen eri malleiksi.</p>
+                    <p><strong>Tarkemmin:</strong> CQRS on kuin kirjastossa olisi eri tiskit lainaamista ja palauttamista varten. Commands (komennot) muuttavat järjestelmän tilaa, Queries (kyselyt) lukevat tietoa. Näillä voi olla täysin erilaiset tietomallit ja tietokannat, optimoitu kulloiseenkin käyttöön. Hyödyllinen monimutkaisissa järjestelmissä.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/Command%E2%80%93query_separation#Command_Query_Responsibility_Segregation" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://martinfowler.com/bliki/CQRS.html" class="info-link">🔗 Martin Fowler - CQRS</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>ES — Event Sourcing</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Tiedon tallennusstrategia, jossa tallennetaan kaikki muutokset tapahtumina perinteisen tilan sijaan.</p>
+                    <p><strong>Tarkemmin:</strong> Event Sourcing on kuin pankkitilin tiliote - sen sijaan että tallentaisit vain nykyisen saldon, tallennat jokaisen tapahtuman (talletus, nosto, korko). Nykyinen tila lasketaan toistamalla kaikki tapahtumat. Tämä antaa täydellisen historian, mahdollistaa ajan halki matkustamisen ja helpottaa debuggausta.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/Event_sourcing" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://martinfowler.com/eaaDev/EventSourcing.html" class="info-link">🔗 Martin Fowler - Event Sourcing</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>PWA — Progressive Web App</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Web-sovellus, joka toimii kuin natiivi mobiilisovellus offline-tuen ja asennettavuuden kanssa.</p>
+                    <p><strong>Tarkemmin:</strong> PWA on kuin web-sivusto, joka oppii mobiilisovelluksen temput. Se toimii ilman internetyhteyttä, voidaan asentaa kotinäytölle, lähettää push-notifikaatioita ja käynnistyy nopeasti. Käyttää Service Worker -teknologiaa välimuistin hallintaan ja Web App Manifest -tiedostoa sovelluksen tietoihin.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/Progressive_web_application" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://web.dev/progressive-web-apps/" class="info-link">🔗 PWA-opas</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>SPA — Single Page Application</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Web-sovellus, joka lataa yhden HTML-sivun ja päivittää sisällön dynaamisesti JavaScriptillä.</p>
+                    <p><strong>Tarkemmin:</strong> SPA on kuin sähköinen kirja - lataat sen kerran, ja sitten voit selata sivuja ilman että kirja latautuu uudelleen. Perinteisissä web-sivuissa jokainen linkki lataa uuden sivun palvelimelta, mutta SPA päivittää vain muuttuneen sisällön. Tämä tekee käyttökokemuksesta sujuvamman mutta vaatii JavaScript-osaamista.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/Single-page_application" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://developer.mozilla.org/en-US/docs/Glossary/SPA" class="info-link">🔗 MDN - SPA</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>SSR — Server-Side Rendering</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Web-sivun HTML generoidaan palvelimella ennen lähettämistä selaimelle.</p>
+                    <p><strong>Tarkemmin:</strong> SSR on kuin valmiiksi koottu Ikean huonekalu - palvelin kokoaa HTML-sivun valmiiksi ja lähettää sen selaimelle. Toisin kuin SPA:ssa, käyttäjä näkee sisällön heti ilman JavaScriptin latautumista. Tämä parantaa SEO:a ja latausnopeutta, mutta vaatii enemmän palvelinresursseja.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/Server-side_rendering" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://nextjs.org/docs/basic-features/pages#server-side-rendering" class="info-link">🔗 Next.js SSR</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>CSR — Client-Side Rendering</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Web-sivun sisältö generoidaan käyttäjän selaimessa JavaScriptillä palvelimen sijaan.</p>
+                    <p><strong>Tarkemmin:</strong> CSR on kuin Ikean huonekalun kokoaminen kotona - saat osat (data) palvelimelta ja JavaScript kokoaa niistä sivun selaimessä. Ensimmäinen lataus on hitaampi ja hakukoneet eivät näe sisältöä yhtä hyvin, mutta sen jälkeen navigointi on sujuvaa ja palvelinrasite pienempi.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/Client-side_rendering" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://www.freecodecamp.org/news/client-side-rendering-vs-server-side-rendering-vs-static-site-generation/" class="info-link">🔗 CSR vs SSR</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>JAMstack — JavaScript, APIs and Markup</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Modernin web-kehityksen arkkitehtuuri, joka perustuu staatisiin sivuihin, API:hin ja JavaScriptiin.</p>
+                    <p><strong>Tarkemmin:</strong> JAMstack on kuin modulaarinen stereojärjestelmä: JavaScript hoitaa interaktiivisuuden, API:t tarjoavat datan, ja Markup (HTML/CSS) muodostaa rakenteen. Sivut generoidaan etukäteen (static site generation), mikä tekee niistä nopeita ja turvallisia. Käytetään CDN:ssä jakeluun ja palvelattomia funktioita backend-logiikkaan.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/Jamstack" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://jamstack.org/" class="info-link">🔗 JAMstack.org</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>BFF — Backend for Frontend</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> API-kerros, joka on räätälöity tietyn käyttöliittymän (frontend) tarpeisiin.</p>
+                    <p><strong>Tarkemmin:</strong> BFF on kuin henkilökohtainen avustaja jokaiselle käyttöliittymälle. Sen sijaan että mobiilisovellus ja websivusto käyttäisivät samaa API:a, kullakin on oma BFF, joka muokkaa datan sopivaksi kyseiselle alustalle. Mobiili saa tiiviimmän datan, desktop laajemman - kaikki optimoituna käyttötapauksen mukaan.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/Backend_for_frontend" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://philcalcado.com/2015/09/18/the_back_end_for_front_end_pattern_bff.html" class="info-link">🔗 BFF Pattern</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>gRPC — Google Remote Procedure Call</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> Googlen kehittämä RPC-protokolla tehokkaaseen kommunikointiin palveluiden välillä.</p>
+                    <p><strong>Tarkemmin:</strong> gRPC on kuin tehokas kuriiri palveluiden välillä. Se käyttää HTTP/2:ta ja Protocol Buffers -formaattia, mikä tekee siitä nopeamman kuin REST API. Funktiokutsut näyttävät paikalliselta koodilta, vaikka ne tapahtuvatkin verkon yli. Tukee streamingaa, automaattista koodigeneroinnin ja tiukkaa tyypitystä.</p>
+                    <div class="links">
+                        <a href="https://en.wikipedia.org/wiki/GRPC" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://grpc.io/" class="info-link">🔗 gRPC.io</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="term-entry">
+                <h2>DOM — Document Object Model</h2>
+                <div class="explanation">
+                    <p><strong>Lyhyesti:</strong> HTML-dokumentin sisäinen esitys, jota JavaScript voi muokata reaaliajassa.</p>
+                    <p><strong>Tarkemmin:</strong> DOM on kuin HTML-sivun sisäinen kartta, jossa jokainen elementti (div, p, h1 jne.) on solmu puussa. JavaScript voi lukea ja muokata tätä puuta - lisätä, poistaa tai muuttaa elementtejä. Kun DOM muuttuu, selain päivittää sivun näkymän automaattisesti. Modernien frontend-frameworkien perusta.</p>
+                    <div class="links">
+                        <a href="https://fi.wikipedia.org/wiki/Document_Object_Model" class="info-link">📖 Lisätietoa Wikipediasta</a>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model" class="info-link">🔗 MDN - DOM</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 

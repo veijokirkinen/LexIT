@@ -1,9 +1,11 @@
-﻿# LexIT - Kaikki termit aakkosjärjestyksessä
+﻿# LexIT - Kaikki termit aakkosjärjestyksessä  
 # Luotu: 11.11.2025
-# Yhteensä: 236 termiä
+# Yhteensä: 262 termiä
+
 2FA — Two‑Factor Authentication
 ABAC — Attribute‑Based Access Control
 ACID — Atomicity, Consistency, Isolation, Durability
+ACL — Access Control List
 AD — Active Directory
 Agile / Scrum
 AI — Artificial Intelligence
@@ -22,7 +24,9 @@ Azure AD — Azure Active Directory
 Backlog
 BASE — Basically Available, Soft state, Eventual consistency
 BCP
+BDD — Behavior-Driven Development
 BERT — Bidirectional Encoder Representations from Transformers
+BFF — Backend for Frontend
 BGP — Border Gateway Protocol
 BI — Business Intelligence
 BIOS — Basic Input/Output System
@@ -36,13 +40,16 @@ CDN — Content Delivery Network
 Ceph — Hajautettu tallennusjärjestelmä
 CI — Continuous Integration
 CISO
+CLI — Command-Line Interface
 CM
 CMDB
 CNN — Convolutional Neural Network
 Co‑management — SCCM + Intune yhteiskäyttö
 COPE — Company Owned, Personally Enabled
 CPU — Central Processing Unit
+CQRS — Command Query Responsibility Segregation
 CRUD — Create, Read, Update, Delete
+CSR — Client-Side Rendering
 CSRF — Cross‑Site Request Forgery
 CSV — Comma-Separated Values
 CTO
@@ -53,19 +60,23 @@ Dataflow — Power BI Dataflows
 DAX — Data Analysis Expressions
 DAX — Data Analysis Expressions
 DB / DBMS — Database / Database Management System
+DDD — Domain-Driven Design
 DevOps
 DHCP — Dynamic Host Configuration Protocol
 DL — Deep Learning
 DLP — Data Loss Prevention
 DNS — Domain Name System
 Docker — Konttiteknologian työkalusarja
+DOM — Document Object Model
 DP — Distribution Point
 DR
 Drill Down — Syväporaus
+DRY — Don't Repeat Yourself
 DWH — Data Warehouse
 EC2 — Elastic Compute Cloud
 ELT — Extract, Load, Transform
 EMM — Enterprise Mobility Management
+ES — Event Sourcing
 ETL — Extract, Transform, Load
 ETL — Extract, Transform, Load
 Exchange — Microsoft Exchange Server
@@ -84,6 +95,8 @@ GPO — Group Policy Object
 GPT — Generative Pre-trained Transformer
 GPU — Graphics Processing Unit
 GPU, TPU — Laitteet massiiviseen rinnakkaislaskentaan
+gRPC — Google Remote Procedure Call
+GUI — Graphical User Interface
 HCI — Hyperconverged Infrastructure
 HDD — Hard Disk Drive
 HDMI — High-Definition Multimedia Interface
@@ -106,11 +119,13 @@ IT — Information Technology
 ITAM
 ITIL
 ITSM
+JAMstack — JavaScript, APIs and Markup
 Jenkins — CI/CD automation server
 JSON — JavaScript Object Notation
 JSON‑RPC / gRPC — Palveluiden väliset protokollat
 JWT — JSON Web Token
 Kanban
+KISS — Keep It Simple, Stupid
 KPI — Key Performance Indicator
 KPI Dashboard — Mittarien kojelauta
 Kubernetes (K8s) — Konttien orkestrointialusta
@@ -136,6 +151,9 @@ MoE — Mixture of Experts
 MOLAP — Multidimensional Online Analytical Processing
 MPLS — Multiprotocol Label Switching
 MTConnect — Manufacturing Technology Connect
+MVC — Model-View-Controller
+MVP — Model-View-Presenter
+MVVM — Model-View-ViewModel
 NAS — Network Attached Storage
 NAT — Network Address Translation
 NFS — Network File System
@@ -153,7 +171,9 @@ OLAP — Online Analytical Processing
 OLTP — Online Transaction Processing
 OneDrive — Microsoft OneDrive
 OOBE — Out Of Box Experience
+OOP — Object-Oriented Programming
 OPC UA — OPC Unified Architecture
+ORM — Object-Relational Mapping
 OS — Operating System
 OSD — Operating System Deployment
 OTP — One‑Time Password
@@ -164,6 +184,7 @@ PDF — Portable Document Format
 PKI — Public Key Infrastructure
 POP3 — Post Office Protocol v3
 Power BI — Microsoft Power BI
+PWA — Progressive Web App
 PXE — Preboot eXecution Environment
 QR — Quick Response
 RAG — Retrieval-Augmented Generation
@@ -194,12 +215,15 @@ SIEM — Security Information and Event Management
 SLA
 Slice and Dice — Datan leikkaus ja pilkkominen
 SLM — Small/Streamlined Language Model
+SLO — Service Level Objective
 SMB — Server Message Block
 SMTP — Simple Mail Transfer Protocol
 SNMP — Simple Network Management Protocol
 SOAP — Simple Object Access Protocol
 SOC — Security Operations Center
 SOC 2 — Service Organization Control 2
+SOLID — Design Principles
+SPA — Single Page Application
 Sprint
 SQL — Structured Query Language
 SQL — Structured Query Language
@@ -211,8 +235,10 @@ SSH — Secure Shell
 SSIS — SQL Server Integration Services
 SSL — Secure Sockets Layer
 SSO — Single Sign‑On
+SSR — Server-Side Rendering
 SSRS — SQL Server Reporting Services
 TCP — Transmission Control Protocol
+TDD — Test-Driven Development
 Teams — Microsoft Teams
 Terraform — Infrastructure as Code tool
 TLS — Transport Layer Security
@@ -236,4 +262,5 @@ WSUS — Windows Server Update Services
 X509 — X.509 Certificate Standard
 XML — eXtensible Markup Language
 XSS — Cross‑Site Scripting
+YAGNI — You Aren't Gonna Need It
 YAML — YAML Ain't Markup Language
