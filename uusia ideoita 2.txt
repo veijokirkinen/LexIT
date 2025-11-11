@@ -1,0 +1,615 @@
+```markdown
+# LexIT / Listing‑alusta — MVP scaffold (Next.js + Stripe Checkout)
+
+Tämä repo on kevyt MVP‑scaffold, joka toteuttaa ilmoitus‑/listauspalvelun mallin, jossa alusta myy "paikkoja" (listausmaksu) mutta ei osallistu myyjien ja ostajien välisiin kauppoihin eikä käsittele loppukauppojen maksuliikennettä.
+
+Tärkeintä:
+- Alusta myy ilmoitustilaa (listauspaketit) ja ottaa vastaan listausmaksun (Stripe Checkout).
+- Myyjä luo ilmoituksen, maksaa listausmaksun ja ilmoitus julkaistaan.
+- Ostaja sopii kaupasta suoraan myyjän kanssa; maksut hoidetaan myyjän ja ostajan tavalla (ei alustan kautta).
+
+Sisältö (tärkeimmät tiedostot)
+- TERMS_OF_SERVICE.md — ehdotus ToS‑tekstiksi (suomeksi).
+- package.json, tsconfig.json — projektikonfiguraatiot.
+- pages/ — Next.js‑sivut:
+  - / (etusivu)
+  - /listings/new (lomake uuden ilmoituksen luomiseen)
+  - /listings/[id] (ilmoitusnäkymä)
+- pages/api/listings/create — API jolla ilmoitus tallennetaan (data/listings.json).
+- pages/api/checkout/session — API joka luo Stripe Checkout sessionin (test mode).
+- data/listings.json — yksinkertainen tallennus (JSON‑taulukko) MVP:ssä.
+- components/* — yksinkertaiset komponentit ja layout.
+
+Huomioita / rajoituksia (MVP)
+- Tämä on demonstratiivinen scaffold, joka tallentaa ilmoitukset paikalliseen tiedostoon (data/listings.json). Tuotantokäytössä tulee käyttää oikeaa tietokantaa (esim. PostgreSQL) ja hosting‑ratkaisua, jossa tiedot säilyvät.
+- Stripe käyttää testmode‑avainpareja (katso .env.example). Älä laita oikeita avaimia julkisiin repolihin.
+- ToS on alustava luonnos; suosittelen juristin läpikäyntiä ennen julkaisemista.
+
+Käyttöönotto lokaalisti
+1. Kopioi tiedostot paikalliseen hakemistoon.
+2. Lisää ympäristömuuttujat .env:
+   - STRIPE_SECRET_KEY=pk_test_...
+   - NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_test_...
+   - DOMAIN=http://localhost:3000
+3. Asenna riippuvuudet:
+   - npm install
+4. Käynnistä kehityspalvelin:
+   - npm run dev
+5. Avaa http://localhost:3000 ja kokeile "Luo ilmoitus" → maksun luonti (Stripe Checkout testmode).
+
+Seuraavat askeleet (suositus)
+- Vaihda listauksien tallennus tietokantaan ja lisää autentikointi (Auth0 / NextAuth / Clerk).
+- Lisää admin‑paneeli moderointiin ja manuaaliseen julkaisuun.
+- Lisää portfolios.fi‑integraatio (OAuth tai profiilin tuonti).
+- Lisää selkeä ToS & Privacy ja hanki juridiikan tarkastus.
+
+```
+
+
+
+
+{
+  "categories": [
+    {
+      "id": "yleiset",
+      "title": "Yleiset IT‑lyhenteet",
+      "description": "Peruslyhenteet ja -käsitteet tietotekniikasta.",
+      "terms": ["IT","ICT","OS","CPU","GPU","RAM","SSD"]
+    },
+    {
+      "id": "verkko",
+      "title": "Verkko ja protokollat",
+      "description": "Verkkojen ja kommunikaation peruskäsitteet.",
+      "terms": ["LAN","WAN","VLAN","DHCP","DNS","TCP","UDP","HTTP","HTTPS","TLS","VPN","IP","BGP"]
+    },
+    {
+      "id": "pilvi",
+      "title": "Pilvi, virtualisointi ja kontit",
+      "description": "Pilvi‑palvelut, virtualisointi ja kontit.",
+      "terms": ["IaaS","PaaS","SaaS","VM","Kubernetes","Docker","HCI","VDI","AMI"]
+    },
+    {
+      "id": "turva",
+      "title": "Tietoturva ja suojaus",
+      "description": "Tietoturvan termit ja teknologiat.",
+      "terms": ["IDS","IPS","SIEM","SOC","MFA","SSO","RBAC","PKI","DLP","OWASP"]
+    },
+    {
+      "id": "data",
+      "title": "Tietokannat ja data",
+      "description": "Tietokantojen, datan ja ETL‑prosessien käsitteet.",
+      "terms": ["DBMS","SQL","NoSQL","ETL","ELT","CDC","DWH","DataLake","ACID"]
+    },
+    {
+      "id": "devops",
+      "title": "Sovelluskehitys ja DevOps",
+      "description": "Kehityksen ja julkaisun automaatio sekä rajapinnat.",
+      "terms": ["API","REST","CI","CD","IaC","Git","CI/CD","Docker","gRPC"]
+    },
+    {
+      "id": "microsoft",
+      "title": "Microsoft & päätelaitteiden hallinta",
+      "description": "Työkalut kuten Intune, SCCM ja Power BI.",
+      "terms": ["Intune","SCCM","Autopilot","WSUS","GPO","AD","AzureAD","PowerBI","DAX","RLS","Co-management"]
+    },
+    {
+      "id": "ai",
+      "title": "AI ja koneoppiminen",
+      "description": "Koneoppimisen ja tekoälyn termit.",
+      "terms": ["AI","ML","DL","NLP","LLM","VLM","MoE","SAM","MLM","RL"]
+    },
+    {
+      "id": "bi",
+      "title": "Analytiikka, BI ja raportointi",
+      "description": "Business Intelligence ja raportointiin liittyvät käsitteet.",
+      "terms": ["BI","KPI","ETL","SSIS","SSAS","SSRS","Visualization","Dataflow"]
+    },
+    {
+      "id": "itserv",
+      "title": "IT‑hallinto ja prosessit",
+      "description": "ITSM, CMDB ja hallintamallit.",
+      "terms": ["ITSM","ITIL","CMDB","SLA","BCP","DR","ITAM","ChangeManagement"]
+    }
+  ],
+  "terms": {
+    "IT": {
+      "short": "Information Technology — tietotekniikka yleisesti.",
+      "long": "IT (Information Technology) tarkoittaa tietotekniikan alaa, joka kattaa laitteistot, ohjelmistot, verkot ja palvelut; se on organisaatioiden teknisen toimintakyvyn perusta. IT‑yksiköt vastaavat infrastruktuurin ylläpidosta, sovellusten jakelusta, tietoturvasta ja loppukäyttäjätuesta. Käytännössä IT‑toiminnot sisältävät myös verkkojen ylläpidon, palvelinympäristöt, varmuuskopioinnit ja raportoinnin. Modernissa yrityksessä IT on usein mukana liiketoiminnan digitalisaatiohankkeissa ja automaatioratkaisuissa. IT‑ammattilaisten roolit vaihtelevat järjestelmäylläpidosta ja verkko‑asiantuntijasta sovelluskehittäjiin ja tietoturva‑asiantuntijoihin. Hyvä IT‑toiminto mahdollistaa myös nopean palautumisen häiriötilanteista ja varmistaa palvelutasosopimusten (SLA) ylläpitämisen. IT:n kehitys seuraa uusia teknologioita kuten pilveä, konttiteknologiaa ja tekoälyä, minkä vuoksi jatkuva osaamisen kehittäminen on välttämätöntä. Organisaatiot mittaavat usein IT:n suorituskykyä KPI‑mittareilla kuten järjestelmien käytettävyydellä, vikatapausten korjausajalla ja loppukäyttäjätyytyväisyydellä. Lopuksi IT on sekä strateginen että operatiivinen funktio: se tukee liiketoimintatavoitteita, mutta vastaa myös arjen palveluiden toimivuudesta."
+    },
+    "OS": {
+      "short": "Operating System — käyttöjärjestelmä (esim. Windows, Linux).",
+      "long": "Käyttöjärjestelmä (OS) hallitsee laitteiston resursseja, tarjoaa ajonaikaisen ympäristön sovelluksille ja tarjoaa perustason palvelut kuten tiedostojärjestelmän ja prosessinhallinnan. Se huolehtii muistinhallinnasta, prosessien aikataulutuksesta sekä laiteajureista, ja tarjoaa suojamekanismeja prosessien ja datan eristämiseen. Eri OS:t on optimoitu eri käyttötapauksiin: palvelimet, työasemat, mobiililaitteet ja sulautetut järjestelmät. Käyttöjärjestelmä vaikuttaa suoraan ohjelmistoyhteensopivuuteen, turvallisuuteen ja hallittavuuteen, ja siksi organisaatioissa tehdään usein huolellinen valinta OS‑ympäristön osalta. OS‑päivitykset ja patch‑hallinta ovat kriittisiä osa‑alueita tietoturvan ja vakauden ylläpitämiseksi. Monissa yritysinfraissa käytetään keskitettyjä hallintatyökaluja ja automaatioita OS‑konfiguraation levittämiseksi ja seurantaan. Virtuaaliympäristöissä ja konttiarkehtiektuureissa OS‑kerrokset ja niiden optimointi korostuvat suorituskyvyn ja kustannusten hallinnassa. Lopulta OS on se taso, johon käyttäjät ja sovellukset luottavat, joten sen vakaus ja turvallisuus ovat koko IT‑ympäristön elinehto."
+    },
+    "CPU": {
+      "short": "Central Processing Unit — suoritin, joka suorittaa ohjelmakoodia.",
+      "long": "CPU eli keskusyksikkö suorittaa tietokoneen ohjelmakoodia ja määrittää merkittävästi järjestelmän laskentakyvyn. Nykyiset CPU:t sisältävät useita ytimiä ja säikeitä, mikä mahdollistaa rinnakkaisen suorituksen ja parantaa suorituskykyä monisäikeisissä kuormissa. CPU:n arkkitehtuuri, kuten x86 tai ARM, vaikuttaa suoraan ohjelmistoyhteensopivuuteen ja optimointimahdollisuuksiin. Lisäksi suorittimen välimuistien koko ja nopeus ovat tärkeitä tekijöitä, jotka vaikuttavat viiveeseen ja läpäisykykyyn. Pilvi‑ sekä high‑performance‑laskennassa CPU‑valinnat vaikuttavat kustannuksiin, ja siksi sopiva tasapaino CPU:n ja muistin välillä on tärkeä suunnittelupäätös. Energiatehokkuus on yhä tärkeämpi mittari erityisesti mobiili‑ ja reunalaskennassa. Loppukäyttäjän kokemukseen vaikuttavat myös käyttöjärjestelmän scheduler‑algoritmit ja sovellusten optimointi CPU:lle. Yhteenvetona CPU on laskentajärjestelmän ydin, jonka ominaisuudet vaikuttavat kaikkeen suoritettavasta koodista aina järjestelmän vasteaikoihin."
+    },
+    "LAN": {
+      "short": "Local Area Network — paikallisverkko (esim. toimisto).",
+      "long": "Paikallisverkko yhdistää laitteita samassa fyysisessä tai loogisessa ympäristössä, kuten toimistossa tai kampuksella, ja tarjoaa korkean tiedonsiirtonopeuden sekä alhaisen viiveen. LAN‑infrastruktuuri koostuu yleensä kytkimistä, reitittimistä, langallisista kaapeleista ja langattomista tukiasemista, ja se mahdollistaa resurssien kuten tiedostopalvelimien ja tulostinten jaon. Verkkoarkkitehtuurissa VLANit auttavat eristämään liikennettä esimerkiksi eri tiimien tai palveluiden välillä turvallisuuden ja suorituskyvyn parantamiseksi. LANin suunnittelussa huomioidaan myös redundanssi ja vikasietoisuus, jotta palvelut pysyvät saatavilla laitevikojen sattuessa. DHCP ja DNS ovat keskeisiä palveluita toimivan LANin ylläpidossa IP‑osoitteiden hallinnassa ja nimipalvelussa. Lisäksi reititys ja palomuurisäännöt varmistavat turvallisen pääsyn sisäisiin resursseihin ja ulkoverkkoon. LANin valvonta ja suorituskyvyn mittarit auttavat havaitsemaan pullonkaulat ja kapasiteettitarpeet. Lopulta hyvin suunniteltu LAN on yrityksen tämänhetkisten ja tulevien tarpeiden perusta."
+    },
+    "DHCP": {
+      "short": "Dynamic Host Configuration Protocol — jakaa IP‑osoitteita automaattisesti.",
+      "long": "DHCP automatisoi IP‑osoitteiden ja muiden verkkoasetusten jakamisen laitteille, mikä vähentää manuaalisen osoitteistuksen virheitä ja hallintatyötä. Kun laite liittyy verkkoon, DHCP‑palvelin antaa sille IP‑osoitteen, aliverkon peitteen, oletusyhdyskäytävän ja usein DNS‑palvelimien osoitteet. Suuremmissa verkoissa DHCP voi käyttää osoitevarantojen segmentointia ja aluekohtaisia määrityksiä esimerkiksi toimipisteittäin. DHCP:n vuoksi laite voi vaihtaa verkkoa ilman tarvetta käsin muuttaa asetuksia, mikä toimii hyvin BYOD‑ympäristöissä. DHCP:n hallinnassa on tärkeää seurata osoitteiden kulutusta ja varmistaa, ettei varannot lopu, sekä suojata palvelinta väärinkäytöltä. Lisäksi voidaan asettaa staattisia osoitteita tiettyjä laitteita varten MAC‑osoitteen perusteella. DHCP toimii yhdessä muiden verkonhallinnan palveluiden, kuten DNS:n, kanssa, jotta palveluiden saavutettavuus säilyy. Kokonaisuutena DHCP on perinteinen, mutta olennainen osa verkon käyttöönottoprosessia ja päivittäistä hallintaa."
+    },
+    "DNS": {
+      "short": "Domain Name System — muuntaa verkkotunnukset IP‑osoitteiksi.",
+      "long": "DNS on hajautettu järjestelmä, joka kääntää ihmisille luettavat verkkotunnukset numeerisiksi IP‑osoitteiksi ja näin mahdollistaa palvelujen löytämisen internetissä ja sisäverkoissa. DNS‑arkkitehtuuri perustuu alueisiin (zone) ja nimipalvelimiin, joissa on erilaisia tietueita kuten A, CNAME, MX ja TXT. Organisaation DNS voi olla kokonaan sisäinen, julkinen tai hybridimalli, ja sen turvallisuus on tärkeä osa palveluiden saatavuutta ja suojausta. DNS‑häiriöt voivat johtaa laajoihin saavutettavuusongelmiin, joten replikointi, monitorointi ja varmistukset ovat tärkeitä. DNS tarjoaa myös lisäominaisuuksia, kuten palveluntunnistuksen (SRV) ja kuorman tasauksen, mutta se voi myös olla hyökkäysten kohde (esim. DNS‑spoofing). Nykyään DNS‑palveluita suojataan usein DNSSEC‑merkinnöillä ja erilaisilla suodatusratkaisuilla. Lopulta DNS on internetin ja yritysverkkojen "hakemisto", jonka oikea toiminta on kriittistä useimmille sovelluksille."
+    },
+    "HTTP": {
+      "short": "HyperText Transfer Protocol — selain‑palvelin‑viestintä.",
+      "long": "HTTP määrittää web‑selaimen ja web‑palvelimen välisen pyyntö‑vastaus‑mallin, jota käytetään verkkosivujen ja REST‑rajapintojen toimittamiseen. HTTP‑pyynnössä asiakas lähettää methodin (GET, POST, PUT jne.), polun ja otsikkotiedot, ja palvelin vastaa tilakoodilla, otsikoilla ja mahdollisella rungolla. HTTPS tuo tähän kerroksen TLS‑salausta, jolloin liikenne on suojattu sieppaukselta ja manipuloinnilta. Modernit HTTP‑versiot kuten HTTP/2 ja HTTP/3 tuovat suorituskykyparannuksia kuten multiplexingin ja paremmat yhteydenhallintamekanismit. Web‑kehittäjät ja API‑arkkitehdit suunnittelevat usein resurssipohjaisia ja cache‑ystävällisiä ratkaisuja HTTP:n päälle. Oikea status‑koodien käyttö ja virheenkäsittely ovat tärkeitä luotettavuuden ja käytettävyyden kannalta. Turvallisuuden näkökulmasta HTTP/HTTPS‑konfiguraatiot (CSP, HSTS, CORS) vaikuttavat huomattavasti siihen, kuinka suojattuja sovellukset ovat. Yhteenvetona HTTP on webin ja useiden mikroservissovellusten viestintäperusta."
+    },
+    "IaaS": {
+      "short": "Infrastructure as a Service — pilven tarjoama virtuaalinen infra.",
+      "long": "IaaS tarjoaa pilvialustalta virtuaalikoneet, verkot ja tallennustilan ilman tarvetta ylläpitää fyysistä datakeskusta, mikä tuo joustavuutta kapasiteetin skaalaukseen. Käyttäjä voi luoda, konfiguroida ja hallita VM‑instansseja sekä verkkoresursseja ja maksaa käytön mukaan, mikä sopii dynaamiseen kuormanhallintaan. IaaS sopii myös ympäristöihin, joissa tarvitaan täydempää kontrollia käyttöjärjestelmästä ja järjestelmäkonfiguraatiosta kuin PaaS tai SaaS tarjoavat. Palveluntarjoajat kuten AWS, Azure ja Google Cloud tarjoavat IaaS‑resursseja API:en ja hallintaportaalien kautta, ja ne tukevat usein automaattisia työnkulkuja sekä IaC‑työkaluja. Turvallisuus, verkko‑segmentointi ja identiteetinhallinta ovat IaaS‑käytön kriittisiä osa‑alueita, ja organisaatioiden tulee varmistaa konfiguraatioiden oikeat käytännöt. Lisäksi kustannusoptimointi ja resurssien elinkaaren hallinta ovat tärkeitä pilvikustannusten hallinnassa. Kokonaisuutena IaaS muuttaa infrastruktuurin hankintamallin CAPEXista OPEX‑malliin ja mahdollistaa nopean kehityksen ja testauksen."
+    },
+    "Docker": {
+      "short": "Konttiteknologia sovellusten paketointiin ja eristämiseen.",
+      "long": "Docker mahdollistaa sovellusten pakkaamisen identtiseen ympäristöön kontteina, jotka sisältävät sovelluksen ja sen riippuvuudet ja joita ajetaan käyttöjärjestelmän kernelin päällä eristettyinä prosesseina. Kontit ovat kevyempiä kuin virtuaalikoneet, koska ne jakavat isäntä‑OS:n resurssit, mikä tekee niistä nopeammin käynnistyviä ja tehokkaampia resurssien käytössä. Docker‑kuvat koostuvat kerroksista ja niitä hallitaan registry‑palveluissa, mikä tukee versiointia ja toistettavuutta. Kontit sopivat hyvin microservices‑arkkitehtuureihin, jatkuvan toimituksen työnkulkuihin ja kehitysympäristöjen yhdenmukaistamiseen. Konttien orkestrointiin tarvitaan usein Kubernetes‑tyyppisiä työkaluja tuotantotason hallintaan, skalaukseen ja palvelun löytäjään. Turvallisuus huomioidaan kuvien koventamisella, scan‑työkaluilla ja oikeuksien minimoimisella. Lopuksi Docker on merkittävä tekijä modernissa sovelluskehityksessä, koska se helpottaa siirrettävyyttä ja ympäristöjen yhdenmukaistamista."
+    },
+    "Kubernetes": {
+      "short": "Konttien orkestrointialusta, joka hallitsee deployta ja skaalautuvuutta.",
+      "long": "Kubernetes automatisoi kontti‑sovellusten elinkaaren hallinnan tarjoten mekanismit deployhin, skaalaukseen, itseparannukseen ja palvelujen löytäjään. Se abstrahoi konttialustat Deployment‑, Service‑ ja Pod‑käsitteiksi ja mahdollistaa ennustettavan uudelleenkäynnistyksen sekä tilan hallinnan. K8s sisältää määritykset resurssien käytölle, replica‑asetuksille ja load balancingin konfiguraatiolle sekä integroitavuutta erilaisiin storage‑ ja verkko‑pluginseihin. Orkestrointi vaatii kuitenkin suunnittelua muun muassa resurssien rajoitusten, konfiguraatio‑hallinnan ja observability‑ratkaisujen (monitorointi, logitus) osalta. Monet pilvipalveluntarjoajat tarjoavat hallittuja Kubernetes‑palveluja, mikä helpottaa klusterin ylläpitoa ja päivityksiä. Turvallisuus, helppokäyttöisyys ja sovellus‑arkkitehtuurin kirkastaminen ovat onnistuneen K8s‑käytön avainasioita. Kokonaisuutena Kubernetes on nykyaikaisten, hajautettujen sovellusten kulmakivi skaalautuvuuden ja saatavuuden kannalta."
+    },
+    "SIEM": {
+      "short": "Security Information and Event Management — turvalokien keruu ja analytiikka.",
+      "long": "SIEM‑järjestelmä kerää ja korreloi lokidataa eri lähteistä kuten palomuureista, palvelimista ja sovelluksista ja tarjoaa näkymän organisaation turvallisuustilaan. SIEM mahdollistaa hälytysten määrittelyn poikkeavista tapahtumista, aikajanan analyysin ja tapahtumaketjujen tutkimisen, mikä on olennaista uhkien havaitsemisessa ja reagoinnissa. SIEM toimii usein osana laajempaa SOC‑toimintoa, jossa turvallisuusasiantuntijat tutkivat hälytyksiä ja priorisoivat vasteet. Ratkaisun tehokkuus riippuu kerättyjen tietojen laadusta, korrelaatioreguleista ja käytössä olevista analytiikkakyvykkyyksistä kuten koneoppimisesta. SIEM:n käyttöönotto vaatii suunnittelua, jotta oikeat lähteet integroidaan ja melutasoa hallitaan, koska liiallinen hälytysvirta voi heikentää tehokkuutta. Lisäksi SIEM tukee forensiikkaa ja vaatimustenmukaisuuden raportointia, mikä on hyödyllistä esimerkiksi lainsäädännön tai auditointien yhteydessä. Yhteenvetona SIEM on keskeinen työkalu uhkien havaitsemiseen ja organisaation turvallisuuden ylläpitämiseen."
+    },
+    "MFA": {
+      "short": "Multi‑Factor Authentication — useampi todennusfaktori kuten salasana + puhelin.",
+      "long": "MFA parantaa tilien ja järjestelmien suojaa vaatimalla vähintään kahta tai useampaa todentamismenetelmää: tietotaito (salasana), omistajuus (puhelin tai token) ja biometria (sormenjälki tai kasvontunnistus). Käyttämällä MFA:ta voidaan merkittävästi vähentää tilien kaappauksen riskiä, koska hyökkääjä tarvitsee useamman, erillisen tekijän murtautuakseen. Organisaatiot ottavat usein MFA:n käyttöön kriittisissä järjestelmissä, etäyhteyksissä ja hallintapaneeleissa sekä yhdistävät sen ehdolliseen pääsyn (Conditional Access) sääntöihin. MFA:n käyttöönotto vaatii myös loppukäyttäjien koulutusta ja palautusprosessien suunnittelua, jotta unohtuneet laitteet tai menetetyt tunnisteet voidaan korvata turvallisesti. Usein käytettyjä MFA-menetelmiä ovat sovelluspohjaiset kertakäyttöiset koodit, tekstiviestit (mikä on vähemmän turvallinen) ja fyysiset FIDO‑avaimet. Hyvin suunniteltu MFA‑arkkitehtuuri parantaa turvallisuutta ilman, että se heikentää merkittävästi käyttökokemusta."
+    },
+    "DBMS": {
+      "short": "Database Management System — tietokannan hallintajärjestelmä.",
+      "long": "DBMS tarjoaa ohjelmistokehyksen tietojen tallentamiseen, hakemiseen, indeksointiin ja transaktioiden hallintaan sekä vastaa käyttäjäoikeuksien ja varmuuskopioiden hallinnasta. Relaatiotietokannat kuten PostgreSQL, MySQL ja SQL Server tarjoavat vahvan tuen ACID‑ominaisuuksille, mikä takaa transaktioiden eheyttä ja luotettavuutta. Toisaalta NoSQL‑järjestelmät tarjoavat joustavuutta skaalauksessa ja mallinnuksessa erilaisille datatyypeille kuten dokumenteille, avain‑arvo‑pareille ja grafiikalle. DBMS‑valinta riippuu usein vaatimuksista kuten konsistenssitasosta, suorituskyvystä, skaalautuvuudesta ja kehitystiimin osaamisesta. Tietokannan suunnittelu, indeksointi ja varmuuskopiointistrategiat ovat keskeisiä tekijöitä tuotannon vakauden ja suorituskyvyn kannalta. Lisäksi DBMS‑järjestelmien ylläpito sisältää suorituskyvyn seurantaa, optimointia ja päivitysten hallintaa. Lopuksi tietoturva‑asetukset ja pääsynhallinta ovat tärkeitä DBMS:ien suojaamiseksi luvattomalta pääsyltä tai datan vuotamiselta."
+    },
+    "SQL": {
+      "short": "Structured Query Language — kyselykieli relaatiotietokannoille.",
+      "long": "SQL on standardoitu kieli taulujen käsittelyyn relaatiotietokannoissa, ja sitä käytetään tietojen hakemiseen, muokkaamiseen ja rakenteen määrittelyyn. Tavallisia SQL‑komentoja ovat SELECT, INSERT, UPDATE ja DELETE sekä CREATE/ALTER TABLEs rakenteiden hallintaan. SQL‑kyselyiden optimointi ja indeksien suunnittelu ovat avainasemassa suorituskyvyn parantamisessa suurissa tietokannoissa. Lisäksi SQL tukee aggregaatioita, liittymiä ja alikyselyitä, jotka mahdollistavat monimutkaiset analyysit ja raportit. Useimmat BI‑työkalut ja ETL‑työkalut käyttävät SQL:ää datan valmistelussa ja suodattamisessa. SQL‑osaaminen on usein välttämätöntä data‑analyytikoille, developer‑tiimeille ja järjestelmäylläpidolle. Lopuksi eri tietokantatuotteilla on pieniä laajennuksia ja eroja SQL‑syntaksissa, joten tuotantoympäristössä on hyvä tuntea juuri käytössä olevan DBMS:n erityispiirteet."
+    },
+    "ETL": {
+      "short": "Extract, Transform, Load — datan siirto ja muokkaus analytiikkaa varten.",
+      "long": "ETL‑prosessi hakee dataa lähdejärjestelmistä, muuntaa ja puhdistaa sen analytiikkaan sopivaan muotoon ja lataa sen kohdejärjestelmään kuten data warehouseen. Extract‑vaiheessa otetaan huomioon lähdejärjestelmien rajapinnat ja latausajankohdat, transformaatioissa tehdään mm. normalisointi, yhdistäminen ja validointi sekä liiketoimintasäännöt. Load‑vaiheessa data siirretään kohteeseen joko inkrementaalisesti tai täytenä riippuen vaatimuksista. Hyvin suunniteltu ETL varmistaa datan laadun, jäljitettävyyden ja mahdollistaa analyytikkojen luotettavat raportit. Modernissa pilvi‑ekosysteemissä käytetään myös ELT‑mallia, jossa data ladataan ensin ja transformoidaan kohdeympäristössä. ETL‑putket vaativat orkestrointia, lokitusta ja virheenkäsittelyä, jotta prosessit ovat luotettavia ja skaalautuvia. Lopuksi ETL:ssä on huomioitava tietoturva ja GDPR‑vaatimukset, etenkin kun käsitellään henkilötietoja tai arkaluonteista dataa."
+    },
+    "PowerBI": {
+      "short": "Microsoft Power BI — datan visualisointi ja raportointi.",
+      "long": "Power BI on Microsoftin työkalu tiedon visualisointiin, mallinnukseen ja raporttien jakeluun, ja se tarjoaa sekä Desktop‑kehitysympäristön että pilvipalvelun raporttien julkaisuun. Työkalun avulla voidaan yhdistää monenlaisia tietolähteitä, valmistella data Power Queryllä, rakentaa relaatiomalleja ja laskea mittareita DAX‑kielellä. Power BI tukee interaktiivisia dashboardeja, suodattimia, aikainteraktiota ja RLS‑käytäntöjä käyttäjäkohtaisen näkymän tarjoamiseksi. Se integroidaan usein muihin Microsoftin palveluihin kuten Azure Data Factoryyn, SQL Serveriin ja Azure Synapseen. Power BI:n jakeluominaisuudet mahdollistavat raporttien jakamisen organisaation sisällä ja sovellusten upottamisen. Lisäksi Power BI tarjoaa valmiita visualisointeja, sekä mahdollisuuden lisätä räätälöityjä visualiseja. Käytännössä Power BI nopeuttaa päätöksentekoa ja mahdollistaa datasta johdetun toiminnan laajassa mittakaavassa."
+    },
+    "DAX": {
+      "short": "Data Analysis Expressions — Power BI:n laskentakieli mittareille.",
+      "long": "DAX on funktioperusteinen kieli, jota käytetään mittareiden, laskettujen sarakkeiden ja eri analyysilaskelmien tekemiseen Power BI:ssä ja Analysis Servicesissa. DAX tukee aikainteraktiota, kontekstipohjaista laskentaa ja vahvaa suodatinhallintaa CALCULATE‑funktion avulla, mikä tekee siitä tehokkaan työkalun liiketoiminnan analytiikkaan. Hyvin kirjoitettu DAX voi parantaa raporttien suorituskykyä ja mahdollistaa monimutkaiset vertailut kuten YTD, mois-, tai ajanjaksovertailut. DAX‑koodin optimointi ja kontekstin ymmärtäminen ovat usein oppimisen vaikeimpia osia, mutta niillä voidaan saavuttaa merkittäviä suorituskykyparannuksia. DAX‑mittareita suositellaan käyttämään joustavasti ja keskitetysti, jotta mallit ovat ylläpidettäviä. Lisäksi DAX tarjoaa laajan funktionaalisuuden aggregaatioista matemaattisiin ja tekstinkäsittelyfunktioihin. Lopulta DAX on Power BI:n ydinosaamisalue datan analysoinnin ja raportoinnin kannalta."
+    },
+    "Intune": {
+      "short": "Microsoft Intune — pilvipohjainen MDM/MAM‑ratkaisu laitteiden ja sovellusten hallintaan.",
+      "long": "Intune on Microsoftin pilvipalvelu päätelaitteiden ja sovellusten hallintaan, osa Microsoft Endpoint Manager ‑kokonaisuutta, ja se mahdollistaa Windows, macOS, iOS ja Android‑laitteiden rekisteröinnin sekä politiikkojen hallinnan. Sen avulla organisaatiot voivat asettaa compliance‑sääntöjä, jakaa sovelluksia keskitetysti ja hallita laitemäärityksiä etänä; Intune tukee myös Autopilotia laitteen esikonfigurointiin. Intune mahdollistaa sekä MDM‑ (laitetason) että MAM‑(sovelluskohtaisen) hallinnan, joka on kätevä BYOD‑tilanteissa, joissa halutaan suojata yritysdataa ilman täyttä laitteen hallintaa. Ehdollinen pääsy (Conditional Access) integroidaan usein Azure AD:n kanssa, mikä mahdollistaa pääsyn rajoittamisen laite‑ ja käyttäjäkohtaisesti. Intunen hallintaan kuuluu myös etätoiminnot kuten wipe, retire ja sovellusten päivitysten hallinta, mikä helpottaa tietoturvan ja käyttökelpoisuuden ylläpitoa. Pilvipohjaisuutensa ansiosta Intune vähentää paikallisten palvelimien tarvetta ja helpottaa monikansallisten ympäristöjen hallintaa. Yhteenvetona Intune tarjoaa joustavan ja skaalautuvan hallintakerroksen modernille laite‑ja sovellusflotalle."
+    },
+    "SCCM": {
+      "short": "System Center Configuration Manager (MECM) — paikallinen konfiguraation- ja ohjelmistohallinta.",
+      "long": "SCCM on Microsoftin perinteinen on‑premise‑työkalu Windows‑ympäristöjen laite‑ ja ohjelmistohallintaan, tarjoten monipuoliset ominaisuudet ohjelmistojen jakeluun, inventaarioon, päivitysten hallintaan ja OS‑deploymenteihin. SCCM tukee task sequence ‑pohjaista massaimurointia ja käyttöjärjestelmän asennuksia, mikä tekee siitä vahvan työkalun laajojen työkonekantojen hallintaan. Ratkaisu vaatii taustalleen infrastruktuuria kuten site‑serverit, distribution pointit ja SQL‑tietokannan, ja sen ylläpito vaatii osaamista ja suunnittelua. SCCM:n integrointi WSUS:iin mahdollistaa kattavan patch‑managementin, ja raportointi auttaa seuraamaan ohjelmistojen jakelua ja virhetilanteita. Monissa organisaatioissa nykyinen malli on co‑management, jossa SCCM ja Intune toimivat rinnakkain ja jakavat vastuita mobiili‑ ja perinteisestä Windows‑hallinnasta. Vaikka SCCM on voimakas, sen käyttöönotto ja ylläpito voivat olla resursseja vieviä verrattuna täysin pilvipohjaisiin ratkaisuihin. SCCM sopii erityisesti organisaatioille, jotka tarvitsevat syvällistä, paikallista hallintaa ja massaimurointikyvykkyyksiä."
+    },
+    "Matrix42": {
+      "short": "Matrix42 — Workspace/Endpoint Management ja ITSM‑työkalu yhdistettynä.",
+      "long": "Matrix42 on kaupallinen ratkaisu, joka yhdistää endpoint‑hallinnan, ohjelmistojen jakelun, patch‑hallinnan ja ITSM‑toiminnot yhdeksi kokonaisuudeksi ja tarjoaa usein agenttipohjaisen inventaarion sekä automaatiotyökaluja. Sen avulla organisaatiot voivat hallita laitteiden elinkaarta, automatisoida ohjelmistojen asennuksia ja käsitellä palvelupyyntöjä self‑service‑portaaleista. Matrix42 on suosittu etenkin EMEA‑alueella, ja se tarjoaa integraatioita eri ympäristöihin sekä mahdollisuuden keskittää asset‑ja license‑hallinta samaan järjestelmään. Ratkaisun etu on yhdistetty näkymä laitteisiin ja palvelupyyntöihin sekä työnkulkujen automatisointi, mikä voi parantaa IT:n tehokkuutta. Toisaalta käyttöönotto voi vaatia agenttien asentamista ja paikallista konfigurointia, sekä lisenssien hallintaa. Matrix42 sopii organisaatioille, jotka haluavat yhdistää ITSM:n ja päätelaitteiden hallinnan yhteen työkalupakkiin. Lopuksi Matrix42 tarjoaa vaihtoehdon Microsoftin ekosysteemille niille, jotka tarvitsevat tiukempaa integraatiota ITSM‑prosesseihin."
+    },
+    "LLM": {
+      "short": "Large Language Model — suuri kielimalli kuten GPT.",
+      "long": "LLM:t ovat laajoilla tekstikorpuksilla koulutettuja neuroverkkoarkkitehtuureita, jotka pystyvät ymmärtämään ja generoimaan luonnollista kieltä monipuolisesti, kuten vastauksia, käännöksiä ja tiivistyksiä. Nämä mallit perustuvat usein transformer‑arkkitehtuuriin ja hyödyntävät miljardien parametrien verkostoja, mikä mahdollistaa monimutkaisten kielellisten kaavojen oppimisen. LLM:ien käyttöalueet vaihtelevat automaattisista keskusteluboteista sisällöntuotantoon, koodin generointiin ja tekstin analytiikkaan. Haasteita ovat laskennallinen kustannus, mallin hallitsematon harhaanjohtavuus (hallusinaatiot) sekä eettiset ja yksityisyydensuojakysymykset, erityisesti kun mallia käytetään sensitiiviseen dataan. Mallien kanssa työskenneltäessä tarvitaan usein prompt‑engineeringia, sisäänrakennettua valvontaa ja rajoituksia, jotta tuotokset pysyvät luotettavina. Lisäksi LLMien integrointi tuotantojärjestelmiin vaatii huomioita tietoturvasta, vasteajoista ja kustannusten optimoinnista. Yhteenvetona LLM:t ovat voimakas työkalu luonnollisen kielen tehtäviin mutta vaativat vastuullista ja hallittua käyttöönottoa."
+    },
+    "MoE": {
+      "short": "Mixture of Experts — arkkitehtuuri, jossa valitaan osa asiantuntijoista laskentaan.",
+      "long": "Mixture of Experts (MoE) on malliarkkitehtuuri, jossa suuri joukko erikoistuneita aliverkkoja (asiantuntijoita) on käytössä ja reititin päättää, mitkä ekspertit aktivoidaan tietylle syötteelle, jolloin laskennan kustannukset pysyvät hallittavina. Tämän lähestymistavan etu on, että koko mallin kapasiteetti voi olla suuri mutta vain osa aktivoituu kullekin pyyntöä, mikä parantaa skaalaavuutta ja kustannustehokkuutta. MoE‑mallit voivat tarjota erikoistunutta osaamista eri tehtäväalueille tai kielen alueille ja siten parantaa suorituskykyä monitehtäväisissä ympäristöissä. Haasteita ovat reitityksen stabiilisuus, asiantuntijoiden kuormanjako ja koulutuksen kompleksisuus, sekä mahdolliset viestintä‑ ja synkronointikustannukset hajautetuissa ympäristöissä. Myös inferenssin latenssin hallinta ja tasapainottaminen ovat tärkeitä tuotantokäytössä. Käytännössä MoE:tä sovelletaan suurten kieli‑ ja multimodaalimallien skaalauttamiseen silloin, kun resurssitehokkuus on kriittistä. Lopuksi MoE tarjoaa arkkitehtuurin, jossa kapasiteettia voidaan lisätä selektiivisesti eikä kaikkia parametreja tarvitse jatkuvasti aktivoida."
+    },
+    "Matrix42_note": {
+      "short": "Lisämuistiinpano — Matrix42 on aiemmin kuvattu yllä."
+    },
+    "SAM": {
+      "short": "Segment Anything Model — prompt‑pohjainen kuvasegmentointimalli.",
+      "long": "SAM on malli, joka on suunniteltu tuottamaan kuvan segmenttejä käyttäjän antamien promptien kuten pisteiden, laatikoiden tai tekstin perusteella, mikä mahdollistaa interaktiivisen ja automatisoidun annotoinnin. Malli on koulutettu laajalla ja monipuolisella datasetillä, minkä ansiosta se tunnistaa ja erottaa kohteita monenlaisissa kuvaympäristöissä. SAM:ia voidaan käyttää annotointityökaluissa, kuvapohjaisissa hakuominaisuuksissa ja sovelluksissa, joissa vaaditaan objekti‑ tai taustasegmentointia. Koska se tukee erilaisia prompt‑tapaa, käyttäjä voi aloittaa hyvin kevyesti (esim. yksittäinen piste) ja tarkentaa segmentointia tarpeen mukaan. SAM:n hyödyt ovat sen yleiskäyttöisyydessä ja nopeassa annotointikyvyssä, mutta tuotantokäytössä on huomioitava laskentatarpeet ja mahdollinen hienosäätö spesifisiin domain‑datoihin. Mallin integrointi vaatii usein ennakkoprosessointia kuville ja jälkikäsittelyä segmenttien siistimiseksi. Yhteenvetona SAM tarjoaa joustavan tavan tuottaa segmenttejä erilaisten kuvankäsittelyongelmien ratkaisemiseksi."
+    },
+    "VLM": {
+      "short": "Vision‑Language Model — yhdistää kuvan ja tekstin ymmärryksen.",
+      "long": "Visio‑kieli‑mallit (VLM) yhdistävät visuaalisen ja kielellisen edustuksen, jolloin malli voi ymmärtää kuvien sisältöä yhdessä tekstuaalisten vihjeiden kanssa ja suorittaa tehtäviä kuten visuaalinen kysymys‑vastaus, kuvatekstitys ja multimodaalinen haku. Tällaiset mallit enkoodaavat kuvat erillisellä kuvamoduulilla ja tekstin erillisellä tekstimoduulilla ja yhdistävät edustukset yhteiseen tilaan monimutkaista päättelyä varten. VLM:t ovat hyödyllisiä sovelluksissa, joissa kontekstin ja kuvien yhdistäminen parantaa käyttäjäkokemusta, esimerkiksi sisällön moderoinnissa, asiakirjojen automaattisessa käsittelyssä ja käyttöliittymien luonnollisen kielen hakutoiminnoissa. Mallien koulutus vaatii multimodaalista dataa ja usein laajaa laskentakapasiteettia, ja ne voivat hyötyä esikoulutuksesta sekä hienosäädöstä domain‑spesifeihin tehtäviin. Käyttöönotossa on huomioitava yksityisyys‑ ja eettiset kysymykset, erityisesti kun kuvia ja niihin liittyvää metadataa käsitellään. VLM‑teknologia kehittyy nopeasti ja sen integraatio tuotteisiin voi merkittävästi parantaa älykkäiden sovellusten kyvykkyyttä ymmärtää monimuotoista sisältöä."
+    },
+    "BI": {
+      "short": "Business Intelligence — datan analysointi liiketoiminnan tueksi.",
+      "long": "BI‑toiminta kerää ja valmistaa organisaation dataa analytiikkaa ja raportointia varten, minkä avulla liiketoimintajohto voi seurata KPI:ta, tunnistaa trendejä ja tehdä tietoon perustuvia päätöksiä. BI‑ratkaisut sisältävät usein data warehouse ‑arkkitehtuurin, ETL/ELT‑putket, analytiikkamallit ja visualisointityökalut. Työkalut kuten Power BI, Tableau ja Qlik tarjoavat interaktiivisia dashboardeja, joita käytetään sekä operatiiviseen seurantaan että strategiseen analyysiin. BI‑projekti vaatii huolellista datan laadunhallintaa, metatiedon dokumentointia ja liiketoiminnan kanssa tehtävää yhteistyötä, jotta raportit tuottavat luotettavia ja käyttökelpoisia näkemyksiä. Lisäksi BI‑toiminnon arkkitehtuuri ja skaalautuvuus ovat tärkeitä tekijöitä, kun datamäärät kasvavat ja kyselykuormat monimutkaistuvat. Modernissa BI:ssä korostuvat myös itsenäinen analytiikka ja data‑tuottajien kyvykkyys luoda omia näkymiään. Hyvin toteutettu BI parantaa läpinäkyvyyttä, tehostaa prosesseja ja mahdollistaa nopeamman reagoinnin markkinamuutoksiin."
+    },
+    "
+
+
+
+
+
+
+
+```json name=package.json
+{
+  "name": "lexit-listings-mvp",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start -p 3000",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "13.4.10",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "stripe": "^12.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  }
+}
+```
+
+```text name=.env.example
+# Kopioi .env.example -> .env ja lisää omat avaimet
+STRIPE_SECRET_KEY=sk_test_...
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_test_...
+DOMAIN=http://localhost:3000
+LISTING_FEE_CENTS=900
+CURRENCY=eur
+```
+
+```json name=tsconfig.json
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["dom", "dom.iterable", "es2022"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "jsx": "preserve",
+    "incremental": true
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
+}
+```
+
+```javascript name=next.config.js
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+};
+
+module.exports = nextConfig;
+```
+
+```css name=styles/globals.css
+:root{
+  --accent:#1EA7FD;
+  --primary:#0F4C5C;
+  --bg:#06131b;
+  --card:#0F1726;
+  --muted:#98A0A8;
+  --text:#E6EEF6;
+  --radius:10px;
+}
+html,body,#__next{height:100%;margin:0;padding:0}
+body{
+  font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial;
+  background:linear-gradient(180deg,var(--bg),#071722);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+}
+.container{max-width:1000px;margin:0 auto;padding:18px}
+.header{display:flex;justify-content:space-between;align-items:center;padding:12px;border-bottom:1px solid rgba(255,255,255,0.03)}
+.brand{font-weight:700;color:var(--accent)}
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:var(--radius);box-shadow:0 6px 20px rgba(0,0,0,0.45);margin-bottom:18px}
+.form-row{margin-bottom:12px}
+input[type="text"],input[type="number"],textarea,select{
+  width:100%;padding:8px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:rgba(255,255,255,0.02);color:var(--text)
+}
+button{background:var(--accent);color:#02171b;padding:8px 12px;border-radius:8px;border:0;cursor:pointer}
+.small{font-size:0.9rem;color:var(--muted)}
+a{color:var(--accent);text-decoration:none}
+```
+
+```typescript name=pages/_app.tsx
+import '../styles/globals.css'
+import type { AppProps } from 'next/app'
+
+export default function App({ Component, pageProps }: AppProps) {
+  return <Component {...pageProps} />
+}
+```
+
+```typescript name=components/Layout.tsx
+import React from 'react'
+import Link from 'next/link'
+
+export default function Layout({ children }: { children: React.ReactNode }) {
+  return (
+    <div>
+      <header className="header container">
+        <div>
+          <Link href="/"><a className="brand">LexIT / Listings</a></Link>
+          <div className="small">Ilmoitusalusta — alusta ei väliinmyy kauppoja</div>
+        </div>
+        <nav>
+          <Link href="/listings/new"><a style={{marginRight:12}}>Luo ilmoitus</a></Link>
+          <Link href="/"><a>Ilmoitukset</a></Link>
+        </nav>
+      </header>
+
+      <main className="container" style={{paddingTop:14}}>
+        {children}
+      </main>
+    </div>
+  )
+}
+```
+
+```typescript name=pages/index.tsx
+import fs from 'fs'
+import path from 'path'
+import Link from 'next/link'
+import Layout from '../components/Layout'
+
+type Listing = {
+  id: string
+  title: string
+  category: string
+  price?: string
+  published?: boolean
+}
+
+export default function Home({ listings }: { listings: Listing[] }) {
+  return (
+    <Layout>
+      <div className="card">
+        <h1>Ilmoitukset</h1>
+        <p className="small">Tämä MVP myy listauspaikkoja — kaupat sovitaan myyjän ja ostajan välillä.</p>
+      </div>
+
+      <div>
+        {listings.length === 0 && <div className="card">Ei vielä ilmoituksia. <Link href="/listings/new"><a>Luo ensimmäinen</a></Link></div>}
+        {listings.map(l => (
+          <div key={l.id} className="card">
+            <h3><Link href={`/listings/${l.id}`}><a>{l.title}</a></Link></h3>
+            <div className="small">{l.category} · {l.price ? `Näkyvä hinta: ${l.price}` : 'Hinta: sovittavissa'}</div>
+          </div>
+        ))}
+      </div>
+    </Layout>
+  )
+}
+
+export async function getServerSideProps() {
+  const file = path.join(process.cwd(), 'data', 'listings.json')
+  let listings: any[] = []
+  try {
+    const raw = fs.readFileSync(file, 'utf8')
+    listings = JSON.parse(raw)
+  } catch (e) {
+    listings = []
+  }
+  return { props: { listings } }
+}
+```
+
+```typescript name=pages/listings/new.tsx
+import React, { useState } from 'react'
+import Layout from '../../components/Layout'
+import { useRouter } from 'next/router'
+
+export default function NewListing() {
+  const [title, setTitle] = useState('')
+  const [category, setCategory] = useState('Palvelu')
+  const [price, setPrice] = useState('')
+  const [contact, setContact] = useState('')
+  const [loading, setLoading] = useState(false)
+  const router = useRouter()
+
+  async function handleCreate(e: React.FormEvent) {
+    e.preventDefault()
+    setLoading(true)
+    const res = await fetch('/api/listings/create', {
+      method: 'POST',
+      headers: {'content-type':'application/json'},
+      body: JSON.stringify({ title, category, price, contact })
+    })
+    const data = await res.json()
+    if (data?.id) {
+      // create checkout session for listing fee
+      const sessionRes = await fetch('/api/checkout/session', {
+        method: 'POST',
+        headers: {'content-type':'application/json'},
+        body: JSON.stringify({ listingId: data.id, title })
+      })
+      const session = await sessionRes.json()
+      if (session?.url) {
+        window.location.href = session.url
+      } else {
+        alert('Checkout‑istunnon luonti epäonnistui')
+      }
+    } else {
+      alert('Ilmoituksen luominen epäonnistui')
+    }
+    setLoading(false)
+  }
+
+  return (
+    <Layout>
+      <div className="card">
+        <h2>Luo ilmoitus</h2>
+        <form onSubmit={handleCreate}>
+          <div className="form-row">
+            <label>Otsikko</label>
+            <input value={title} onChange={e=>setTitle(e.target.value)} required/>
+          </div>
+          <div className="form-row">
+            <label>Kategoria</label>
+            <select value={category} onChange={e=>setCategory(e.target.value)}>
+              <option>Palvelu</option>
+              <option>Osaaminen</option>
+              <option>Tuote</option>
+              <option>Muuta</option>
+            </select>
+          </div>
+          <div className="form-row">
+            <label>Hinta (valinnainen, näyttävä tieto)</label>
+            <input value={price} onChange={e=>setPrice(e.target.value)} placeholder="esim. 50 €"/>
+          </div>
+          <div className="form-row">
+            <label>Yhteystiedot / ohjeet ostajalle</label>
+            <textarea value={contact} onChange={e=>setContact(e.target.value)} rows={4} />
+          </div>
+
+          <p className="small">Hyväksyn käyttöehdot ja tiedän, että alusta ei osallistu ostajan ja myyjän väliseen kauppaan. Listausmaksu on ei‑palautettava.</p>
+
+          <button type="submit" disabled={loading}>{loading ? '...' : 'Julkaise ja maksa listaus'}</button>
+        </form>
+      </div>
+    </Layout>
+  )
+}
+```
+
+```typescript name=pages/listings/[id].tsx
+import fs from 'fs'
+import path from 'path'
+import Layout from '../../components/Layout'
+import Link from 'next/link'
+
+export default function ListingPage({ listing }: any) {
+  if (!listing) {
+    return <Layout><div className="card">Ilmoitusta ei löytynyt. <Link href="/"><a>Takaisin</a></Link></div></Layout>
+  }
+  return (
+    <Layout>
+      <div className="card">
+        <h1>{listing.title}</h1>
+        <div className="small">{listing.category} · {listing.price ?? 'Hinta sovittavissa'}</div>
+        <div style={{marginTop:12}}>
+          <p>{listing.contact}</p>
+        </div>
+        <div style={{marginTop:12}}>
+          <p className="small">Huom: Sopimus tehdään suoraan myyjän kanssa; alusta ei käsittele kauppojen maksuliikennettä.</p>
+        </div>
+      </div>
+    </Layout>
+  )
+}
+
+export async function getServerSideProps(context:any) {
+  const { id } = context.params
+  const file = path.join(process.cwd(), 'data', 'listings.json')
+  let listings: any[] = []
+  try {
+    listings = JSON.parse(fs.readFileSync(file,'utf8'))
+  } catch (e) {
+    listings = []
+  }
+  const listing = listings.find(l => l.id === id) || null
+  return { props: { listing } }
+}
+```
+
+```typescript name=pages/api/listings/create.ts
+import type { NextApiRequest, NextApiResponse } from 'next'
+import fs from 'fs'
+import path from 'path'
+import { v4 as uuidv4 } from 'uuid'
+
+type Data = { id?: string; error?: string }
+
+export default function handler(req: NextApiRequest, res: NextApiResponse<Data>) {
+  if (req.method !== 'POST') {
+    res.status(405).json({ error: 'Method not allowed' })
+    return
+  }
+  const { title, category, price, contact } = req.body
+  if (!title || typeof title !== 'string') {
+    res.status(400).json({ error: 'Title is required' })
+    return
+  }
+  const file = path.join(process.cwd(), 'data', 'listings.json')
+  let listings: any[] = []
+  try {
+    listings = JSON.parse(fs.readFileSync(file,'utf8'))
+  } catch (e) {
+    listings = []
+  }
+  const id = uuidv4()
+  const item = { id, title, category, price, contact, published: false, created_at: new Date().toISOString() }
+  listings.push(item)
+  try {
+    fs.writeFileSync(file, JSON.stringify(listings, null, 2), 'utf8')
+  } catch (e) {
+    res.status(500).json({ error: 'Could not save listing' })
+    return
+  }
+  res.status(200).json({ id })
+}
+```
+
+```typescript name=pages/api/checkout/session.ts
+import type { NextApiRequest, NextApiResponse } from 'next'
+import Stripe from 'stripe'
+
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || '', { apiVersion: '2024-11-15' })
+
+export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+  if (req.method !== 'POST') return res.status(405).end('Method Not Allowed')
+  const { listingId, title } = req.body
+  if (!listingId) return res.status(400).json({ error: 'listingId required' })
+  const domain = process.env.DOMAIN || 'http://localhost:3000'
+  const feeCents = parseInt(process.env.LISTING_FEE_CENTS || '900', 10)
+  const currency = (process.env.CURRENCY || 'eur').toLowerCase()
+
+  try {
+    const session = await stripe.checkout.sessions.create({
+      payment_method_types: ['card'],
+      mode: 'payment',
+      line_items: [
+        {
+          price_data: {
+            currency,
+            product_data: { name: `Ilmoitus: ${title || 'Listaus'}`, metadata: { listingId } },
+            unit_amount: feeCents
+          },
+          quantity: 1
+        }
+      ],
+      success_url: `${domain}/listings/${listingId}?payment=success`,
+      cancel_url: `${domain}/listings/${listingId}?payment=cancel`
+    })
+    res.status(200).json({ url: session.url })
+  } catch (err:any) {
+    console.error('Stripe error', err)
+    res.status(500).json({ error: err.message })
+  }
+}
+```
+
+```json name=data/listings.json
+[]
+```
+
+---
+
+Mitä tein ja miksi
+- Laadin suomenkielisen ToS‑luonnoksen (TERMS_OF_SERVICE.md) joka kuvastaa ehdottamaasi liiketoimintamallia: alusta myy ilmoituspaikkoja mutta ei osallistu myyjien ja ostajien välisiin kauppoihin.
+- Rakensin Next.js‑MVP‑scaffoldin, jossa myyjä voi luoda ilmoituksen (POST /api/listings/create → tallennus data/listings.json) ja maksaa listausmaksun Stripe Checkoutin kautta (POST /api/checkout/session).
+- Toteutus on yksinkertainen ja nopeasti käynnistettävä paikallisesti, sopii testaamiseen ja pilottiin. Tallennus on tällä hetkellä JSON‑tiedostoon — päivitettävä tuotantoon halutessasi tietokantaan.
+
+Mitä seuraavaksi voit tehdä (ehdotus)
+- Aja paikallisesti ja testaa listaus‑ ja checkout‑flow käyttäen Stripe test‑avaimia.
+- Päivitä ToS tarvittaessa (haluatko että muokkaan tiettyjä kappaleita tai teen lyhyemmän englanninkielisen version?).
+- Päivitän scaffoldin seuraaviin ominaisuuksiin: autentikointi (NextAuth), tietokantaintegraatio (Postgres + Prisma), admin‑paneeli sekä portfolios.fi‑integraatio (OAuth/profiilin tuonti) — jos haluat, teen nämä seuraavina askeleina.
+
+Haluatko, että:
+- Puskaan nämä tiedostot GitHub‑reposiisi (veijokirkinen/lexit) puolestasi? (tarvitsen vahvistuksen ja repo‑nimen/määritykset), tai
+- Teen jatkokehityksen: autentikointi + Postgres + admin UI ennen GitHubiin puskemista?
+Kerro kumpi sopii — toteutan seuraavan vaiheen heti.

@@ -1,0 +1,239 @@
+﻿# LexIT - Kaikki termit aakkosjärjestyksessä
+# Luotu: 11.11.2025
+# Yhteensä: 236 termiä
+2FA — Two‑Factor Authentication
+ABAC — Attribute‑Based Access Control
+ACID — Atomicity, Consistency, Isolation, Durability
+AD — Active Directory
+Agile / Scrum
+AI — Artificial Intelligence
+AIOps — Artificial Intelligence for IT Operations
+AMI — Amazon Machine Image
+Ansible — Configuration management tool
+API — Application Programming Interface
+API — Application Programming Interface
+API — Application Programming Interface
+APM — Application Performance Monitoring
+Auto Scaling — Automaattinen skaalautuminen
+Autopilot — Windows Autopilot
+AWS — Amazon Web Services
+Azure — Microsoft Azure
+Azure AD — Azure Active Directory
+Backlog
+BASE — Basically Available, Soft state, Eventual consistency
+BCP
+BERT — Bidirectional Encoder Representations from Transformers
+BGP — Border Gateway Protocol
+BI — Business Intelligence
+BIOS — Basic Input/Output System
+BPM
+BYOD — Bring Your Own Device
+CA — Certificate Authority
+CD — Continuous Delivery / Continuous Deployment
+CDC — Change Data Capture
+CDN — Content Delivery Network
+CDN — Content Delivery Network
+Ceph — Hajautettu tallennusjärjestelmä
+CI — Continuous Integration
+CISO
+CM
+CMDB
+CNN — Convolutional Neural Network
+Co‑management — SCCM + Intune yhteiskäyttö
+COPE — Company Owned, Personally Enabled
+CPU — Central Processing Unit
+CRUD — Create, Read, Update, Delete
+CSRF — Cross‑Site Request Forgery
+CSV — Comma-Separated Values
+CTO
+Dashboard — Kojelauta
+Data Lake — Laaja datavarasto raakamuotoiselle datalle
+Data Mart — Osavarasto
+Dataflow — Power BI Dataflows
+DAX — Data Analysis Expressions
+DAX — Data Analysis Expressions
+DB / DBMS — Database / Database Management System
+DevOps
+DHCP — Dynamic Host Configuration Protocol
+DL — Deep Learning
+DLP — Data Loss Prevention
+DNS — Domain Name System
+Docker — Konttiteknologian työkalusarja
+DP — Distribution Point
+DR
+Drill Down — Syväporaus
+DWH — Data Warehouse
+EC2 — Elastic Compute Cloud
+ELT — Extract, Load, Transform
+EMM — Enterprise Mobility Management
+ETL — Extract, Transform, Load
+ETL — Extract, Transform, Load
+Exchange — Microsoft Exchange Server
+FAQ — Frequently Asked Questions
+FIDO — Fast IDentity Online
+Fine-tuning — Hienosäätö
+FTP — File Transfer Protocol
+GAN — Generative Adversarial Network
+GCP — Google Cloud Platform
+GDPR — General Data Protection Regulation
+Git — Version Control System
+GitHub Actions — GitHub automation platform
+GitLab CI — GitLab Continuous Integration
+GitOps — Git-pohjainen infrastruktuurin hallinta
+GPO — Group Policy Object
+GPT — Generative Pre-trained Transformer
+GPU — Graphics Processing Unit
+GPU, TPU — Laitteet massiiviseen rinnakkaislaskentaan
+HCI — Hyperconverged Infrastructure
+HDD — Hard Disk Drive
+HDMI — High-Definition Multimedia Interface
+HTML — HyperText Markup Language
+HTTP — HyperText Transfer Protocol
+HTTPS — HTTP Secure
+Hyper-V — Microsoft Hyper-V
+IaaS — Infrastructure as a Service
+IaC — Infrastructure as Code
+ICMP — Internet Control Message Protocol
+ICT — Information and Communications Technology
+IDE — Integrated Development Environment
+IDS — Intrusion Detection System
+IMAP — Internet Message Access Protocol
+Intune — Microsoft Intune
+IP — Internet Protocol
+IPS — Intrusion Prevention System
+ISP — Internet Service Provider
+IT — Information Technology
+ITAM
+ITIL
+ITSM
+Jenkins — CI/CD automation server
+JSON — JavaScript Object Notation
+JSON‑RPC / gRPC — Palveluiden väliset protokollat
+JWT — JSON Web Token
+Kanban
+KPI — Key Performance Indicator
+KPI Dashboard — Mittarien kojelauta
+Kubernetes (K8s) — Konttien orkestrointialusta
+KVM — Kernel‑based Virtual Machine
+LAN — Local Area Network
+LDAP — Lightweight Directory Access Protocol
+LLM — Large Language Model
+Load Balancer — Kuormanjako
+Lustre — Rinnakkainen tiedostojärjestelmä
+M365 / O365 — Microsoft 365 / Office 365
+MAC — Media Access Control
+MAM — Mobile Application Management
+Maven — Build automation tool
+MDM — Mobile Device Management
+MDT — Microsoft Deployment Toolkit
+MDX — Multidimensional Expressions
+MFA — Multi‑Factor Authentication
+Microsoft Fabric — Microsoftin analytiikka-alusta
+ML — Machine Learning
+MLM — Masked Language Model
+MLOps — Machine Learning Operations
+MoE — Mixture of Experts
+MOLAP — Multidimensional Online Analytical Processing
+MPLS — Multiprotocol Label Switching
+MTConnect — Manufacturing Technology Connect
+NAS — Network Attached Storage
+NAT — Network Address Translation
+NFS — Network File System
+NFS — Network File System
+NLP — Natural Language Processing
+NoSQL — Not Only SQL
+npm — Node Package Manager
+OAuth2 — OAuth 2.0
+OCI — Open Container Initiative
+Office 365 — Microsoft Office 365
+OKR — Objectives and Key Results
+OLA
+OLAP — Online Analytical Processing
+OLAP — Online Analytical Processing
+OLTP — Online Transaction Processing
+OneDrive — Microsoft OneDrive
+OOBE — Out Of Box Experience
+OPC UA — OPC Unified Architecture
+OS — Operating System
+OSD — Operating System Deployment
+OTP — One‑Time Password
+OWASP — Open Web Application Security Project
+PaaS — Platform as a Service
+PCI DSS — Payment Card Industry Data Security Standard
+PDF — Portable Document Format
+PKI — Public Key Infrastructure
+POP3 — Post Office Protocol v3
+Power BI — Microsoft Power BI
+PXE — Preboot eXecution Environment
+QR — Quick Response
+RAG — Retrieval-Augmented Generation
+RAID — Redundant Array of Independent Disks
+RAM — Random Access Memory
+RBAC — Role‑Based Access Control
+REST — Representational State Transfer
+RL — Reinforcement Learning
+RLS — Row‑Level Security
+RNN — Recurrent Neural Network
+ROI — Return on Investment
+ROLAP — Relational Online Analytical Processing
+ROM — Read‑Only Memory
+RPA
+RPO
+RTO
+S3 — Simple Storage Service
+S3 — Simple Storage Service
+SaaS — Software as a Service
+SAML — Security Assertion Markup Language
+SAN — Storage Area Network
+SCCM / MECM — System Center Configuration Manager / Microsoft Endpoint Configuration Manager
+SCM — Source Code Management
+SDK — Software Development Kit
+SFTP — SSH File Transfer Protocol
+SharePoint — Microsoft SharePoint
+SIEM — Security Information and Event Management
+SLA
+Slice and Dice — Datan leikkaus ja pilkkominen
+SLM — Small/Streamlined Language Model
+SMB — Server Message Block
+SMTP — Simple Mail Transfer Protocol
+SNMP — Simple Network Management Protocol
+SOAP — Simple Object Access Protocol
+SOC — Security Operations Center
+SOC 2 — Service Organization Control 2
+Sprint
+SQL — Structured Query Language
+SQL — Structured Query Language
+SQL Server, SSAS, SSIS, SSRS — Microsoftin data‑tuotekokonaisuus
+SRE — Site Reliability Engineering
+SSAS — SQL Server Analysis Services
+SSD — Solid State Drive
+SSH — Secure Shell
+SSIS — SQL Server Integration Services
+SSL — Secure Sockets Layer
+SSO — Single Sign‑On
+SSRS — SQL Server Reporting Services
+TCP — Transmission Control Protocol
+Teams — Microsoft Teams
+Terraform — Infrastructure as Code tool
+TLS — Transport Layer Security
+UDP — User Datagram Protocol
+UEFI — Unified Extensible Firmware Interface
+UEM — Unified Endpoint Management
+URL — Uniform Resource Locator
+USB — Universal Serial Bus
+VDI — Virtual Desktop Infrastructure
+VIZ — Visualization
+VLAN — Virtual Local Area Network
+VLM — Vision‑Language Model
+VM — Virtual Machine
+VPN — Virtual Private Network
+VPN (IPSec / SSL‑VPN) — Turvallinen etäyhteys
+VQ — Visual Query / Q&A
+VXLAN — Virtual Extensible LAN
+WAN — Wide Area Network
+WDS — Windows Deployment Services
+WSUS — Windows Server Update Services
+X509 — X.509 Certificate Standard
+XML — eXtensible Markup Language
+XSS — Cross‑Site Scripting
+YAML — YAML Ain't Markup Language

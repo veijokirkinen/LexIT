@@ -1,0 +1,261 @@
+✅ LISÄTTY v2.0 - SUURPÄIVITYS: 
+- 🆕 Uusi kategoria: "Tallennus ja protokollat" (4 termiä: Ceph, Lustre, NFS, S3) 
+- 🚀 DevOps: +8 termiä (C#/.NET, TypeScript, Angular, Express.js, MVC, Laravel, React Native, Bun)
+- 🏢 Microsoft: +1 termi (Matrix42)
+= YHTEENSÄ: +13 termiä → 243 termiä (nyt 11 kategoriaa!)
+
+✅ LISÄTTY v1.5: SaaS (pilvi.html), MVP ja MVP-roadmap (devops.html) = 230 termiä
+
+Alkuperäinen lista: SaaS, MVP, MVP‑roadmap, SAN- ja NAS, Ceph ja Lustre, tallennusprotokollista (CIFS, NFS, S3), C# / .NET, SQL, HTML / Angular, Javascript / Typescript, React, Laravel, MySQL, PostgreSQL ja Redis, Linux, RAG-malli, Matrix42, Intune, SCCM, MVC, Express.js, React Native, Bun
+
+❌ EI LISÄTTY (jo olemassa tai ei sovellu):
+- SQL ✅, HTML ✅, JavaScript ✅, React ✅, MySQL ✅, PostgreSQL ✅, Linux ✅, Redis ✅ (jo olemassa)  
+- CIFS ✅, Intune ✅, SCCM ✅, RAG-malli ✅ (jo olemassa)
+- SAN/NAS ✅ (jo data.html:ssä)
+- Forsta, Mepco, Shipit, Livewire, Tailwind, Alpine.js, Expo, Odoo (liian yritys-/projektikohtaisia)
+
+Uusia termejä: SaaS, MVP, MVP‑roadmap
+SAN- ja NAS, Ceph ja Lustre
+
+
+Hakuun palaute jos ei löydy hakusanalla että kokeile jotain muuta ja voisko ne joita ei löydy tallettaa johonkin ja lisätä sellaisia sitten jossain vaiheessa.
+
+
+
+
+
+
+
+
+
+
+Kyllä — tuo malli on täysin mahdollinen ja itse asiassa monilla sivustoilla toimiva tapa: alusta myy “paikkoja” eli listaus‑/ilmoitusoikeutta ja kaupat sovitaan ja hoidetaan myyjän ja ostajan välillä ilman, että alusta käsittelee maksuliikennettä tai ottaa provisioita transaktioista. Se on käytännöllinen tapa vähentää alustaan kohdistuvaa vastuuta ja monimutkaisuutta, mutta siinä on myös omat riskinsä ja huomioitavat asiat. Alla käytännön arvio, hyvät käytännöt ja konkreettinen toteutus‑/MVP‑ehdotus.
+
+Yhteenveto: miksi se toimii
+- Helppo toteuttaa ja ylläpitää (ei tarvita PCI‑yhteensopivaa maksujärjestelmää tai payout‑logiikkaa).
+- Alhaisemmat juoksevat kustannukset ja vähemmän regulaatio‑vaatimuksia alustalle.
+- Sopii erityisesti ilmoitus‑/luokitetut‑tyyppisiin palveluihin (esim. Craigslist, paikalliset ilmoitustaulut, freelance‑ilmoitukset ilman escrow’ta).
+
+Haasteet ja riskit
+- Luottamus: ostajat voivat epäröidä ostamista jos maksu hoidetaan ulkopuolisesti (voi pienentää konversiota).
+- Petokset & huijaukset: alusta altistuu vilpille (esim. tekaistuja ilmoituksia) koska se ei kontrolloi suorituksia.
+- Lainsäädäntö: vaikka et käsittele maksuja, vastuuta ei voi täysin siirtää; kuluttajansuojalainsäädäntö ja markkinoinnin vastuut voivat silti kohdistua alustaan (riippuu maasta).
+- Verotus: alustan myymät listing‑maksut ovat alustan tuloa ja yleensä verotettavaa (ALV‑käsittely pitää selvittää).
+- Käyttäjien riidat: ilman escrow’ta on vaikeampi ratkaista riitoja; alustan rooli riitojen selvittäjänä kannattaa määritellä.
+
+Hyvät käytännöt ja suositukset
+1. Selkeät sopimusehdot ja vastuuvapautukset
+   - ToS ja Privacy Policy, joissa kerrot selkeästi että alusta:
+     - tarjoaa mainostilaa/ilmoituksia,
+     - ei osallistu myyjän ja ostajan väliseen sopimukseen,
+     - ei ole vastuussa tuotteista/palveluista tai maksujen onnistumisesta.
+   - Vaikka teet vastuuvapauslausekkeet, ota lakimies tarkistamaan ne (erityisesti kuluttajakaupassa).
+
+2. Aktivointi & maksun näyttö
+   - Myyjä maksaa ilmoitusmaksun alustalle (esim. Stripe/PayPal) ja saa aktivointikoodin tai automaattisen julkaisun.
+   - Alusta pitää laskut ja kirjanpidon listing‑maksuista (sinun vastuullasi verotus & laskutus).
+
+3. Varmistus & luottamuksen rakentaminen
+   - Vahvistus/verification badge (sähköposti, puhelinnumero, ID‑tarkistus opt.) parantaa luottamusta.
+   - Mahdollisuus lisätä portfolios.fi‑linkki/portfolio‑proof (todentaa osaamista).
+
+4. Kontaktitavat ja maksuvaihtoehdot
+   - Anna myyjälle vaihtoehtoja: yhteydenottolomake (alustan sisäinen), sähköposti, puhelin tai linkki ulkoiseen maksusivuun (esim. PayPal.me, Stripe Checkout linkki myyjän omalta tililtä).
+   - Estä/ei‑suosittele salasanasuojattuja maksulinkkejä; ohjeista turvalliseen maksukäytäntöön (esim. pankkisiirron käyttö, PayPal, Klarna tms.).
+
+5. Moderointi & valvonta
+   - Ennakko‑moderointi tai automaattinen tarkistus (spam, kuvien validointi, must‑listatut sanat).
+   - Ilmoitus/raportointikanava käyttäjille (raportoi petos/epäily).
+   - Mahdollisuus poistaa/estää epäluotettavat ilmoittajat.
+
+6. Lisäarvo‑ominaisuudet (tuotekehitys & myynti)
+   - Esim. nostettu listaus / featured‑tila / kesto‑paketit (päivä, viikko, kuukausi).
+   - Statistikkanava: katselukerrat, yhteydenottopyynnöt.
+   - Maksullinen “todentaminen” (ID‑check) tai profiilin validointi (maksu myyjälle).
+
+7. Riitojen käsittely
+   - Selkeä ohjeistus miten käyttäjät toimivat riitatilanteissa; tarjoa vapaaehtoinen premium‑miditaus‑palvelu (esim. sovittelu, maksullinen).
+
+Verkkokauppa‑mallit & hinnoitteluvaihtoehdot
+- One‑time listing fee: yksinkertaisin (esim. 5–20 € per ilmoitus, voimassa X päivää).
+- Subscription: myyjille kuukausi‑ tai vuosisopimus rajattomille ilmoituksille.
+- Freemium + maksu nostosta: perusilmoitus ilmainen, lisämaksu featured/korostus.
+- Paketti: esim. 10 ilmoitusta kerralla alennetulla hinnalla (bulk).
+- Lisäpalvelut: näyttävä banneri, etusivu‑nosto, lisätarkistus (paid verification).
+
+Tekninen toteutus (MVP‑askelmat)
+1. Listing‑flow (UI)
+   - Luo lomake: otsikko, kuva, kategoria, hinta (jos haluat näyttää), kuvaus, yhteystiedot, haluttu aktivointipaketti.
+   - Rasti: “Hyväksyn ToS:n että alusta ei välitä maksua puolestani.”
+
+2. Maksu tilauksesta
+   - Alusta myy listapaikan: maksu vastaanotetaan alustalle (Stripe/PayPal) → kun maksu onnistuu, julkaistaan ilmoitus.
+   - Vaihtoehto: laskutus (B2B) — lähetä lasku sähköpostitse (paperless/invoice).
+
+3. Julkaisu & näkyvyys
+   - Julkinen ilmoitussivu sisältää selkeän tiedon kontaktitavasta ja kommentin: “Sopimus tehdään suoraan myyjän kanssa. LexIT/Portfolios.fi ei osallistu maksuihin.”
+
+4. Yhteydenotto‑kanava
+   - Sisäinen viestijärjestelmä (alusta‑viestit) tai vain formi joka lähettää myyjälle sähköpostin.
+   - Tallenna lokit yhteydenotoista (seuraa huijauksia).
+
+5. Admin / Audit
+   - Admin‑näkymä julkaistujen ilmoitusten hallintaan, moderointiin ja tarvittaessa manuaaliseen poistoihin.
+
+Oikeudelliset & verotukselliset näkökohdat
+- Listing‑maksut ovat sinun tulojasi: laskuta ja kirjaa ne oikein, käsittele ALV‑velvollisuus (tarvitset todennäköisesti ALV‑laskutuksen riippuen ostajan sijainnista ja siitä onko kyse B2B/B2C).
+- ToS: laadi vastuuvapautukset, mutta konsultoi juristia; älä luota pelkkään “vastuuvapaus”‑lauseeseen.
+- Kuluttajansuoja: jos kohderyhmä on kuluttajia (ei‑yrityksiä), kuluttajansuojalainsäädäntö voi asettaa velvoitteita alustalle (esim. reklamaatioissa); selvitä seuraamukset paikallisesti.
+
+Käyttäjäkokemus: miten ostaja toimii
+- Ostaja löytää ilmoituksen → klikkaa “Ota yhteyttä” → saa myyjän yhteystiedot tai lähettää viestin alustalta → sopii maksusta ja toimituksesta suoraan myyjän kanssa.
+- Varmista, että ostaja näkee selkeän tekstin “Maksu tehdään myyjälle suoraan — alusta ei käsittele tilausta.”
+
+Vertailukohta: klassinen luokituspalsta
+- Craigslist / Tori / Gumtree toimivat juuri tällä periaatteella: ilmoitukset maksetaan tai listataan, kaupat tehdään osapuolten välillä. Nämä ovat toimivia esimerkkejä.
+
+Hyvä MVP‑polku tälle idealle (konkreettinen)
+1. Määrittele yhden tyyppinen listing‑paketti (esim. yksittäinen ilmoitus 9 €, 30 pv).
+2. Rakenna yksinkertainen listing flow + Stripe Checkout maksun vastaanottoon (alusta saa maksun).
+3. Julkaise ilmoitus automaattisesti, lähetä myyjälle ja ostajalle vahvistus ja ohjeet.
+4. Lisää “featured”‑paketti ja analytiikka.
+5. Aseta moderointiprosessi manuaaliseksi alkuun (pienempi riskitaso).
+6. Viimeistele ToS & Privacy (juridiikka).
+
+Miksi tämä voi olla hyvä idea juuri sinun tapauksessasi
+- Pienemmällä tekniikalla ja alhaisemmilla kustannuksilla voit käynnistää markkinapaikan.
+- Portfolios.fi‑integraatio parantaa myyjien luotettavuutta: käyttäjät, jotka yhdistävät portfolionsa, näyttävät uskottavammilta.
+- Voit testata markkinaa ilman monimutkaisia payout‑ratkaisuja ja lisätä maksujenkäsittelyn myöhemmin, jos haluat ottaa provisioita.
+
+Seuraavat konkreettiset asiat, joita voin tehdä puolestasi
+- Laadin ehdotetun ToS‑pohjan (suomella, lyhyt mutta kattava) jossa selkeä vastuujako ja ilmoituspalvelun määritelmä — voit antaa sen juristille tarkastettavaksi.
+- Teen MVP‑scaffoldin (React/Vite tai Next.js) jossa on:
+  - listing‑form,
+  - maksun vastaanotto (Stripe Checkout) vain listausmaksulle,
+  - julkinen ilmoitussivu ja admin‑näkymä,
+  - ostajan ohjeen teksti “alusta ei osallistu maksuihin”.
+- Teen teknisen check‑listin ja mallipolitiikat (moderointi, raportointi, ID‑varmennus‑vaihtoehdot).
+
+Haluatko, että laadin:
+A) lyhyen ToS‑luonnoksen (1–2 sivua) joka kattaa vastuunrajoitukset ja ilmoituspalvelun?  
+B) MVP‑scaffoldin (Next.js + Stripe Checkout testmode) jossa listausmaksu ja julkinen ilmoitussivu?  
+C) molemmat?
+
+Kerro kumpi/tai molemmat haluat, niin aloitan valmistelun.
+
+
+
+
+
+
+Loistavaa — hyvä idea lisätä Cheatsheets‑osio LexITiin. Alla ensin selkeä, kone‑ ja ihmislukemiseen sopiva transkriptio siitä Git‑cheat‑sheet‑kuvasta, ja sen jälkeen ehdotuksia mitä toiminnallisuutta ja toteutustapoja voit lisätä (print/PDF, copy‑painikkeet, JSON‑data, yms.). Halutessasi teen tästä valmiin cheatsheet‑sivun (HTML/CSS/JS) ja lisään sen LexIT‑projektiin.
+
+Transkriptio — “Ultimate Git Cheat Sheet”
+- Starting a Repo
+  - git init
+  - git clone <url>
+
+- Staging & Committing
+  - git status
+  - git add <file>
+  - git add .
+  - git commit -m "msg"
+  - git commit -am "msg"
+
+- Inspecting History
+  - git log --oneline --graph
+  - git diff
+  - git diff --staged
+
+- Branching
+  - git branch
+  - git branch <name>
+  - git switch <name>
+  - git switch -c <name>
+  - git checkout <name>
+  - git branch -d <name>
+
+- Remote Sync
+  - git remote -v
+  - git pull
+  - git pull --rebase
+  - git push
+  - git push -u origin <branch>
+
+- Merging & Rebasing
+  - git merge <branch>
+  - git rebase <branch>
+  - git cherry-pick <commit>
+
+- Undoing Changes
+  - git restore <file>
+  - git reset <file>
+  - git reset --hard HEAD
+  - git revert <commit>
+
+- Stash
+  - git stash
+  - git stash list
+  - git stash pop
+
+- Tags
+  - git tag
+  - git tag <name>
+  - git push origin <name>
+
+- Helpers
+  - git reflog
+  - git clean -fd
+
+(Eri kohtiin kuvassa oli lyhyet selitteet oikealla: esim. “Create new repo / Clone remote repo” jne. Jos haluat, lisään ne myös rivikohtaisesti.)
+
+Miten tuoda tämä LexITiin — suositellut toiminnot
+- Uusi kategoria: "Cheatsheets" (tai “Termi‑kortit / Cheatsheets”) valikon alle.
+- Yksi sivu per cheatsheet, esim. /cheatsheets/git — sisältää:
+  - selkeä otsikko ja lyhyt kuvaus,
+  - komentolista ryhmiteltyinä (kuten yllä),
+  - copy‑to‑clipboard‑painike jokaisen komennon viereen,
+  - “Kopioi kaikki” / “Lataa PDF” -toiminnot,
+  - print‑kelpoinen CSS (print‑media query) — tulostuu kompaktisti mustavalkoisena,
+  - mahdollisuus vaihtaa teema (dark/light).
+- Data hallintaan: pidä cheatsheetit JSON‑tiedostossa (src/data/cheatsheets.json) niin voit generoida sivut dynaamisesti.
+- Interaktiivisuus: hakutoiminto, tagit (git, bash, docker), ja pikatiedot (aliasit).
+- Lisämausteita: kopioi‑esimerkki, “Esimerkki‑workflow” (esim. create branch → commit → push), upotettu pieni terminaalikonsoli‑demo (vain simulaatio).
+
+Toteutusvaihtoehdot (nopeasta laajaan)
+- Minimal (nopein): staattinen HTML‑sivu / LexIT:n nykyinen layoutiin sijoitettu kortti; sisältää komennot ja copy‑painikkeet.
+- Dynaaminen: lisää JSON‑tiedosto ja pieni JS‑renderer joka luo cheat‑sheetin dynaamisesti (helpompi ylläpitää monta cheatsheetia).
+- Jamstack + Markdown: tallenna cheatsheetit markdownina ja generoi staattiset sivut build‑vaiheessa (esim. Eleventy/Next).
+- Export: PDF/print (client‑side: window.print() + print‑CSS; server‑side: puppeteer jos haluat automaattisen PDF‑generoinnin).
+
+Esimerkki JSON‑rakenne cheatsheeteille (voi laittaa data/cheatsheets.json)
+{
+  "cheatsheets": [
+    {
+      "id": "git",
+      "title": "Git — Cheat Sheet",
+      "description": "Peruskäskyt Gitille: commit, branch, merge, rebase, stash jne.",
+      "sections": [
+        { "title": "Starting a Repo", "lines": ["git init","git clone <url>"] },
+        { "title": "Staging & Committing", "lines": ["git status","git add <file>","git add .","git commit -m \"msg\"","git commit -am \"msg\""] },
+        ...
+      ],
+      "tags": ["git","vcs","cheatsheet"]
+    }
+  ]
+}
+
+Käyttöliittymä‑ominaisuudet, jotka suosittelen toteuttamaan heti
+- Copy‑to‑clipboard per rivi (navigator.clipboard.writeText)
+- “Kopioi kaikki” -painike koko osion / koko sivun komentoja varten
+- Print / PDF ‑painike (window.print())
+- Light/Dark teema toggle (synchronous with site theme)
+- Pienet inline‑selitteet (tooltip tai lyhyt selitys aina komentorivin viereen)
+- Mobile‑friendly layout (yhden sarakkeen näkymä pienillä näytöillä)
+
+Seuraava askel — haluatko, että minä:
+1) Generoin valmiin cheatsheet‑sivun Git‑cheatsheetillä (HTML/CSS/JS) jolla on copy‑to‑clipboard ja print‑nappula — voin puskea sen LexIT‑scaffoldiin?  
+2) Teen dynaamisen JSON‑pohjaisen implementaation (data + renderer + yksittäiset cheat‑sheet‑sivut)?  
+3) Vain lisään Git‑cheatsheetin tekstisisällön Markdown/JSON‑muodossa, jotta voit lisätä sen myöhemmin?
+
+Kerro mikä vaihtoehto sopii — teen valmiin tiedostopaketin (index.html tai /cheatsheets/git.html + css + js), jos haluat.
