@@ -16,6 +16,16 @@ Alkuperäinen lista: SaaS, MVP, MVP‑roadmap, SAN- ja NAS, Ceph ja Lustre, tall
 
 Uusia termejä: SaaS, MVP, MVP‑roadmap
 SAN- ja NAS, Ceph ja Lustre
+(TORI) ja (TUVE)
+Human-in-the-loop (HITL) palvelut: AI tuottaa ehdotukset/luonnokset, sinä validioit, muokkaat ja vastaat laadusta (esim. lakiasiain, lääketiede, talousneuvonta).
+GDAL ja GeoPandas,  toimialariippumattomien (TORI) ja (TUVE) 
+F2F, MUI, RAG,Gcp,MDM-ratkaisut kuten Jamf, Kandji
+M3, WMS, Datalake, IDM/MEC, Rest API, SOAP ja XML.
+(M3, CloudSuite)
+Cadmatic,  Sulautettujen järjestelmien kehittäjää (Firmware Engineer),  Yocto Linux ja FreeRTOS. Lisäksi olisi hyvä, että sinulla on ARM Cortex -prosessorien ja mikro-ohjaimien, kuten NXP iMX, STM32, Nordic nRF, Microchip osaamista. 
+
+
+
 
 
 Hakuun palaute jos ei löydy hakusanalla että kokeile jotain muuta ja voisko ne joita ei löydy tallettaa johonkin ja lisätä sellaisia sitten jossain vaiheessa.

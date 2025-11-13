@@ -97,7 +97,7 @@ const termsDatabase = [
     { term: "X509", fullName: "X.509 Certificate Standard", category: "turva.html", description: "X.509 sertifikaattistandardi" },
     { term: "XSS", fullName: "Cross-Site Scripting", category: "turva.html", description: "Sivustojen välinen skriptien ajaminen" },
     
-    // AI ja koneoppiminen (20 termiä)
+    // AI ja koneoppiminen (23 termiä)
     { term: "AI", fullName: "Artificial Intelligence", category: "ai.html", description: "Tekoäly" },
     { term: "BERT", fullName: "Bidirectional Encoder Representations from Transformers", category: "ai.html", description: "Kaksisuuntainen kielimalli" },
     { term: "CNN", fullName: "Convolutional Neural Network", category: "ai.html", description: "Konvolutiivinen neuroverkko" },
@@ -112,6 +112,9 @@ const termsDatabase = [
     { term: "MLOps", fullName: "Machine Learning Operations", category: "ai.html", description: "Koneoppimisen operaatiot" },
     { term: "MoE", fullName: "Mixture of Experts", category: "ai.html", description: "Asiantuntijoiden sekoitus" },
     { term: "NLP", fullName: "Natural Language Processing", category: "ai.html", description: "Luonnollisen kielen käsittely" },
+    { term: "NumPy", fullName: "Numerical Python", category: "ai.html", description: "Python-kirjasto numeeriseen laskentaan" },
+    { term: "OpenCV", fullName: "Open Source Computer Vision Library", category: "ai.html", description: "Avoimen lähdekoodin konenäkökirjasto" },
+    { term: "Pandas", fullName: "Python Data Analysis Library", category: "ai.html", description: "Python-kirjasto tietojen analysointiin" },
     { term: "RAG", fullName: "Retrieval-Augmented Generation", category: "ai.html", description: "Hakutoiminnolla tuettu generointi" },
     { term: "RL", fullName: "Reinforcement Learning", category: "ai.html", description: "Vahvistusoppiminen" },
     { term: "RNN", fullName: "Recurrent Neural Network", category: "ai.html", description: "Toistuva neuroverkko" },

@@ -1,266 +1,290 @@
-﻿# LexIT - Kaikki termit aakkosjärjestyksessä  
-# Luotu: 11.11.2025
-# Yhteensä: 262 termiä
+﻿# LexIT - Kaikki IT-termit alfabeettisessa järjestyksessä
+# Päivitetty: 2025-11-13
+# Yhteensä: 289 termiä
 
-2FA — Two‑Factor Authentication
-ABAC — Attribute‑Based Access Control
-ACID — Atomicity, Consistency, Isolation, Durability
-ACL — Access Control List
-AD — Active Directory
-Agile / Scrum
-AI — Artificial Intelligence
-AIOps — Artificial Intelligence for IT Operations
-AMI — Amazon Machine Image
-Ansible — Configuration management tool
-API — Application Programming Interface
-API — Application Programming Interface
-API — Application Programming Interface
-APM — Application Performance Monitoring
-Auto Scaling — Automaattinen skaalautuminen
-Autopilot — Windows Autopilot
-AWS — Amazon Web Services
-Azure — Microsoft Azure
-Azure AD — Azure Active Directory
-Backlog
-BASE — Basically Available, Soft state, Eventual consistency
-BCP
-BDD — Behavior-Driven Development
-BERT — Bidirectional Encoder Representations from Transformers
-BFF — Backend for Frontend
-BGP — Border Gateway Protocol
-BI — Business Intelligence
-BIOS — Basic Input/Output System
-BPM
-BYOD — Bring Your Own Device
-CA — Certificate Authority
-CD — Continuous Delivery / Continuous Deployment
-CDC — Change Data Capture
-CDN — Content Delivery Network
-CDN — Content Delivery Network
-Ceph — Hajautettu tallennusjärjestelmä
-CI — Continuous Integration
-CISO
-CLI — Command-Line Interface
-CM
-CMDB
-CNN — Convolutional Neural Network
-Co‑management — SCCM + Intune yhteiskäyttö
-COPE — Company Owned, Personally Enabled
-CPU — Central Processing Unit
-CQRS — Command Query Responsibility Segregation
-CRUD — Create, Read, Update, Delete
-CSR — Client-Side Rendering
-CSRF — Cross‑Site Request Forgery
-CSV — Comma-Separated Values
-CTO
-Dashboard — Kojelauta
-Data Lake — Laaja datavarasto raakamuotoiselle datalle
-Data Mart — Osavarasto
-Dataflow — Power BI Dataflows
-DAX — Data Analysis Expressions
-DAX — Data Analysis Expressions
-DB / DBMS — Database / Database Management System
-DDD — Domain-Driven Design
-DevOps
-DHCP — Dynamic Host Configuration Protocol
-DL — Deep Learning
-DLP — Data Loss Prevention
-DNS — Domain Name System
-Docker — Konttiteknologian työkalusarja
-DOM — Document Object Model
-DP — Distribution Point
-DR
-Drill Down — Syväporaus
-DRY — Don't Repeat Yourself
-DWH — Data Warehouse
-EC2 — Elastic Compute Cloud
-ELT — Extract, Load, Transform
-EMM — Enterprise Mobility Management
-ES — Event Sourcing
-ETL — Extract, Transform, Load
-ETL — Extract, Transform, Load
-Exchange — Microsoft Exchange Server
-FAQ — Frequently Asked Questions
-FIDO — Fast IDentity Online
-Fine-tuning — Hienosäätö
-FTP — File Transfer Protocol
-GAN — Generative Adversarial Network
-GCP — Google Cloud Platform
-GDPR — General Data Protection Regulation
-Git — Version Control System
-GitHub Actions — GitHub automation platform
-GitLab CI — GitLab Continuous Integration
-GitOps — Git-pohjainen infrastruktuurin hallinta
-GPO — Group Policy Object
-GPT — Generative Pre-trained Transformer
-GPU — Graphics Processing Unit
-GPU, TPU — Laitteet massiiviseen rinnakkaislaskentaan
-gRPC — Google Remote Procedure Call
-GUI — Graphical User Interface
-HCI — Hyperconverged Infrastructure
-HDD — Hard Disk Drive
-HDMI — High-Definition Multimedia Interface
-HTML — HyperText Markup Language
-HTTP — HyperText Transfer Protocol
-HTTPS — HTTP Secure
-Hyper-V — Microsoft Hyper-V
-IaaS — Infrastructure as a Service
-IaC — Infrastructure as Code
-ICMP — Internet Control Message Protocol
-ICT — Information and Communications Technology
-IDE — Integrated Development Environment
-IDS — Intrusion Detection System
-IMAP — Internet Message Access Protocol
-Intune — Microsoft Intune
-IP — Internet Protocol
-IPS — Intrusion Prevention System
-ISP — Internet Service Provider
-IT — Information Technology
-ITAM
-ITIL
-ITSM
-JAMstack — JavaScript, APIs and Markup
-Jenkins — CI/CD automation server
-JSON — JavaScript Object Notation
-JSON‑RPC / gRPC — Palveluiden väliset protokollat
-JWT — JSON Web Token
-Kanban
-KISS — Keep It Simple, Stupid
-KPI — Key Performance Indicator
-KPI Dashboard — Mittarien kojelauta
-Kubernetes (K8s) — Konttien orkestrointialusta
-KVM — Kernel‑based Virtual Machine
-LAN — Local Area Network
-LDAP — Lightweight Directory Access Protocol
-LLM — Large Language Model
-Load Balancer — Kuormanjako
-Lustre — Rinnakkainen tiedostojärjestelmä
-M365 / O365 — Microsoft 365 / Office 365
-MAC — Media Access Control
-MAM — Mobile Application Management
-Maven — Build automation tool
-MDM — Mobile Device Management
-MDT — Microsoft Deployment Toolkit
-MDX — Multidimensional Expressions
-MFA — Multi‑Factor Authentication
-Microsoft Fabric — Microsoftin analytiikka-alusta
-ML — Machine Learning
-MLM — Masked Language Model
-MLOps — Machine Learning Operations
-MoE — Mixture of Experts
-MOLAP — Multidimensional Online Analytical Processing
-MPLS — Multiprotocol Label Switching
-MTConnect — Manufacturing Technology Connect
-MVC — Model-View-Controller
-MVP — Model-View-Presenter
-MVVM — Model-View-ViewModel
-NAS — Network Attached Storage
-NAT — Network Address Translation
-NFS — Network File System
-NFS — Network File System
-NLP — Natural Language Processing
-NoSQL — Not Only SQL
-npm — Node Package Manager
-OAuth2 — OAuth 2.0
-OCI — Open Container Initiative
-Office 365 — Microsoft Office 365
-OKR — Objectives and Key Results
-OLA
-OLAP — Online Analytical Processing
-OLAP — Online Analytical Processing
-OLTP — Online Transaction Processing
-OneDrive — Microsoft OneDrive
-OOBE — Out Of Box Experience
-OOP — Object-Oriented Programming
-OPC UA — OPC Unified Architecture
-ORM — Object-Relational Mapping
-OS — Operating System
-OSD — Operating System Deployment
-OTP — One‑Time Password
-OWASP — Open Web Application Security Project
-PaaS — Platform as a Service
-PCI DSS — Payment Card Industry Data Security Standard
-PDF — Portable Document Format
-PKI — Public Key Infrastructure
-POP3 — Post Office Protocol v3
-Power BI — Microsoft Power BI
-PWA — Progressive Web App
-PXE — Preboot eXecution Environment
-QR — Quick Response
-RAG — Retrieval-Augmented Generation
-RAID — Redundant Array of Independent Disks
-RAM — Random Access Memory
-RBAC — Role‑Based Access Control
-REST — Representational State Transfer
-RL — Reinforcement Learning
-RLS — Row‑Level Security
-RNN — Recurrent Neural Network
-ROI — Return on Investment
-ROLAP — Relational Online Analytical Processing
-ROM — Read‑Only Memory
-RPA
-RPO
-RTO
-S3 — Simple Storage Service
-S3 — Simple Storage Service
-SaaS — Software as a Service
-SAML — Security Assertion Markup Language
-SAN — Storage Area Network
-SCCM / MECM — System Center Configuration Manager / Microsoft Endpoint Configuration Manager
-SCM — Source Code Management
-SDK — Software Development Kit
-SFTP — SSH File Transfer Protocol
-SharePoint — Microsoft SharePoint
-SIEM — Security Information and Event Management
-SLA
-Slice and Dice — Datan leikkaus ja pilkkominen
-SLM — Small/Streamlined Language Model
-SLO — Service Level Objective
-SMB — Server Message Block
-SMTP — Simple Mail Transfer Protocol
-SNMP — Simple Network Management Protocol
-SOAP — Simple Object Access Protocol
-SOC — Security Operations Center
-SOC 2 — Service Organization Control 2
-SOLID — Design Principles
-SPA — Single Page Application
-Sprint
-SQL — Structured Query Language
-SQL — Structured Query Language
-SQL Server, SSAS, SSIS, SSRS — Microsoftin data‑tuotekokonaisuus
-SRE — Site Reliability Engineering
-SSAS — SQL Server Analysis Services
-SSD — Solid State Drive
-SSH — Secure Shell
-SSIS — SQL Server Integration Services
-SSL — Secure Sockets Layer
-SSO — Single Sign‑On
-SSR — Server-Side Rendering
-SSRS — SQL Server Reporting Services
-TCP — Transmission Control Protocol
-TDD — Test-Driven Development
-Teams — Microsoft Teams
-Terraform — Infrastructure as Code tool
-TLS — Transport Layer Security
-UDP — User Datagram Protocol
-UEFI — Unified Extensible Firmware Interface
-UEM — Unified Endpoint Management
-URL — Uniform Resource Locator
-USB — Universal Serial Bus
-VDI — Virtual Desktop Infrastructure
-VIZ — Visualization
-VLAN — Virtual Local Area Network
-VLM — Vision‑Language Model
-VM — Virtual Machine
-VPN — Virtual Private Network
-VPN (IPSec / SSL‑VPN) — Turvallinen etäyhteys
-VQ — Visual Query / Q&A
-VXLAN — Virtual Extensible LAN
-WAN — Wide Area Network
-WDS — Windows Deployment Services
-WSUS — Windows Server Update Services
-X509 — X.509 Certificate Standard
-XML — eXtensible Markup Language
-XSS — Cross‑Site Scripting
-YAGNI — You Aren't Gonna Need It
-YAML — YAML Ain't Markup Language
+2FA — Two‑Factor Authentication:  Kaksivaiheinen tunnistautuminen - käyttäjätunnuksen ja salasanan lisäksi vaaditaan toinen varmistus.
+ABAC — Attribute‑Based Access Control:  Kehittynyt pääsynhallintatapa, joka käyttää erilaisia ominaisuuksia päätöksien tekemiseen.
+ACID — Atomicity, Consistency, Isolation, Durability:  Tietokantatapahtumien luotettavuusperiaatteet, jotka takaavat datan eheyden.
+ACL — Access Control List:  Lista joka määrittelee kuka pääsee mihinkin resurssiin ja millä oikeuksilla.
+AD — Active Directory:  Microsoftin hakemistopalvelu joka hallitsee käyttäjiä, tietokoneita ja resursseja yritysverkossa.
+Agile / Scrum:  Palvelun laatutavoitteet - konkreettiset mittarit joilla palvelun suorituskykyä seurataan.
+AI — Artificial Intelligence:  Teknologia jolla koneet voivat suorittaa tehtäviä jotka vaatisivat ihmisältä älykkyyttä.
+AIOps — Artificial Intelligence for IT Operations:  Tekoälyn käyttö IT-järjestelmien monitorointiin, analysointiin ja automaattiseen ongelmanratkaisuun.
+AMI — Amazon Machine Image:  Valmis tietokoneen "kuva" joka sisältää käyttöjärjestelmän ja sovellukset AWS:ssä.
+Ansible — Configuration management tool:  Työkalu palvelimien automaattiseen konfigurointiin ja hallintaan ilman agentteja.
+API — Application Programming Interface:  Rajapinta jolla sovellukset voivat käyttää AI-palveluja internetin kautta.
+API — Application Programming Interface:  Tapa jolla ohjelmat keskustelevat keskenään - määrittää mitä voit pyytää ja miten.
+API — Application Programming Interface:  Tapa jolla ohjelmat keskustelevat keskenään ja jakavat dataa.
+APM — Application Performance Monitoring:  Järjestelmä joka seuraa sovelluksen suorituskykyä ja käyttäjäkokemusta reaaliajassa.
+ARM Cortex — Prosessoriarkkitehtuuri:  ARM:n suunnittelema prosessoriarkkitehtuuri, joka on yleinen mobiililaitteissa ja sulautetuissa järjestelmissä.
+Auto Scaling — Automaattinen skaalautuminen:  Järjestelmä joka automaattisesti lisää tai vähentää palvelimia kuormituksen mukaan.
+Autopilot — Windows Autopilot:  Palvelu joka automatisoi uusien Windows-laitteiden käyttöönoton.
+AWS — Amazon Web Services:  Amazonin pilvipalveluiden kokoelma - maailman suurin pilvipalveluntarjoaja.
+Azure — Microsoft Azure:  Microsoftin pilvipalvelualusta, erityisesti suosittu yrityksissä jotka käyttävät Microsoft-tuotteita.
+Azure AD — Azure Active Directory:  Microsoftin pilvipohjainen identiteetti- ja käyttöoikeuspalvelu.
+Backlog:  Palvelun laatutavoitteet - konkreettiset mittarit joilla palvelun suorituskykyä seurataan.
+BASE — Basically Available, Soft state, Eventual consistency:  Vaihtoehtoinen lähestymistapa ACID:ille suurissa hajautetuissa järjestelmissä.
+BCP:  Palvelun laatutavoitteet - konkreettiset mittarit joilla palvelun suorituskykyä seurataan.
+BDD — Behavior-Driven Development:  Kehitysmenetelmä, joka keskittyy ohjelmiston käyttäytymisen määrittelyyn liiketoiminnan näkökulmasta.
+BERT — Bidirectional Encoder Representations from Transformers:  Googlen kehittämä AI-malli joka ymmärtää kieltä lukemalla tekstiä molempiin suuntiin.
+BFF — Backend for Frontend:  API-kerros, joka on räätälöity tietyn käyttöliittymän (frontend) tarpeisiin.
+BGP — Border Gateway Protocol:  Internetin selkärankareititin, joka ohjaa liikennettä eri verkkojen välillä internetissä.
+BI — Business Intelligence:  Teknologioita ja menetelmiä joilla yritysdata muutetaan ymmärrettäviksi raporteiksi päätöksenteon tueksi.
+BIOS — Basic Input/Output System:  Tietokoneen käynnistysjärjestelmä, joka herättää koneen henkiin.
+BPM:  Palvelun laatutavoitteet - konkreettiset mittarit joilla palvelun suorituskykyä seurataan.
+BYOD — Bring Your Own Device:  Käytäntö jossa työntekijät käyttävät omia henkilökohtaisia laitteitaan työtehtäviin.
+CA — Certificate Authority:  Luotettava taho joka myöntää ja varmistaa digitaalisia varmenteita internetissä.
+Cadmatic — Teollisuuden suunnitteluohjelmisto:  Suomalainen 3D-suunnitteluohjelmisto laivanrakennukseen, offshore-teollisuuteen ja prosessiteollisuuteen.
+CD — Continuous Delivery / Continuous Deployment:  Automaattinen tapa viedä sovelluspäivityksia tuotantoon nopeasti ja turvallisesti.
+CDC — Change Data Capture:  Tekniikka jolla seurataan ja tallennetaan kaikki muutokset tietokannassa.
+CDN — Content Delivery Network:  Maailmanlaajuinen palvelinverkosto, joka nopeuttaa verkkosivujen lataamista sijoittamalla sisältöä lähemmäs käyttäjiä.
+CDN — Content Delivery Network:  Maailmanlaajuinen palvelinverkosto, joka nopeuttaa verkkosivujen lataamista sijoittamalla sisältöä lähemmäs käyttäjiä.
+Ceph — Hajautettu tallennusjärjestelmä:  Avoimen lähdekoodin hajautettu tallennusratkaisu joka jakaa datan usealle palvelimelle.
+CI — Continuous Integration:  Käytäntö jossa koodimuutokset yhdistetään ja testataan automaattisesti jatkuvasti.
+CISO:  Palvelun laatutavoitteet - konkreettiset mittarit joilla palvelun suorituskykyä seurataan.
+CLI — Command-Line Interface:  Tekstipohjainen käyttöliittymä, jossa annetaan komentoja kirjoittamalla.
+CM:  Palvelun laatutavoitteet - konkreettiset mittarit joilla palvelun suorituskykyä seurataan.
+CMDB:  Palvelun laatutavoitteet - konkreettiset mittarit joilla palvelun suorituskykyä seurataan.
+CNN — Convolutional Neural Network:  Neuroverkkotyyppi joka on erikoistunut kuvien tunnistamiseen ja käsittelyyn.
+Co‑management — SCCM + Intune yhteiskäyttö:  Lähestymistapa jossa SCCM ja Intune hallitsevat samoja laitteita yhdessä.
+COPE — Company Owned, Personally Enabled:  Yrityksen omistama laite jota saa käyttää myös henkilökohtaisiin tarpeisiin.
+CPU — Central Processing Unit:  Tietokoneen "aivot" - suoritin joka laskee ja käsittelee kaiken.
+CQRS — Command Query Responsibility Segregation:  Arkkitehtuurimalli, joka erottaa tiedon lukemisen ja kirjoittamisen eri malleiksi.
+CRUD — Create, Read, Update, Delete:  Neljä perusoperaatiota joita tehdään datalle: luo, lue, päivitä, poista.
+CSR — Client-Side Rendering:  Web-sivun sisältö generoidaan käyttäjän selaimessa JavaScriptillä palvelimen sijaan.
+CSRF — Cross‑Site Request Forgery:  Hyökkäystyyppi, jossa pahantahtoinen sivusto saa sinut tekemään toimintoja toisella sivustolla.
+CSV — Comma-Separated Values:  Yksinkertainen tiedostomuoto taulukkomuotoisen datan tallentamiseen pilkuilla erotettuina.
+CTO:  Palvelun laatutavoitteet - konkreettiset mittarit joilla palvelun suorituskykyä seurataan.
+Dashboard — Kojelauta:  Visuaalinen näytöt joka kokoaa tärkeimmät mittarit ja trendit yhdelle sivulle.
+Data Lake — Laaja datavarasto raakamuotoiselle datalle:  Valtava säiliö jonne voidaan tallentaa kaikenlaista dataa sellaisenaan ilman ennakkokäsittelyä.
+Data Mart — Osavarasto:  Pienempi, erikoistunut datavarasto tietyn osaston tai toiminnon tarpeisiin.
+Dataflow — Power BI Dataflows:  Power BI:n ominaisuus datan puhdistamiseen, muotoiluun ja tallentamiseen pilvipalvelussa.
+DAX — Data Analysis Expressions:  Excelin kaavamainen kieli Power BI:ssä ja Analysis Servicesissa laskutoimituksia varten.
+DAX — Data Analysis Expressions:  Excelin kaavamainen kieli Power BI:ssä laskutoimituksiin ja data-analyyseihin.
+DB / DBMS — Database / Database Management System:  Tietokanta ja järjestelmä joka hallitsee sitä.
+DDD — Domain-Driven Design:  Ohjelmistosuunnittelumenetelmä, joka keskittyy liiketoiminta-alueen (domain) ymmärtämiseen ja mallintamiseen.
+DevOps:  Palvelun laatutavoitteet - konkreettiset mittarit joilla palvelun suorituskykyä seurataan.
+DHCP — Dynamic Host Configuration Protocol:  Automaattinen järjestelmä, joka jakaa IP-osoitteita laitteille, kun ne liittyvät verkkoon.
+DL — Deep Learning:  Koneoppimisen haaraiksi, joka käyttää monimutkaisia, monikerroksisia neuroverkkoja.
+DLP — Data Loss Prevention:  Järjestelmä joka estää arkaluonteisten tietojen vahingossa tai tahallaan leviämisen.
+DNS — Domain Name System:  Internetin "puhelinluettelo", joka muuttaa verkkosivujen nimet (kuten google.com) IP-osoitteiksi.
+Docker — Konttiteknologian työkalusarja:  Teknologia jolla sovelluksia pakataan "kontteihin" helpottamaan niiden asentamista ja siirtämistä.
+DOM — Document Object Model:  HTML-dokumentin sisäinen esitys, jota JavaScript voi muokata reaaliajassa.
+DP — Distribution Point:  SCCM:n palvelimen lisäkone joka jakaa ohjelmistoja ja päivityksiä paikallisesti.
+DR:  Palvelun laatutavoitteet - konkreettiset mittarit joilla palvelun suorituskykyä seurataan.
+Drill Down — Syväporaus:  Raportin ominaisuus jolla voi klikata ylätason lukua ja nähdä yksityiskohtaisemman tiedon.
+DRY — Don't Repeat Yourself:  Ohjelmointiperiaate, jonka mukaan koodia ei pidä toistaa vaan käyttää uudelleen.
+DWH — Data Warehouse:  Keskitetty varasto puhtaalle, analysoitavalle datalle eri lähteistä.
+EC2 — Elastic Compute Cloud:  AWS:n peruspalvelin-palvelu, jolla voit vuokrata virtuaalisia tietokoneita pilvessä.
+ELT — Extract, Load, Transform:  Dataprosessi jossa tieto haetaan, ladataan kohteeseen ja sitten muokataan siellä.
+EMM — Enterprise Mobility Management:  Kokonaisvaltainen lähestymistapa yrityksen mobiililaitteiden, sovellusten ja datan hallintaan.
+ES — Event Sourcing:  Tiedon tallennusstrategia, jossa tallennetaan kaikki muutokset tapahtumina perinteisen tilan sijaan.
+ETL — Extract, Transform, Load:  Dataprosessi jossa tieto haetaan, muokataan ja sitten ladataan kohdetietokantaan.
+ETL — Extract, Transform, Load:  Prosessi jossa data haetaan, muokataan ja ladataan tietovarastoon analysointia varten.
+Exchange — Microsoft Exchange Server:  Microsoftin sähköposti-, kalenteri- ja yhteistöpalvelin yrityksille.
+F2F — Face-to-Face:  Kasvotusten tapahtuva vuorovaikutus, erityisesti tiimityössä ja kokouksissa.
+FAQ — Frequently Asked Questions:  Usein kysytyt kysymykset -osio verkkosivuilla tai ohjeissa.
+FIDO — Fast IDentity Online:  Standardi salasanattomaan kirjautumiseen käyttäen sormenjälkeä, kasvoja tai turva-avaimia.
+Fine-tuning — Hienosäätö:  Prosessi jossa valmista AI-mallia muokataan toimimaan paremmin tietyssä tehtävässä.
+Firmware Engineer — Sulautettujen järjestelmien kehittäjä:  Ohjelmoija joka kehittää alhaisen tason ohjelmistoa laitteistolle, kuten mikro-ohjaimille.
+FreeRTOS — Reaaliaikainen käyttöjärjestelmä:  Vapaa reaaliaikainen käyttöjärjestelmä mikro-ohjaimille ja sulautetuille laitteille.
+FTP — File Transfer Protocol:  Vanha menetelmä tiedostojen siirtämiseen internetin kautta palvelimien välillä.
+GAN — Generative Adversarial Network:  AI-arkkitehtuuri jossa kaksi neuroverkkor kilpailevat keskenään - toinen luo väärentäjyy, toinen yrittää paljastaa ne.
+GCP — Google Cloud Platform:  Googlen pilvipalvelualusta, erityisesti vahva tekoälyssä ja data-analyyseissä.
+GDAL — Geospatial Data Abstraction Library:  Kirjasto maantieteellisen datan lukemiseen, muokkaamiseen ja kirjoittamiseen eri formaateissa.
+GDPR — General Data Protection Regulation:  EU:n tietosuoja-asetus joka suojaa sinun henkilötietojasi.
+GeoPandas — Python-kirjasto maantieteelliselle datalle:  Python-kirjasto joka yhdistää Pandas data-analyysin maantieteellisiin ominaisuuksiin.
+Git — Version Control System:  Versionhallintajärjestelmä joka tallentaa kaikki muutokset koodissa ja mahdollistaa yhteistyön.
+GitHub Actions — GitHub automation platform:  GitHubin sisäänrakennettu automaatiojärjestelmä CI/CD:lle ja muille tehtäville.
+GitLab CI — GitLab Continuous Integration:  GitLabin sisäänrakennettu CI/CD-järjestelmä automaattiseen testaukseen ja julkaisuun.
+GitOps — Git-pohjainen infrastruktuurin hallinta:  Tapa hallita infrastruktuuria ja sovelluksia Git-repositoryn kautta deklaratiivisesti.
+GPO — Group Policy Object:  Windows-ympäristössä käytetty määritystyökalu jolla hallitaan käyttäjien ja koneiden asetuksia keskitetysti.
+GPT — Generative Pre-trained Transformer:  OpenAI:n kehittämä kielimalli-arkkitehtuuri, jonka tunnetuin versio on ChatGPT.
+GPU — Graphics Processing Unit:  Näytönohjain - piirtää kaiken mitä näet ruudulla.
+GPU, TPU — Laitteet massiiviseen rinnakkaislaskentaan:  Erikoissuorittimet jotka pystyvät tekemään tuhansia laskutoimituksia samanaikaisesti AI:n vaatimiin laskuihin.
+gRPC — Google Remote Procedure Call:  Googlen kehittämä RPC-protokolla tehokkaaseen kommunikointiin palveluiden välillä.
+GUI — Graphical User Interface:  Graafinen käyttöliittymä, jossa käytetään ikkunoita, kuvakkeita ja hiirtä.
+HCI — Hyperconverged Infrastructure:  Arkkitehtuuri joka yhdistää palvelimet, tallennuksen ja verkon yhdeksi hallittavaksi kokonaisuudeksi.
+HDD — Hard Disk Drive:  Kiintolevy - tallentaa kaikki tiedostosi pysyvästi.
+HDMI — High-Definition Multimedia Interface:  Kaapeliliitin kuvan ja äänen siirtämiseen laitteesta toiseen.
+HITL — Human-in-the-loop:  AI-järjestelmä jossa ihminen on mukana päätöksenteossa tai oppimisprosessissa.
+HTML — HyperText Markup Language:  Verkkosivujen rakentamiseen käytetty merkintäkieli.
+HTTP — HyperText Transfer Protocol:  Perusprotokolla, jolla verkkosivut siirretään internetissä selaimelle näytettäväksi.
+HTTPS — HTTP Secure:  Turvallinen versio HTTP:stä, joka salaa tietoliikennettä verkkosivun ja selaimesi välillä.
+Hyper-V — Microsoft Hyper-V:  Microsoftin virtualisointialusta jolla luodaan ja hallitaan virtuaalitietokoneita.
+IaaS — Infrastructure as a Service:  Pilvipalvelumalli jossa vuokraat perus-IT-infrastruktuurin (palvelimet, tallennuksen, verkon).
+IaC — Infrastructure as Code:  Lähestymistapa jossa IT-infrastruktuuri määritellään ja hallitaan koodina, ei manuaalisesti.
+ICMP — Internet Control Message Protocol:  Verkkoprotokolla, joka lähettää virheilmoituksia ja testausviestejä internetissä.
+ICT — Information and Communications Technology:  Tieto- ja viestintätekniikka - kaikki digitaalinen teknologia yhteensä.
+IDE — Integrated Development Environment:  Kaikki-yhdessä-sovellus ohjelmointiin: editori, debuggeri, kääntäjä samassa paketissa.
+IDM — Identity Management:  Järjestelmä joka hallitsee käyttäjien identiteettejä, oikeuksia ja pääsyä yrityksen resursseihin.
+IDS — Intrusion Detection System:  Tietoturvajärjestelmä joka havaitsee epäilyttävää toimintaa verkossa.
+IMAP — Internet Message Access Protocol:  Sähköpostiprotokolla, jolla voit lukea sähköposteja useilla laitteilla pitäen ne synkronissa.
+Intune — Microsoft Intune:  Microsoftin pilvipohjainen laitteiden hallintapalvelu (MDM/EMM).
+IP — Internet Protocol:  Internetin perusprotokolla, joka määrittelee, miten tietopaketit ohjataan oikeisiin osoitteisiin.
+IPS — Intrusion Prevention System:  Järjestelmä joka ei vain havaitse uhkia kuten IDS, vaan myös estää ne aktiivisesti.
+ISP — Internet Service Provider:  Internet-palveluntarjoaja, yritys joka tarjoaa sinulle internet-yhteyden kotiin tai toimistoon.
+IT — Information Technology:  Tietotekniikka - tietokoneet, ohjelmat ja digitaaliset palvelut.
+ITAM:  Palvelun laatutavoitteet - konkreettiset mittarit joilla palvelun suorituskykyä seurataan.
+ITIL:  Palvelun laatutavoitteet - konkreettiset mittarit joilla palvelun suorituskykyä seurataan.
+ITSM:  Palvelun laatutavoitteet - konkreettiset mittarit joilla palvelun suorituskykyä seurataan.
+Jamf — Apple-laitteiden hallintaratkaisu:  Johtava MDM-ratkaisu Mac-, iPhone- ja iPad-laitteiden yritysympäristössä hallintaan.
+JAMstack — JavaScript, APIs and Markup:  Modernin web-kehityksen arkkitehtuuri, joka perustuu staatisiin sivuihin, API:hin ja JavaScriptiin.
+Jenkins — CI/CD automation server:  Avoimen lähdekoodin automaatiopalvelin CI/CD-prosessien hallintaan.
+JSON — JavaScript Object Notation:  Kevyt tekstimuotoinen dataformaatti strukturoidun tiedon tallentamiseen ja siirtämiseen.
+JSON‑RPC / gRPC — Palveluiden väliset protokollat:  Protokollia joilla sovellukset voivat kutsua toistensa funktioita verkon kautta tehokkaasti.
+JWT — JSON Web Token:  Turvallinen tapa säilyttää käyttäjän tietoja ja oikeuksia digitaalisessa muodossa.
+Kanban:  Palvelun laatutavoitteet - konkreettiset mittarit joilla palvelun suorituskykyä seurataan.
+Kandji — Apple-laitteiden hallintaratkaisu:  Moderni MDM-alusta Apple-ekosysteemille, kilpailija Jamfille.
+KISS — Keep It Simple, Stupid:  Suunnitteluperiaate, joka korostaa yksinkertaisuuden tärkeyttä.
+KPI — Key Performance Indicator:  Ydintunnusluku joka mittaa miten hyvin yritys tai prosessi saavuttaa tavoitteensa.
+KPI Dashboard — Mittarien kojelauta:  Erikoistunut dashboard joka keskittyy näyttämään yrityksen tärkeimmät KPI:t.
+Kubernetes (K8s) — Konttien orkestrointialusta:  Järjestelmä joka hallitsee tuhansia Docker-kontteja automaattisesti useilla palvelimilla.
+KVM — Kernel‑based Virtual Machine:  Linuxin sisäänrakennettu virtualisointiteknologia, joka muuttaa Linuxin hypervisoriksi.
+LAN — Local Area Network:  Paikallinen tietoliikenneverkko, joka yhdistää laitteita pienellä alueella kuten kotona tai toimistossa.
+LDAP — Lightweight Directory Access Protocol:  Protokolla käyttäjä- ja ryhmätietojen hallintaan yrityksissä.
+LLM — Large Language Model:  Valtava AI-malli joka on oppinut ymmärtämään ja tuottamaan ihmiskieltä.
+Load Balancer — Kuormanjako:  Järjestelmä joka jakaa verkkoliikenteen tasaisesti usealle palvelimelle.
+Lustre — Rinnakkainen tiedostojärjestelmä:  Erittäin nopea tiedostojärjestelmä suurten tietomassojen käsittelyyn supertietokoneissa.
+M365 / O365 — Microsoft 365 / Office 365:  Microsoftin pilvipalvelupaketti joka sisältää Officen, sähköpostin, tallennustilan ja yhteistyötyökalut.
+MAC — Media Access Control:  Jokaisella verkkolaitteella oleva yksilöllinen tunniste, kuin sormenjälki tai henkilötunnus.
+MAM — Mobile Application Management:  Järjestelmä jolla hallitaan mobiilisovellusten käyttöä, asentamista ja turvallisuutta yritysympäristössä.
+Maven — Build automation tool:  Java-projektien automaattiseen rakentamiseen ja riippuvuuksien hallintaan tarkoitettu työkalu.
+MDM — Mobile Device Management:  Järjestelmä mobiililaitteiden keskitettyyn hallintaan, konfigurointiin ja turvallisuuden valvontaan.
+MDT — Microsoft Deployment Toolkit:  Ilmainen Microsoftin työkalu Windows-käyttöjärjestelmien automaattiseen asennukseen.
+MDX — Multidimensional Expressions:  Kyselykieli monimutkaisten analyysien tekemiseen multidimensionaalisista tietokannoista.
+MEC — Multi-access Edge Computing:  Tietojenkäsittelyn tuominen lähelle käyttäjiä matalan viiveen ja paremman suorituskyvyn saavuttamiseksi.
+MFA — Multi‑Factor Authentication:  Monivaiheinen tunnistautuminen - sama kuin 2FA, mutta voi olla useampi vaihe.
+Microchip — Mikro-ohjainvalmistaja:  Amerikkalainen yritys joka valmistaa mikro-ohjaimia ja puolijohteita.
+Microsoft Fabric — Microsoftin analytiikka-alusta:  Microsoftin kattava pilvipohjainen analytiikka- ja dataalusta, joka yhdistää Power BI:n, Azure Synapse:n ja muita datatyökaluja.
+ML — Machine Learning:  Tieteenhaara jossa koneet oppivat tunnistamaan kuvioita datasta ilman eksplisiittistä ohjelmoitua.
+MLM — Masked Language Model:  AI-mallin harjoittelutapa jossa piilotetaan sanoja tekstistä ja yritetään arvata ne kontekstista.
+MLOps — Machine Learning Operations:  Käytäntöjä ja työkaluja koneoppimismallien hallintaan tuotantoympäristössä.
+MoE — Mixture of Experts:  AI-arkkitehtuuri jossa eri osa-mallit ("asiantuntijat") erikoistuvat eri tehtäviin.
+MOLAP — Multidimensional Online Analytical Processing:  OLAP-toteutus jossa data on tallennettu monidimensionaalisiin kuutioihin nopeaa analyysiä varten.
+MPLS — Multiprotocol Label Switching:  Tehokas reititystekniikka, joka nopeuttaa tietoliikennettä suurissa verkoissa käyttämällä etikettejä.
+MTConnect — Manufacturing Technology Connect:  Standardi teollisuuskoneistojen reaaliaikaisen tiedon jakamiseen ja valmistusprosessien seurantaan.
+MUI — Material-UI tai Mobile User Interface:  React-komponenttikirjasto tai mobiililaitteiden käyttöliittymän suunnittelu.
+MVC — Model-View-Controller:  Ohjelmistoarkkitehtuurimalli, joka jakaa sovelluksen kolmeen osaan: tietomalli, näkymä ja ohjain.
+MVP — Model-View-Presenter:  MVC:n muunnelma, jossa Presenter hoitaa kaikki View:n päätökset ja View on passiivinen.
+MVP‑roadmap — Minimum Viable Product roadmap:  Suunnitelma siitä, miten MVP kehittyy täysimittaiseksi tuotteeksi ajan kuluessa.
+MVVM — Model-View-ViewModel:  Arkkitehtuurimalli, jossa ViewModel toimii välittäjänä Model:n ja View:n välillä tiedon sitomisen kautta.
+NAS — Network Attached Storage:  Verkkoon kytketty tallennuslaite jonka kautta voidaan jakaa tiedostoja.
+NAT — Network Address Translation:  Tekniikka, joka mahdollistaa useamman laitteen käytön samalla julkisella IP-osoitteella.
+NFS — Network File System:  Protokolla joka mahdollistaa tiedostojen jakamisen verkon yli Unix/Linux-järjestelmissä.
+NFS — Network File System:  Unix/Linux-protokolla tiedostojen jakamiseen verkon kautta.
+NLP — Natural Language Processing:  AI:n osa-alue joka käsittelee ihmiskielen ymmärtämistä ja tuottamista tietokoneilla.
+Nordic nRF — Bluetooth ja IoT mikro-ohjaimet:  Nordic Semiconductorin valmistama mikro-ohjainperhe, joka on erikoistunut langattomaan kommunikointiin.
+NoSQL — Not Only SQL:  Tietokantateknologioiden perhe joka ei käytä perinteisiä taulukkoja ja SQL:ää.
+npm — Node Package Manager:  JavaScript-projektien pakettien (kirjastojen) hallintajärjestelmä.
+NumPy — Numerical Python:  Python-kirjasto tehokkaaseen numeeriseen laskentaan ja taulukkolaskentaan.
+NXP iMX — ARM-prosessoriperhe:  NXP:n valmistama ARM Cortex -pohjainen prosessoriperhe teollisuus- ja autosovelluksiin.
+OAuth2 — OAuth 2.0:  Standardi jolla voit antaa sovelluksille rajatun pääsyn tileihisi jakamatta salasanaasi.
+OCI — Open Container Initiative:  Standardi joka määrittelee miten kontit pitää rakentaa, jotta ne toimivat kaikissa järjestelmissä.
+Office 365 — Microsoft Office 365:  Microsoftin pilvipalveluna tarjottu Office-ohjelmistopaketti.
+OKR — Objectives and Key Results:  Tavoitteenasettamismenetelmä jossa jokainen tavoite on liitetty mitattaviin tuloksiin.
+OLA:  Palvelun laatutavoitteet - konkreettiset mittarit joilla palvelun suorituskykyä seurataan.
+OLAP — Online Analytical Processing:  Järjestelmä monimutkaisten data-analyysien tekemiseen suurista datamassoista.
+OLAP — Online Analytical Processing:  Teknologia nopeaan monimutkaisten analyysien tekemiseen suurista datamassoista.
+OLTP — Online Transaction Processing:  Järjestelmä päivittäisten liiketoimintatransaktioiden käsittelyyn reaaliajassa.
+OneDrive — Microsoft OneDrive:  Microsoftin pilvipalvelu tiedostojen tallentamiseen, synkronointiin ja jakamiseen.
+OOBE — Out Of Box Experience:  Ensimmäinen käyttökokemus kun uusi laite otetaan käyttöön.
+OOP — Object-Oriented Programming:  Ohjelmointiparadigma, jossa koodi organisoidaan olioiksi, jotka sisältävät dataa ja toimintoja.
+OPC UA — OPC Unified Architecture:  Teollisuuden standardiprotokolla turvalliseen tiedonvaihtoon automaatiojärjestelmien ja pilvipalvelujen välillä.
+OpenCV — Open Source Computer Vision Library:  Avoimen lähdekoodin kirjasto konenäköön ja kuvankäsittelyyn.
+ORM — Object-Relational Mapping:  Teknologia, joka yhdistää olio-ohjelmoinnin ja relaatiotietokannat.
+OS — Operating System:  Käyttöjärjestelmä - ohjelmisto joka hallinnoi koko tietokonetta.
+OSD — Operating System Deployment:  Käyttöjärjestelmien automaattinen asentaminen usealle tietokoneelle samanaikaisesti.
+OTP — One‑Time Password:  Kertakäyttöinen salasana joka on voimassa vain hetken, usein 6-numeroinen koodi.
+OWASP — Open Web Application Security Project:  Kansainvälinen yhteisö joka edistää verkkosovellusten turvallisuutta.
+PaaS — Platform as a Service:  Pilvipalvelumalli jossa saat valmiin alustan sovelluskehitykseen ilman palvelinhallintaa.
+Pandas — Python Data Analysis Library:  Python-kirjasto taulukkomuotoisen datan käsittelyyn ja analysointiin.
+PCI DSS — Payment Card Industry Data Security Standard:  Turvallisuusstandardi yrityksille jotka käsittelevät luottokorttitietoja.
+PDF — Portable Document Format:  Tiedostomuoto joka näyttää samalta kaikissa laitteissa ja ohjelmissa.
+PKI — Public Key Infrastructure:  Järjestelmä joka hallinnoi digitaalisia varmenteita turvallista viestintää varten.
+POP3 — Post Office Protocol v3:  Vanha sähköpostiprotokolla, joka lataa viestit paikallisesti eikä pidä niitä synkronissa laitteiden välillä.
+Power BI — Microsoft Power BI:  Microsoftin business intelligence -työkalu datan visualisointiin ja analytiikkaan.
+PWA — Progressive Web App:  Web-sovellus, joka toimii kuin natiivi mobiilisovellus offline-tuen ja asennettavuuden kanssa.
+PXE — Preboot eXecution Environment:  Standardi jolla tietokone voi käynnistyä verkosta ilman paikallisia levyjä.
+QR — Quick Response:  Neliönmuotoinen viivakoodi jonka voi lukea puhelimella.
+RAG — Retrieval-Augmented Generation:  Tekniikka joka yhdistää tiedon haun ja tekstin tuotannon antaen AI:lle ajantasaista faktatietoa.
+RAID — Redundant Array of Independent Disks:  Tekniikka jolla useita kovalevyjä yhdistetään toimimaan yhtenä luotettavampana yksikkönä.
+RAM — Random Access Memory:  Tietokoneen työmuisti - tilapäinen säilytyspaikka käynnissä oleville ohjelmille.
+RBAC — Role‑Based Access Control:  Pääsynhallinta jossa oikeudet määritellään työroolin, ei henkilön mukaan.
+REST — Representational State Transfer:  Arkkitehtuurityyli web-API:ille joka käyttää HTTP-verbejä (GET, POST, PUT, DELETE) resurssien hallintaan.
+RL — Reinforcement Learning:  Oppimismetodi jossa AI oppii kokeilemalla ja saamalla palautetta - palkintoja hyvistä ja rangaistuksia huonoista päätöksistä.
+RLS — Row‑Level Security:  Tietoturvaominaisuus jolla rajoitetaan mitä tietokantarivejä eri käyttäjät näkevät.
+RNN — Recurrent Neural Network:  Neuroverkko joka muistaa aikaisempaa tietoa ja soveltaa sitä uusiin tilanteisiin.
+ROI — Return on Investment:  Mittari joka kertoo miten paljon sijoitus tuottaa suhteessa sen kustannuksiin.
+ROLAP — Relational Online Analytical Processing:  OLAP-toteutus joka käyttää perinteisiä relationaalisia tietokantoja ja SQL:ää.
+ROM — Read‑Only Memory:  Pysyvä muisti johon on tallennettu laitteen perusohjelmat.
+RPA:  Palvelun laatutavoitteet - konkreettiset mittarit joilla palvelun suorituskykyä seurataan.
+RPO:  Palvelun laatutavoitteet - konkreettiset mittarit joilla palvelun suorituskykyä seurataan.
+RTO:  Palvelun laatutavoitteet - konkreettiset mittarit joilla palvelun suorituskykyä seurataan.
+S3 — Simple Storage Service:  Amazonin objektitallennuspalvelu ja de facto standardi pilvipohjaiselle tiedostotallennukselle.
+S3 — Simple Storage Service:  AWS:n pilvipalvelu tiedostojen tallentamiseen, kuin rajaton kovalevy internetissä.
+SaaS — Software as a Service:  Pilvipalvelumalli jossa käytät valmiita sovelluksia suoraan selaimessa ilman asennuksia.
+SAML — Security Assertion Markup Language:  Standardi jolla organisaatiot voivat jakaa tunnistautumistietoja turvallisesti.
+SAN — Storage Area Network:  Erillinen nopea verkko joka yhdistää palvelimet jaettuun tallennustilaan.
+SCCM / MECM — System Center Configuration Manager / Microsoft Endpoint Configuration Manager:  Microsoftin järjestelmä Windows-tietokoneiden keskitettyyn hallintaan suurissa organisaatioissa.
+SCM — Source Code Management:  Järjestelmä lähdekoodin versionhallinnan ja yhteistyön hallintaan.
+SDK — Software Development Kit:  Kehittäjien työkalupaketti tietyn alustan, palvelun tai järjestelmän sovelluskehitykseen.
+SFTP — SSH File Transfer Protocol:  Turvallinen tapa siirtää tiedostoja internetin kautta käyttämällä SSH-salausta.
+SharePoint — Microsoft SharePoint:  Microsoftin alusta dokumenttien hallintaan, yhteistyöhön ja intranet-sivustojen luomiseen.
+SIEM — Security Information and Event Management:  Järjestelmä joka kerää ja analysoi tietoturvatietoja koko organisaatiosta.
+SLA:  Palvelun laatutavoitteet - konkreettiset mittarit joilla palvelun suorituskykyä seurataan.
+Slice and Dice — Datan leikkaus ja pilkkominen:  Analytiikkan tekniikka jolla data "leikataan" eri näkökulmista tutkimisen helpottamiseksi.
+SLM — Small/Streamlined Language Model:  Pienet, tehokkaat kielimallit jotka toimivat paikallisesti ilman pilviyhteyttä.
+SLO — Service Level Objective:  Palvelun laatutavoitteet - konkreettiset mittarit joilla palvelun suorituskykyä seurataan.
+SMB — Server Message Block:  Windows-protokolla tiedostojen, tulostimien ja muiden resurssien jakamiseen verkossa.
+SMTP — Simple Mail Transfer Protocol:  Protokolla sähköpostien lähettämiseen internetin kautta sähköpostipalvelimien välillä.
+SNMP — Simple Network Management Protocol:  Protokolla verkkolaitteiden etähallintaan ja seurantaan internetin kautta.
+SOAP — Simple Object Access Protocol:  Vanha mutta edelleen käytössä oleva protokolla web-palveluille, käyttää XML:ää.
+SOC — Security Operations Center:  Tietoturvakeskus jossa ammattilaiset valvovat ja reagoivat uhkiin ympäri vuorokauden.
+SOC 2 — Service Organization Control 2:  Tarkastusstandardi joka varmistaa että pilvipalvelut käsittelevät asiakkaiden tietoja turvallisesti.
+SOLID — Design Principles:  Viisi olio-ohjelmoinnin suunnitteluperiaatetta puhtaan ja ylläpidettävän koodin kirjoittamiseen.
+SPA — Single Page Application:  Web-sovellus, joka lataa yhden HTML-sivun ja päivittää sisällön dynaamisesti JavaScriptillä.
+SQL — Structured Query Language:  Standardikieli tietokantojen kanssa keskustelemiseen.
+SQL — Structured Query Language:  Tietokantojen kyselykieli, jolla haetaan ja muokataan tietoa.
+SQL Server, SSAS, SSIS, SSRS — Microsoftin data‑tuotekokonaisuus:  Microsoftin kattava kokoelma työkaluja tiedon tallentamiseen, käsittelyyn, analysointiin ja raportointiin.
+SRE — Site Reliability Engineering:  Googlen kehittämä lähestymistapa, jossa luotettavuus käsitellään ohjelmistokehitysongelmana.
+SSAS — SQL Server Analysis Services:  Microsoftin työkalu OLAP-kuutioiden ja data mining -mallien luomiseen ja hallintaan.
+SSD — Solid State Drive:  Nopea, hiljainen tallennuslaite jossa ei ole liikkuvia osia.
+SSH — Secure Shell:  Turvallinen tapa kirjautua etänä toiseen tietokoneeseen ja hallita sitä internetin kautta.
+SSIS — SQL Server Integration Services:  Microsoftin ETL-työkalu jolla siirretään ja muokataan dataa eri järjestelmien välillä.
+SSL — Secure Sockets Layer:  Vanha salaustekniikka internetyhteyksiä varten, nykyisin korvattu TLS:llä.
+SSO — Single Sign‑On:  Yhden kirjautumisen järjestelmä - yhdellä kirjautumisella pääsee useisiin palveluihin.
+SSR — Server-Side Rendering:  Web-sivun HTML generoidaan palvelimella ennen lähettämistä selaimelle.
+SSRS — SQL Server Reporting Services:  Microsoftin työkalu muodollisten raporttien luomiseen ja jakamiseen.
+STM32 — STMicroelectronics mikro-ohjaimet:  STMicroelectronicsin valmistama ARM Cortex -pohjainen mikro-ohjainperhe.
+TCP — Transmission Control Protocol:  Luotettava internetprotokolla, joka varmistaa että kaikki tietopaketit saapuvat perille oikeassa järjestyksessä.
+TDD — Test-Driven Development:  Kehitysmenetelmä, jossa testit kirjoitetaan ennen varsinaista koodia.
+Teams — Microsoft Teams:  Microsoftin yhteistyöalusta chatille, videokokouksille ja dokumenttien jakamiselle.
+Terraform — Infrastructure as Code tool:  Työkalu IT-infrastruktuurin määrittelyyn, rakentamiseen ja hallintaan koodin kautta.
+TLS — Transport Layer Security:  Nykyaikainen salaustekniikka, joka suojaa tietoliikenteen internetin kautta.
+TORI — Toimialariippumattomien:  Lyhenne joka viittaa toimialariippumattomiin ratkaisuihin tai palveluihin.
+TUVE — (määriteltävä kontekstista):  Lyhenne jonka tarkka merkitys riippuu käyttöyhteydestä.
+UDP — User Datagram Protocol:  Nopea mutta epäluotettava internetprotokolla, joka lähettää tietoa ilman takuita perillemenosta.
+UEFI — Unified Extensible Firmware Interface:  Modernin tietokoneen käynnistysjärjestelmä, BIOS:n seuraaja.
+UEM — Unified Endpoint Management:  Kokonaisvaltainen lähestymistapa kaikkien päätelaitteiden hallintaan yhdestä järjestelmästä.
+URL — Uniform Resource Locator:  Internet-osoite - kertoo missä verkkosivusto tai tiedosto sijaitsee.
+USB — Universal Serial Bus:  Yleisliitin laitteiden yhdistämiseen tietokoneeseen.
+VDI — Virtual Desktop Infrastructure:  Järjestelmä jossa työpöytäympäristöt toimivat palvelimilla ja käyttäjät yhdistävät niihin etänä.
+VIZ — Visualization:  Datan esittäminen visuaalisessa muodossa kaavioina, graafeina ja kartoina.
+VLAN — Virtual Local Area Network:  Tekniikka, jolla yksi fyysinen verkko jaetaan useisiin erillisiin virtuaaliverkkoihin.
+VLM — Vision‑Language Model:  AI-malli joka ymmärtää sekä kuvia että tekstiä ja osaa yhdistää niitä.
+VM — Virtual Machine:  Ohjelmallisesti luotu tietokone toisessa tietokoneessa, joka toimii kuin aito tietokone.
+VPN — Virtual Private Network:  Turvallinen yhteys internetin kautta, joka luo salattun tunnelin laitteesi ja VPN-palvelimen välille.
+VPN (IPSec / SSL‑VPN) — Turvallinen etäyhteys:  Eri teknologioilla toimivat VPN:t - IPSec sovelluksiin, SSL-VPN selaimeen.
+VQ — Visual Query / Q&A:  Ominaisuus jolla voi kysyä kysymyksiä datasta luonnollisella kielellä visuaalisen vastauksen saamiseksi.
+VXLAN — Virtual Extensible LAN:  Kehittynyt virtualisoitekniikka, joka mahdollistaa VLAN:ien laajentamisen datacenterien välille.
+WAN — Wide Area Network:  Laaja verkko, joka yhdistää useita LAN-verkkoja eri maantieteellisillä alueilla.
+WDS — Windows Deployment Services:  Windows Server -rooli joka mahdollistaa Windows-käyttöjärjestelmien asentamisen verkon kautta.
+WSUS — Windows Server Update Services:  Microsoftin järjestelmä Windows-päivitysten keskitettyyn hallintaan organisaatioissa.
+X509 — X.509 Certificate Standard:  Standardi digitaalisten varmenteiden muodolle ja sisällölle internetissä.
+XML — eXtensible Markup Language:  Merkintäkieli strukturoidun datan tallentamiseen ja siirtämiseen.
+XSS — Cross‑Site Scripting:  Hyökkäystyyppi jossa pahantahtoinen koodi suoritetaan toisen käyttäjän selaimessa.
+YAGNI — You Aren't Gonna Need It:  Älä rakenna ominaisuuksia "varmuuden vuoksi" - rakenna vain se mitä todella tarvitset.
+YAML — YAML Ain't Markup Language:  Ihmisystävällinen dataformaatti konfiguraatiotiedostoille ja datan vaihtoon.
+Yocto Linux — Embedded Linux-käyttöjärjestelmä:  Työkalu Linux-käyttöjärjestelmien räätälöimiseen sulautetuille laitteille.
+

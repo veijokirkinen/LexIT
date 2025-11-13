@@ -1,11 +1,11 @@
 # LexIT - Suomalainen IT-sanasto
 
-🇫🇮 **LexIT on kattava suomenkielinen IT-terminologian oppimissivusto, joka selittää 262 IT-termiä selkeästi ja ymmärrettävästi.**
+🇫🇮 **LexIT on kattava suomenkielinen IT-terminologian oppimissivusto, joka selittää 289 IT-termiä selkeästi ja ymmärrettävästi.**
 
 ## 📖 Mitä LexIT tarjoaa?
 
 - **11 kategoriaa** IT-termejä ammattilaisille ja aloittelijoille
-- **262 termiä** täydellisillä selityksillä suomeksi
+- **289 termiä** täydellisillä selityksillä suomeksi
 - **Kaksitasoinen selitys**: Lyhyt yhteenveto + syvempi kuvaus
 - **Hyödylliset linkit** Wikipedia-artikkeleihin ja virallisiin sivustoihin
 - **Responsiivinen design** toimii kaikilla laitteilla
@@ -15,16 +15,16 @@
 
 ## 🎯 Kategoriat
 
-1. **Yleiset IT-lyhenteet** (22 termiä) - Peruskäsitteet (CPU, RAM, USB, PDF...)
-2. **Verkko ja protokollat** (30 termiä) - Internet-teknologiat (HTTP, DNS, VPN, TCP...)
-3. **Pilvi, virtualisointi ja kontit** (19 termiä) - Pilvipalvelut (AWS, Azure, Docker, Kubernetes...)
-4. **Tietoturva ja suojaus** (27 termiä) - Kyberturva (2FA, GDPR, PKI, SIEM...)
-5. **Tietokannat ja data** (22 termiä) - Tiedonhallinta (SQL, API, ETL, NoSQL...)
-6. **Sovelluskehitys ja DevOps** (44 termiä) - Ohjelmistokehitys (CI/CD, Git, Jenkins...)
-7. **Microsoft & päätelaitteiden hallinta** (32 termiä) - Microsoft-ekosysteemi (Azure AD, Intune, Office 365...)
-8. **AI ja koneoppiminen** (20 termiä) - Tekoäly (ML, NLP, GPT, CNN...)
-9. **Analytiikka, BI ja raportointi** (21 termiä) - Tietoanalytiikka (BI, KPI, OLAP, Power BI...)
-10. **IT-hallinto ja prosessit** (21 termiä) - Palveluhallinta (ITIL, Agile, SLA, DevOps...)
+1. **Yleiset IT-termit** (25 termiä) - Peruskäsitteet (CLI, GUI, ORM, PDF...)
+2. **Verkot ja yhteydet** (30 termiä) - Internet-teknologiat (HTTP, DNS, VPN, OPC UA...)
+3. **Pilvilaskenta** (19 termiä) - Pilvipalvelut (AWS, Azure, Docker, Kubernetes...)
+4. **Tietoturva** (29 termiä) - Kyberturva (2FA, GDPR, PKI, ACL...)
+5. **Tietokanta ja data-analytiikka** (22 termiä) - Tiedonhallinta (SQL, API, ETL, NoSQL...)
+6. **DevOps ja ohjelmistokehitys** (55 termiä) - Ohjelmistokehitys (CI/CD, OOP, TDD, gRPC...)
+7. **Microsoft-teknologiat** (34 termiä) - Microsoft-ekosysteemi (Azure AD, Intune, Microsoft Fabric...)
+8. **Tekoäly ja koneoppiminen** (26 termiä) - Tekoäly (ML, NLP, GPT, NumPy...)
+9. **Business Intelligence** (21 termiä) - Tietoanalytiikka (BI, KPI, OLAP, Power BI...)
+10. **IT-palvelut** (24 termiä) - Palveluhallinta (ITIL, Agile, SLA, SLO...)
 11. **Tallennus ja protokollat** (4 termiä) - Tallennusjärjestelmät (Ceph, Lustre, NFS, S3...)
 
 ## 🚀 Ominaisuudet
